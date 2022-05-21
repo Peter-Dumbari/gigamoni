@@ -169,12 +169,42 @@ a {
 
 @media (min-width: 768px) and (max-width: 992px){
   .sidenav {
-  width: 200px;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  width: 300px;
   transition: 0.8s;
-  padding-top: 30px;
+  padding: 30px 50px 0 15px;
   }
+  
+  .body {
+    margin-left: 40%;
+    padding-top: 30px;
+    padding-right: 40px;
+}
+  
+.home_image{
+  width: 250px;
+  margin-top: 3rem;
+}
+
+.smallBox {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #0e8a5e;
+  margin-right: 2rem;
+}
+
+   
+.chip {
+  margin-top: 40px;
+  padding: 0 25px;
+  height: 60px;
+  width: 300px;
+  font-size: 20px;
+  line-height: 50px;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+  margin-right: 30px;
+}
 
 }
 
@@ -186,7 +216,6 @@ a {
     padding: 15px 30px 0 15px;
     }
 
-    
     .home_image{
       width: 180px;
     }
@@ -195,11 +224,10 @@ a {
       margin-left: 45%;
       padding-top: 30px;
       padding-right: 40px;
-      text-align: center;
     }
 
     h2{
-      font-size: 15px;
+      font-size: 17px;
       font-weight: bolder;
       margin-bottom: 10px;
     }
