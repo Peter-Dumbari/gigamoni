@@ -13,7 +13,7 @@ export default function Home() {
           placeholder that used beacuse real text are not available
         </p>
 
-        <img src={welcome} alt="/" width="300" height="300" />
+        <img src={welcome} alt="/" width="300" height="300" className="home_image"/>
       </div>
       <div className="body">
         <h2>Choose your account type</h2>
