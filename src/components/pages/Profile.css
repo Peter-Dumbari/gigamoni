@@ -1,0 +1,39 @@
+.profile__container{
+    margin: 2rem 0rem 2rem 25rem;
+    height: 80vh;
+}
+
+.btn-primary{
+    width: 150px;
+}
+
+.form__items{
+    display: flex;
+    flex-direction: row;
+    margin: 3rem 0 5rem 0;
+}
+
+.firstline{
+    margin-right: 10rem;
+}
+
+.secondline{
+    margin-right: 10rem;
+}
+
+.profile__items h3{
+    color: #0e8a5e;
+    font-family: Sen;
+    font-weight: 600;
+}
+
+label{
+    font-weight: 600;
+    font-family: Sen;
+}
+
+.profiles{
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 15px;
+}

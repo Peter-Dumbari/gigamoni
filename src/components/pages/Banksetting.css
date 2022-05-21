@@ -1,0 +1,38 @@
+.banksetting{
+    margin: 2rem 0 0 20rem;
+    height: 85vh;
+}
+
+.banksttng__header h5{
+    color: #0E8A5E;
+    font-size: 2.5rem;
+    font-family: sen;
+}
+
+.banksttng__header{
+    text-align: center;
+    background-color: #fff;
+    padding: 3rem;
+    width: 800px;
+    border-radius: 15px;
+}
+
+.banksttng__header h5{
+  margin: 0 30rem 2rem 0;
+}
+
+.void__image{
+    width: 250px;
+}
+
+.image__text{
+    margin: 0rem 0 2rem 0;
+    color: #0E8A5E;
+    font-family: Sen;
+    font-size: 2rem;
+}
+
+.btn-success{
+    width: 200px;
+    text-align: center;
+}

@@ -1,0 +1,112 @@
+.startbbing__container{
+    margin: 2rem 0 0 20rem;
+    height: 120vh;
+}
+
+.startbidding__header{
+    margin: 1rem 0  2.5rem 0;
+}
+
+.startbidding__header h2{
+    color: #0e8a5e;
+    font-family: Sen;
+    font: 400;
+    font-size: 3rem;
+}
+
+.startbidding__header  h5{
+    font-family: Ruluko;
+    color: #000B00;;
+}
+
+.startbidding__card{
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 700px;
+    margin-bottom:1.5rem ;
+    cursor: pointer;
+}
+
+.startbidding__card:hover{
+    transform: scale(1.05);
+    transition: all 0.2s linear;
+}
+
+.startbbing__card__image{
+    padding-right: 5px;
+}
+
+.startbidding__card h3{
+    color: #0e8a5e;
+    font-weight: 500;
+    font-family: Sarala;
+}
+
+.startbidding__card p{
+    font-family: Ruluko;
+}
+
+.startbbing__container h4{
+    color:#0e8a5e;
+    font-family: Reggae One;
+    margin: 2.7rem 0 0 2rem
+}
+
+.card__button{
+    padding: 5px;
+    border-color: #0e8a5e;
+    border-radius: 5px;
+    background-color: inherit;
+    width: 150px;
+    font-weight: 600;
+    color: #0e8a5e;
+}
+
+ 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .profile__setting, .bank__setting{
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .profile__setting:hover {
+      background-color: #f1f1f1;
+    }
+
+    .bank__setting:hover{
+        background-color: #f1f1f1;
+    } 
+
+    .settings:hover .dropdown-content {
+        display: block;
+      }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  
+.profile__setting,.bank__setting {
+    display: inline-block;
+    text-align: center;
+    color:  #808080;
+    padding: 10px 16px;
+    text-decoration: none;
+  }
+  
+  .profile__setting, .bank__setting, .dropdown {
+    display: inline-block;
+  }
+  

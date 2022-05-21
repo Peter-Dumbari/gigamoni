@@ -1,0 +1,283 @@
+.transaction__container{
+    margin: 2rem 0 0 18rem;
+    height: 85vh;
+}
+
+.transaction__items{
+    display: flex;
+    flex-direction: row;
+}
+
+.transactions{
+    background-color: #fff;
+    padding: 4rem;
+    margin-right: 1rem;
+    border-radius: 5px;
+}
+
+.transaction__heading h4{
+    color: #0E8A5E;
+    font-weight: 600;
+    font-family: Sarala;
+}
+
+.transaction__heading{
+    margin-bottom: 2rem;
+}
+
+.transaction__heading h6{
+    font-family: Ruluko;
+    color: #6D6D6D;
+}
+
+.transaction__managers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.buttons{
+    margin-right: 12rem;
+}
+
+.investiment__button{
+    margin-right: 1rem;
+    border-radius: 5px;
+    background-color: #0E8A5E;
+    padding: 3px 10px 3px  10px;
+    color: #fff;
+    font-weight: 500;
+    border-color: #0E8A5E;
+}
+
+.withdraw__button{
+    border-radius: 5px;
+    padding: 3px 10px 3px  10px;
+    font-weight: 500;
+    border-color: #0E8A5E;
+    color: #0E8A5E;
+}
+
+.investiment__button:hover{
+    background-color: #fff;
+    color: #0E8A5E;
+    transition: all 0.2s linear;
+}
+
+.withdraw__button:hover{
+    background-color: #0E8A5E;
+    color: #fff;
+    transition: all 0.2s linear;
+}
+
+.search__button{
+    background-color:#3C9DDA;
+    border-radius: 5px;
+    border-color: #3C9DDA;
+    margin-left: 1rem;
+}
+
+
+.search__container{
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    width: 250px;
+}
+.transactions__table{
+    width: 600px;
+}
+
+
+th{
+    background-color: #3C9DDA;
+    padding: 0 1.5rem 0 1.5rem ;
+    color: #fff;
+    align-content: center;
+}
+
+tr td{
+    padding: 5px 10px 5px 10px;
+    color: #808080;
+    border-bottom:  0.30px solid;
+    text-align: center;
+}
+
+.completed{
+    color: #0E8A5E;
+    border: 1px  solid;
+    padding: 4px 7px 4px 7px;
+    border-radius: 5px;
+}
+
+.ongoing{
+    color: #FB1717;
+    border: 1px solid;
+    padding: 4px 7px 4px 7px;
+    border-radius: 5px;
+}
+
+.transaction__last__row{
+    background-color: #fff;
+    padding: 35px 35px 2rem 35px;
+    border-radius: 5px;
+    align-items: center;
+    margin-right: 1rem;
+}
+.row__image{
+    width: 100px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.row__text{
+    margin-bottom: 4rem;
+}
+.row__text h5{
+    font-family: Sarala;
+    font-size: 20px;
+    color: #3C9DDA;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+.row__text h6{
+    color:  #B8B6B6;
+    font-size: 15px;
+    text-align: center;
+}
+
+.overlay{
+    margin-left: 17rem;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #797777a6;
+    transition: opacity 500ms;
+    opacity: 10;
+}
+.overlay:target{
+    visibility: visible;
+    opacity: 1;
+   
+}
+
+.wrapper{
+    margin: 70px auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 30px;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+
+.wrapper .close{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+.content{
+    background-color: #fff;
+    text-align: center;
+    margin: 3rem 15rem 3rem 15rem;
+    padding: 2rem 2rem 4rem 2rem;
+    border-radius: 20px;
+
+}
+
+.withdraw__items{
+    color: #3C9DDA;
+    font-family: Reggae One;
+    font-weight: 900;
+    float: right;
+}
+
+.withdraw__image{
+    margin-left: 10rem;
+}
+.withdraw__text{
+    color:  #3C9DDA;
+    font-family: Sarala;
+    font-weight: 500;
+    padding-bottom: 2rem;
+}
+
+.withdraw__balance h6{
+    color: #DA3C3C;
+    font-size: smaller;
+    margin-right: 11rem;
+    
+}
+
+.withdraw__balance input{
+    width: 300px;
+    border-radius: 8px;
+    margin: 1rem 1rem 1rem 7.5rem;
+    
+}
+
+.withdraw__button2{
+    background-color: #3C9DDA;
+    width: 170px;
+    color: #fff;
+    border-color: #3C9DDA;
+    border-radius: 20px;
+    margin-top: 2rem;
+    padding: 5px;
+}
+
+ 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .profile__setting, .bank__setting{
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .profile__setting:hover {
+      background-color: #f1f1f1;
+    }
+
+    .bank__setting:hover{
+        background-color: #f1f1f1;
+    } 
+
+    .settings:hover .dropdown-content {
+        display: block;
+      }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  
+.profile__setting,.bank__setting {
+    display: inline-block;
+    text-align: center;
+    color:  #808080;
+    padding: 10px 16px;
+    text-decoration: none;
+  }
+  
+  .profile__setting, .bank__setting, .dropdown {
+    display: inline-block;
+  }
+  

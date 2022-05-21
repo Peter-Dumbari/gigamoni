@@ -1,0 +1,28 @@
+.verfication__container{
+    background-color: #fff;
+    width: 400px;
+    margin-left: 20rem;
+    padding: 3rem;
+    border-radius: 15px;
+}
+
+.verfication__container h5{
+    color: #3C9DDA;
+    font-family: Sarala;
+    text-align: center;
+    margin: 0rem 2rem 2rem 2rem;
+}
+
+.verification_form h6{
+    color: #808080;
+    font-family: Sen;
+    margin-bottom: 1rem;
+}
+
+.verification_form input{
+    margin-bottom: 2rem;
+}
+
+.btn-primary{
+    border-radius: 25px;
+}

@@ -1,0 +1,79 @@
+.emptyStartBiddingContainer{
+    margin: 2rem 0 1rem 30rem;
+  
+}
+
+.biddingContainer{
+    background-color: #fff;
+    padding: 1rem 2rem 1rem 2rem;
+    width: 600px;
+    border-radius: 30px;
+}
+
+.empty_void{
+    width: 300px;
+    height: 200px;
+}
+
+.container__items{
+    text-align: center;
+}
+
+.emtpty_header_text h4{
+    font-family: Sen;
+}
+
+.container__items h3{
+    color:#0e8a5e;
+    font-family: Sen;
+}
+
+.container__items h4{
+    font-family: Sen;
+}
+
+ 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .profile__setting, .bank__setting{
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .profile__setting:hover {
+      background-color: #f1f1f1;
+    }
+
+    .bank__setting:hover{
+        background-color: #f1f1f1;
+    } 
+
+    .settings:hover .dropdown-content {
+        display: block;
+      }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  
+.profile__setting,.bank__setting {
+    display: inline-block;
+    text-align: center;
+    color:  #808080;
+    padding: 10px 16px;
+    text-decoration: none;
+  }
+  
+  .profile__setting, .bank__setting, .dropdown {
+    display: inline-block;
+  }
+  
