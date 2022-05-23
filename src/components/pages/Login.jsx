@@ -1,5 +1,6 @@
 import gigmaoni from "../assets/gigamoni.svg";
 import userimage from "../assets/user-image.svg";
+import "../../App.css";
 import { useRef, useState, useEffect, useContext } from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
@@ -46,9 +47,9 @@ export default function UserRegistration() {
 
   return (
     <div className="container">
+      <img src={gigmaoni} alt="" width="200" height="100" className="gigalogo" />
       <div className="row">
         <div className="col-lg-6">
-          <img src={gigmaoni} alt="" width="200" height="100" />
           <div className="col-lg-8">
             <h4>Login</h4>
             <br />

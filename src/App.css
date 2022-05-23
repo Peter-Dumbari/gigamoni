@@ -204,6 +204,20 @@ a {
   margin-right: 30px;
 }
 
+.gigalogo{
+  width: 150px;
+}
+
+.btn-success{
+  margin-bottom: 2rem;
+}
+
+.row{
+  width: 400px;
+  margin: 0 0 0 6rem;
+  
+}
+
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
