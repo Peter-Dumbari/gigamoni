@@ -365,4 +365,9 @@ a {
   width: 150px;
 }
 
+.confirmEmail__container{
+  width: 100px;
+  height: 300px;
+}
+
 }
