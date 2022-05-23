@@ -223,14 +223,16 @@ a {
     .body {
       margin-left: 50%;
       padding-top: 30px;
-      padding-right: 0px;
+     margin-right: 20px;
       width: auto;
+      height: 90vh;
     }
 
     h2{
       font-size: 15px;
       font-weight: bolder;
       margin-bottom: 15px;
+      text-align: center;
     }
 
     .smallBox {
