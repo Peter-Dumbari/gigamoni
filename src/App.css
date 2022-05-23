@@ -223,9 +223,8 @@ a {
     .body {
       margin-left: 50%;
       padding-top: 30px;
-     margin-right: 20px;
+     margin-right: 5px;
       width: auto;
-      height: 90vh;
     }
 
     h2{
@@ -243,6 +242,7 @@ a {
 
     
 .chip {
+  margin-top: 2rem;
   flex-direction: row;
   height: 50px;
   width: 170px;
@@ -250,6 +250,7 @@ a {
   font-weight: 600;
   display: inline-block;
   text-align: center;
+  margin-right: 10px;
 
 
 }
