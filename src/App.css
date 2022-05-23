@@ -165,6 +165,11 @@ a {
   justify-content: baseline;
 }
 
+
+
+
+/* MEDIA SCREEN */
+
 @media (min-width: 768px) and (max-width: 992px){
   .sidenav {
   width: 300px;
@@ -307,4 +312,23 @@ a {
 .btn-success{
   margin-bottom: 2rem;
 }
+
+.confirmEmail__Item{
+  margin: 2rem 2rem 0 5rem;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.or_User_Reg_btn{
+  width: 150px;
+}
+
+.giga_Logo{
+  width: 200px;
+}
+
+.Registration_btn{
+  width: 150px;
+}
+
 }
