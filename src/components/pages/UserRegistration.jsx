@@ -5,8 +5,6 @@ import DashBoard from "./DashBoard";
 import "./style.css";
 import { Link } from "react-router-dom";
 
-
-
 const REGISTER_URL = "api/v1/accounts/register/person/";
 const VALIDEMAIL = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 const VALIDPASSWORD = /^ (?=.* [A - Za - z])(?=.*\d)[A - Za - z\d]{ 8, }$/;
@@ -53,9 +51,9 @@ export default function UserRegistration() {
 
   return (
     <div className="container">
+      <img src={gigmaoni} alt="" width="200" height="100"  className="gigalogo"/>
       <div className="row">
         <div className="col-lg-6">
-          <img src={gigmaoni} alt="" width="200" height="100" />
           <div className="col-lg-8">
             <h4>User Registration</h4>
             <br />
@@ -105,7 +103,9 @@ export default function UserRegistration() {
               </p>
               <br /> <br />
               {/* <button className="btn btn-success">Register</button> */}
-              <Link to="/dashboard" className="btn btn-success">Register</Link>
+              <Link to="/dashboard" className="btn btn-success">
+                Register
+              </Link>
             </form>
           </div>
         </div>
