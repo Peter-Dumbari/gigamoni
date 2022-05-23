@@ -326,14 +326,20 @@ a {
   font-size: 1rem;
 }
 
-.gigalogo{
-  background-color: #f1f1f1;
-  width: 150px;
+.headboss{
+  background-color:#fff;
   position: sticky;
   top: 0;
   z-index: 999;
   max-width: 1500px;
-  height: 60px;
+  height: 70px;
+  margin-bottom: 2rem;
+}
+.gigalogo{
+  width: 150px;
+ 
+ 
+
 }
 
 .btn-success{

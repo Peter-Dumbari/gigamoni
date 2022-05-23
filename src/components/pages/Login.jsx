@@ -47,7 +47,15 @@ export default function UserRegistration() {
 
   return (
     <div className="container">
-      <img src={gigmaoni} alt="" width="200" height="100" className="gigalogo" />
+      <div className="headboss">
+        <img
+          src={gigmaoni}
+          alt=""
+          width="200"
+          height="100"
+          className="gigalogo"
+        />
+      </div>
       <div className="row">
         <div className="col-lg-6">
           <div className="col-lg-8">
