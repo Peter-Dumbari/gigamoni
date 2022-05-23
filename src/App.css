@@ -211,6 +211,7 @@ a {
 
 .gigalogo{
   width: 150px;
+  
 }
 
 .btn-success{
@@ -222,6 +223,26 @@ a {
   margin: 0 0 0 6rem;
   
 }
+
+
+.confirmEmail__Item{
+  margin: 2rem 2rem 0 12rem;
+  justify-content: space-between;
+  width: 350px;
+}
+
+.or_User_Reg_btn{
+  width: 250px;
+}
+
+.giga_Logo{
+  width: 250px;
+}
+
+.Registration_btn{
+  width: 250px;
+}
+
 
 }
 
@@ -307,6 +328,11 @@ a {
 
 .gigalogo{
   width: 150px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  max-width: 1500px;
+  height: 60px;
 }
 
 .btn-success{
@@ -314,7 +340,7 @@ a {
 }
 
 .confirmEmail__Item{
-  margin: 2rem 2rem 0 5rem;
+  margin: 2rem 2rem 0 2rem;
   justify-content: space-between;
   width: 300px;
 }
@@ -325,6 +351,7 @@ a {
 
 .giga_Logo{
   width: 200px;
+  
 }
 
 .Registration_btn{
