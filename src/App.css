@@ -263,7 +263,8 @@ a {
 
 .col-lg-6{
   display: flex;
-  margin-left: 5rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
   text-align: center;
 }
 
