@@ -255,14 +255,26 @@ a {
 
 }
 
-.col-lg-6{
-  display: flex;
-  flex-direction: column;
+.row{
   width: 300px;
-  margin-left: 7rem;
-  justify-content: space-between;
+  align-content: center;
 }
 
+
+.col-lg-6{
+  display: flex;
+  margin-left: 7rem;
+  text-align: center;
+}
+
+
+.col-lg-8{
+  width: 250px;
+}
+
+.userImage{
+  width: 300px;
+}
 .sidenav p{
   font-size: 12px;
   font-weight: 600;
