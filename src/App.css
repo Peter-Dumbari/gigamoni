@@ -367,7 +367,8 @@ a {
 
 .confirmEmail__container{
   width: 100px;
-  height: 300px;
+  height: 300px; 
+ margin-left: 1rem;
 }
 
 

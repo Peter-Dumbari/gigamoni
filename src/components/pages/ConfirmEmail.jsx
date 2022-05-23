@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../assets/Logo.png";
 import { Link } from "react-router-dom";
-import "./style.css";
+import "../../App.css";
 
 export default function confirmEmail() {
   return (
