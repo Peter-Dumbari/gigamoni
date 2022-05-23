@@ -229,6 +229,7 @@ a {
       font-weight: bolder;
       margin-bottom: 15px;
       text-align: center;
+      width: 200px;
     }
 
     .smallBox {
@@ -261,6 +262,10 @@ a {
   font-size: 12px;
   font-weight: 600;
   margin-top: 2rem;
+}
+
+.sidenav h1{
+  font-size: 1rem;
 }
 
 }
