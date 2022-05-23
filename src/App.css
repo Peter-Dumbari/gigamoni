@@ -349,7 +349,7 @@ a {
 .confirmEmail__Item{
   margin: 2rem 2rem 0 2rem;
   justify-content: space-between;
-  width: 300px;
+  width: 200px;
 }
 
 .or_User_Reg_btn{
@@ -357,7 +357,7 @@ a {
 }
 
 .giga_Logo{
-  width: 200px;
+  width: 100px;
   
 }
 
@@ -370,4 +370,9 @@ a {
   height: 300px;
 }
 
+
+.confirmEmail__header{
+  font-size: 0.9rem;
+  font-weight: 700;
+}
 }
