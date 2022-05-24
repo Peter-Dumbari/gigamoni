@@ -379,8 +379,44 @@ ul {
 
 .dashboards{
     width: 200px;
-    margin-left: 10px;
+    margin-left: 100px;
 
 }
 
+.card1, .card2, .card3 {
+    width: 250px;
+    padding: 5px;
+    margin-bottom: 5px;
+  
+
+}
+
+.card__image{
+    width: 50px;
+    height: 60px;
+}
+
+.middle_first{
+    padding: 5px 0 0 5px;
+}
+
+.middle_first h1{
+    font-size: medium;
+}
+
+.middle_first p{
+    font-size: small;
+}
+
+
+.cardText{
+    margin-right: 3px;
+    margin-top: 5px;
+    width: 500px;
+    font-size:10px;
+}
+
+.cardText h3{
+    font-size: 15px;
+}
 }

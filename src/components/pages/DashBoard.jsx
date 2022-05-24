@@ -47,7 +47,7 @@ export default function DashBoard() {
               <h1>Hi Sammy Cliffy</h1>
               <p>What do you want to do today?</p>
             </div>
-            <Link to="/startbiding"> <div className="card1">
+            <Link to="/startbiding" className="cardlink"> <div className="card1">
               <div className="cardText">
                 <h3>Start Bidding</h3>
                 <p>You now start biding for IPOs as little as 5,000</p>
@@ -55,21 +55,21 @@ export default function DashBoard() {
               <img src={Realtime} alt="/" width="200px" height="100px" className="card__image"/>
             </div></Link>
 
-           <Link to="/"><div className="card2">
+           <div className="card2">
               <div className="cardText">
                 <h3>Current IPOs</h3>
                 <p>Here are the list of IPO</p>
               </div>
               <img src={image2} alt="/" width="200px" height="100px" className="card__image"/>
-            </div></Link>
-           <Link to="/">
+            </div>
+           
            <div className="card3" >
               <div className="cardText">
                 <h3>Transaction History</h3>
               </div>
               <img src={construction} alt="/" width="200px" height="100px" className="card__image"/>
             </div>
-           </Link>
+           
             
           </div>
 
