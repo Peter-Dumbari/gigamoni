@@ -379,7 +379,7 @@ ul {
 
 .dashboards{
     width: 100%;
-    margin-left: 100px;
+    margin-left: 0;
 
 }
 
@@ -436,6 +436,5 @@ ul {
 .dashboard__row{
     width: 100px;
     margin-right: 5rem;
-    padding-right: 10px;
 }
 }
