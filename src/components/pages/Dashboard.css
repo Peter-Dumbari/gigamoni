@@ -340,6 +340,7 @@ ul {
     padding-bottom: 5rem;
     box-shadow: 0 0 3px 0 #fff;
     width: 90px;
+
   
 }
 
@@ -384,9 +385,10 @@ ul {
 }
 
 .card1, .card2, .card3 {
-    width: 150px;
+    width: 230px;
     padding: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    
   
 
 }
@@ -423,18 +425,50 @@ ul {
 
 .fund_wallet__button{
     padding: 5px;
-    width: 50px;
-    margin: 0 0 3px 50px;
-    font-size: 3px;
+    width: 80px;
+    margin: 0 0 10px 35px;
+    font-size: 10px;
 }
 
 .dashboard__container__container{
     width: 100%;
-    background-color: rebeccapurple;
 }
 
 .dashboard__row{
     width: 100px;
-    margin-right: 5rem;
+    margin-right: 1rem;
+    }
+
+.dashboard__row h4{
+    font-size: 11px;
+    font-weight: 800;
 }
+
+.analytics__items h6{
+    font-weight: 700;
+    font-size: 6px;
+}
+
+.Ball{
+    margin-right: 3px;
+    width: 10px;
+    height: 10px;
+    margin-left: 0;
+}
+
+
+.dashboard__medle__items{
+    margin-left: 7rem;
+}
+
+.dashboard__row h4{
+    margin-bottom: 3px;
+    padding-bottom: 0;
+}
+
+.analytics__items{
+    margin-right: 1rem;
+    padding-bottom: 1rem;
+}
+
 }
