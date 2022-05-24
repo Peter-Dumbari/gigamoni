@@ -384,7 +384,7 @@ ul {
 }
 
 .card1, .card2, .card3 {
-    width: 250px;
+    width: 150px;
     padding: 5px;
     margin-bottom: 5px;
   
@@ -409,7 +409,7 @@ ul {
 }
 
 
-.cardText{
+.cardText {
     margin-right: 3px;
     margin-top: 5px;
     width: 500px;
@@ -417,6 +417,16 @@ ul {
 }
 
 .cardText h3{
-    font-size: 15px;
+    font-size: 10px;
+  
+}
+
+.fund_wallet__button{
+    padding: 5px;
+    width: 50px;
+    margin: 0 0 0 50px;
+    font-size: 3px;
+
+
 }
 }
