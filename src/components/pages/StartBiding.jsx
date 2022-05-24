@@ -77,7 +77,7 @@ export default function DashBoard() {
             <h4>N70,000,000.00</h4>
           </div>
         </div>
-        <p>Clear All Biddings  <Link to="/emptystartbidding">here</Link></p>
+        <p className="clear_all_link"><Link to="/emptystartbidding">X</Link></p>
 
       </div>
     </div>
