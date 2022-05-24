@@ -1,6 +1,8 @@
 .startbbing__container{
     margin: 2rem 0 0 20rem;
     height: 120vh;
+    width: 40%;
+    padding-right: 3em;
 }
 
 .startbidding__header{
