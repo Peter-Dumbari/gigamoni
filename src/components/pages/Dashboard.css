@@ -426,7 +426,16 @@ ul {
     width: 50px;
     margin: 0 0 3px 50px;
     font-size: 3px;
+}
 
+.dashboard__container__container{
+    width: 100%;
+    background-color: rebeccapurple;
+}
 
+.dashboard__row{
+    width: 100px;
+    margin-right: 5rem;
+    padding-right: 10px;
 }
 }
