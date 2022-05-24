@@ -1,5 +1,5 @@
 .emptyStartBiddingContainer{
-    margin: 2rem 0 1rem 30rem;
+    margin: 2rem 0 1rem 23rem;
   
 }
 
@@ -10,10 +10,6 @@
     border-radius: 30px;
 }
 
-.empty_void{
-    width: 300px;
-    height: 200px;
-}
 
 .container__items{
     text-align: center;
@@ -76,4 +72,73 @@
   .profile__setting, .bank__setting, .dropdown {
     display: inline-block;
   }
+
+  @media (min-width: 768px) and (max-width: 992px){
+    .emptyStartBiddingContainer{
+      margin: 5rem 0 0 13rem;
+    
+  }
+
   
+.biddingContainer{
+  width: 500px;
+  height: 450px;
+  margin-left: 2rem;
+}
+
+.container__items{
+  text-align: center;
+}
+
+.empty__void{
+  width: 300px;
+  height: 300px;
+}
+
+.emtpty_header_text h4{
+    font-size: 20px;
+}
+
+.container__items h3{
+  font-size: 1.5rem;
+}
+
+.container__items h4{
+  font-size: 1.5rem;
+}
+  }
+
+  @media (min-width: 320px) and (max-width: 767px){
+    .emptyStartBiddingContainer{
+      margin: 5rem 0 0 5rem;
+    
+  }
+
+  
+.biddingContainer{
+  width: 300px;
+  height: 250px;
+  margin-left: 2rem;
+}
+
+.container__items{
+  text-align: center;
+}
+
+.empty__void{
+  width: 200px;
+  height: 100px;
+}
+
+.emtpty_header_text h4{
+    font-size: 20px;
+}
+
+.container__items h3{
+  font-size: medium;
+}
+
+.container__items h4{
+  font-size: medium;
+}
+  }
