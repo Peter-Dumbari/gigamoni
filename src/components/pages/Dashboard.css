@@ -378,7 +378,7 @@ ul {
 }
 
 .dashboards{
-    width: 200px;
+    width: 100%;
     margin-left: 100px;
 
 }
@@ -386,7 +386,7 @@ ul {
 .card1, .card2, .card3 {
     width: 150px;
     padding: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   
 
 }
@@ -405,7 +405,7 @@ ul {
 }
 
 .middle_first p{
-    font-size: small;
+    font-size: 8px;
 }
 
 
@@ -424,7 +424,7 @@ ul {
 .fund_wallet__button{
     padding: 5px;
     width: 50px;
-    margin: 0 0 0 50px;
+    margin: 0 0 3px 50px;
     font-size: 3px;
 
 
