@@ -1,13 +1,11 @@
 .navbar__container{
     background-color: #fff;
-    align-items: center;
     width: 100%;
     position: sticky;
     top: 0;
     z-index: 999;
     max-width: 1500px;
     height: 60px;
-    text-align: center;
     box-shadow: 0 0 15px 0 #808080;
 
 
@@ -15,7 +13,7 @@
 
 .navbar__container p{
     float: right;
-    margin: 10px 10rem 0 ;
+    margin: 10px 2rem 0 ;
     font-size: 1.5rem;
     color: #0e8a5e;
     font-weight: 600;
@@ -40,7 +38,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 250px;
+    width: 200px;
      height: 500px;
      position: relative;
      overflow: auto;
@@ -75,7 +73,7 @@ ul {
   }
 
   .sidenav__image{
-      width: 250px;
+      width: 200px;
       padding: 10px 20px;
       
   }
@@ -87,11 +85,12 @@ ul {
       background-color: #E5E5E5;;
       height: auto;
       
+      
   }
 
   .dashboards{
       width: 1000px;
-      margin-left: 20rem;
+      margin-left: 16rem;
       display: flex;
       justify-content: space-between;
       margin-top: 2rem;
@@ -99,14 +98,13 @@ ul {
 }
 
 .dashboard__medle__items{
-    /* text-align: center; */
-    justify-content: space-between;
+    width: 100%;
 }
 .card1 {
     display: inline-flex;
     text-decoration-line: none;
     background-color: #fff;
-    width: 600px;
+    width: 500px;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 3rem;
@@ -140,7 +138,7 @@ ul {
     display: flex;
     flex-direction: row;
     background-color: #E0FFE7;
-    width: 600px;
+    width: 500px;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 3rem;
@@ -174,7 +172,7 @@ ul {
     display: flex;
     flex-direction: row;
     background-color: #B7FEA5;
-    width: 600px;
+    width: 500px;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 3rem;
@@ -221,8 +219,8 @@ ul {
 
 .fund_wallet__button{
     padding: 10px;
-    width: 200px;
-    margin: 2rem 0 5rem 4rem;
+    width: 150px;
+    margin: 2rem 0 2rem 2rem;
     border-radius: 10px;
     background-color: #0e8a5e;
     color: #fff;
@@ -238,8 +236,8 @@ ul {
 .dashboard__row{
     background-color: #fff;
     padding: 2rem 0 0 0 ;
-    width: 250px;
-    margin-left: 35px;
+    width: 200px;
+    margin-left: 15px;
     border-radius: 10px;
  }
 
@@ -247,6 +245,10 @@ ul {
      text-align: center;
      color: #000000;
      margin-bottom: 4rem;
+ }
+
+ .dashboard__last__items{
+     margin-right: 2rem;
  }
  
  .analytics{
@@ -312,8 +314,169 @@ ul {
   .profile__setting, .bank__setting, .dropdown {
     display: inline-block;
   }
+
   
-  /* @media (min-width: 768px) and (max-width: 992px) */
+
+
+  
+  @media (min-width: 768px) and (max-width: 992px){
+    .navbar__container{
+        width: 100%;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        max-width: 1500px;
+        height: 60px;
+    
+    
+    }
+
+    
+.navbar__container p{
+    margin: 10px 1rem 0 ;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.side__Nav{
+    align-items: center;
+    padding-left: 20px;
+    position: fixed;
+    padding-bottom: 3rem;
+}
+
+
+ul {
+    width: 120px;
+     overflow: auto;
+     z-index: 1;
+  }
+
+  li a {
+    padding: 20px 16px;
+    font-weight:600;
+    font-size: 1rem;
+  }
+
+  
+  .settings{
+    padding: 30px 16px;
+    font-weight:600;
+    font-size: 1rem;
+  }
+
+  .dropbtn{
+    padding: 30px 16px;
+    font-weight:600;
+    font-size: 1rem;
+  }
+
+  
+  .sidenav__image{
+    width: 150px;
+    padding: 10px 20px;
+    margin-left: -1rem;
+    
+}
+
+.dashboards{
+    width: 100%;
+    margin-left: 0;
+
+}
+
+.card1, .card2, .card3 {
+    width: 500px;
+    padding: 12px;
+    margin-bottom: 30px;
+    
+  
+
+}
+
+.card__image{
+    width: 100px;
+    height: 100px;
+}
+
+.middle_first{
+    padding: 9px 0 0 5px;
+}
+
+.middle_first h1{
+    font-size: 1.5rem;
+}
+
+.middle_first p{
+    font-size: 15px;
+}
+
+
+.cardText {
+    margin-right: 3px;
+    margin-top: 5px;
+    width: 500px;
+    font-size: 15px;
+}
+
+.cardText h3{
+    font-size: 20px;
+  
+}
+
+.fund_wallet__button{
+    padding: 7px;
+    width: 150px;
+    margin: 0 0 30px 2px;
+    font-size: 10px;
+}
+
+.dashboard__container__container{
+    width: 100%;
+    height: 90vh;
+    padding: 0 1rem 0 0;
+}
+
+.dashboard__row{
+    width: 150px;
+    margin-left: 1px;
+    }
+
+.dashboard__row h4{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.analytics__items h6{
+    font-weight: 700;
+    font-size: 10px;
+    margin-left: 1rem;
+}
+
+.Ball{
+    margin-right: 3px;
+    width: 20px;
+    height: 20px;
+    margin-left: 0;
+}
+
+
+.dashboard__medle__items{
+    margin-left: 11rem;
+}
+
+.dashboard__row h4{
+    margin-bottom: 3px;
+    padding-bottom: 0;
+}
+
+.analytics__items{
+    margin-right: 1rem;
+    padding-bottom: 3rem;
+}
+
+
+  }
   
   @media (min-width: 320px) and (max-width: 767px){
     .navbar__container{
