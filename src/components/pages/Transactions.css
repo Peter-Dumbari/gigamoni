@@ -442,11 +442,6 @@ margin-top: 3px
 .overlay{
     margin-left: 4.5rem;
 }
-.overlay:target{
-    visibility: visible;
-    opacity: 1;
-   
-}
 
 .wrapper{
     margin: 9px auto;
@@ -457,17 +452,16 @@ margin-top: 3px
 }
 
 
-.wrapper .close{
-    font-size: 20px;
-
-}
 
 .withdraw__image{
-    width: 50px;
+    width: 150px;
     height: 50px;
-    margin-right: 20rem;
+    margin-left: 4rem;
+    padding-right: 5rem;
+
     
 }
+
 .content{
     margin: 4rem 10px 5px 3rem;
     padding: 2rem 2rem 4rem 2rem;
@@ -483,6 +477,17 @@ margin-top: 3px
 .withdraw__balance h6{
 font-size: 10px;
 width: 200px;
+padding-right: 6rem;
+}
+
+.withdraw__balance input{
+    margin-left: 0;
+    width: 250px;
+}
+
+.withdraw__button2{
+    margin-top: 1px;
+    padding: 2px;
 }
 
 
