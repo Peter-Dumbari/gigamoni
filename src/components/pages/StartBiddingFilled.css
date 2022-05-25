@@ -1,178 +1,364 @@
-.startBiddings{
-    margin: 2rem 0 3rem 25rem;
+.startBiddings {
+  margin: 2rem 0 3rem 17rem;
+  padding-right: 5rem;
 }
 
-.startbidding__card h4{
-    color:#73A738;
-    font-family: Reggae One;
-    margin: 2.7rem 0 0 2rem;
-    font-weight: 600;
+.startbidding__card h4 {
+  color: #73a738;
+  font-family: Reggae One;
+  margin: 2.7rem 0 0 2rem;
+  font-weight: 600;
 }
 
-.gigasec__container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between
+.gigasec__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.calculator__container{
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    padding: 3rem;
-    width: 300px;
-    border-radius: 10px;
-    
+.calculator__container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 3rem;
+  width: 300px;
+  border-radius: 10px;
 }
 
-.gigasec__header_text{
-    width: 300px;
+.gigasec__header_text {
+  width: 300px;
 }
 
-.gigasec__header_text h3{
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    font-family: Sarala;
-    font-weight: 700;
+.gigasec__header_text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-family: Sarala;
+  font-weight: 700;
 }
 
-.gigasec__header_text p{
-    color: #6D6D6D;
-    font-family: Ruluko;
+.gigasec__header_text p {
+  color: #6d6d6d;
+  font-family: Ruluko;
 }
 
-.calculator__items{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #E0FFE7;
-    padding: 10px 30px 9px 30px;
-    border-radius: 30px;
-    margin-bottom: 2rem;
+.calculator__items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #e0ffe7;
+  padding: 10px 30px 9px 30px;
+  border-radius: 30px;
+  margin-bottom: 2rem;
 }
 
-.calculator__items2{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #CDFEC1;
-    padding: 10px 25px 9px 25px;
-    border-radius: 30px;
-    margin-bottom: 2rem;
+.calculator__items2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #cdfec1;
+  padding: 10px 25px 9px 25px;
+  border-radius: 30px;
+  margin-bottom: 2rem;
 }
 
-
-
-
-.gigasec__items__container{
-    display: flex;
-    flex-direction: row;
-    width: 300px;
-    margin-bottom: 3rem;
+.gigasec__items__container {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  margin-bottom: 3rem;
 }
 
-.gigasec__services_list{
-    background-color: #fff;
-    padding: 2rem;
-    margin-right: 3rem;
-    align-items: center;
-    border-radius: 10px;
-
+.gigasec__services_list {
+  background-color: #fff;
+  padding: 2rem;
+  margin-right: 3rem;
+  align-items: center;
+  border-radius: 10px;
 }
-.text__icon{
-    height: 25px;
-    margin-top: 10px;
-}
-
-.gigasec__text{
-    margin-left: 2rem;
+.text__icon {
+  height: 25px;
+  margin-top: 10px;
 }
 
-.gigasec__text h6{
-    font-size: 12px;
-    color: #808080;
+.gigasec__text {
+  margin-left: 2rem;
 }
 
-.gigasec__text h5{
-    font-size: 20px;
-    color: #3C9DDA;
-    margin: 0;
+.gigasec__text h6 {
+  font-size: 12px;
+  color: #808080;
 }
 
-.input__search{
-    border-color: #F2F2F2;
-    margin: 2rem 0 2rem 0 ;
-    background-color:  #F2F2F2;
-    padding: 10px 30px 9px 30px;
-    border-radius: 20px;
+.line{
     width: 200px;
 }
 
-::placeholder{
-    color: #0e8a5e;
-    text-align: center;
-    font-size: 13px;
-    font-weight: 600;
-
+.gigasec__text h5 {
+  font-size: 20px;
+  color: #3c9dda;
+  margin: 0;
 }
 
-.invest_button{
-    background-color: #0e8a5e;
-    border-radius: 30px;
-    padding: 5px 0 5px 0;
-    border-color: #0e8a5e;
-    margin-top: 2rem;
-    color: #fff;
-    font-weight: 500;
+.input__search {
+  border-color: #f2f2f2;
+  margin: 2rem 0 2rem 0;
+  background-color: #f2f2f2;
+  padding: 10px 30px 9px 30px;
+  border-radius: 20px;
+  width: 200px;
 }
- 
+
+::placeholder {
+  color: #0e8a5e;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.invest_button {
+  background-color: #0e8a5e;
+  border-radius: 30px;
+  padding: 5px 0 5px 0;
+  border-color: #0e8a5e;
+  margin-top: 2rem;
+  color: #fff;
+  font-weight: 500;
+}
+
 .dropdown-content {
-    display: none;
-    position: absolute;
-    min-width: 10px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .profile__setting, .bank__setting{
-    color: black;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .profile__setting:hover {
-      background-color: #f1f1f1;
-    }
+  display: none;
+  position: absolute;
+  min-width: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
 
-    .bank__setting:hover{
-        background-color: #f1f1f1;
-    } 
+.profile__setting,
+.bank__setting {
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
 
-    .settings:hover .dropdown-content {
-        display: block;
-      }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
+.profile__setting:hover {
+  background-color: #f1f1f1;
+}
+
+.bank__setting:hover {
+  background-color: #f1f1f1;
+}
+
+.settings:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.profile__setting,
+.bank__setting {
+  display: inline-block;
+  text-align: center;
+  color: #808080;
+  padding: 10px 16px;
+  text-decoration: none;
+}
+
+.profile__setting,
+.bank__setting,
+.dropdown {
+  display: inline-block;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .startBiddings {
+    margin: 2rem 0 0 13rem;
+    background-color: #e5e5e5;
+    padding: 2rem 5rem 0 0;
   }
 
-  
-.profile__setting,.bank__setting {
-    display: inline-block;
-    text-align: center;
-    color:  #808080;
-    padding: 10px 16px;
-    text-decoration: none;
+  .dashboard__container__container {
+    height: 110vh;
   }
-  
-  .profile__setting, .bank__setting, .dropdown {
-    display: inline-block;
-  }
-  /* @media (min-width: 768px) and (max-width: 992px){
 
-  } */
-/* 
-  @media (min-width: 320px) and (max-width: 767px){
-      
-  } */
+  .gigasec__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .line{
+    width: 200px;
+}
+
+  .calculator__container {
+    width: 250px;
+    align-items: center;
+  }
+
+  .gigasec__header_text {
+    width: 200px;
+  }
+
+  .gigasec__services_list {
+    padding-right: 0;
+    width: 250px;
+  }
+
+  .gigasec__header_text h3 {
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+
+  .text__icon {
+    height: 20px;
+    margin-top: 5px;
+  }
+
+  .gigasec__text h6 {
+    font-size: 10px;
+  }
+
+  .gigasec__text h5 {
+    font-size: 15px;
+  }
+
+  .gigasec__header_text p {
+    font-size: 15px;
+  }
+
+  .calculator__items {
+    padding: 7px 17px 0 17px;
+    margin-bottom: 1.5rem;
+  }
+
+  .calculator__items h6 {
+    font-size: 12px;
+  }
+
+  .calculator__items2 {
+    padding: 7px 17px 0 17px;
+    margin-bottom: 1.5rem;
+  }
+
+  .calculator__items2 h6 {
+    font-size: 12px;
+  }
+
+  .input__search {
+    margin: 1rem 0 1rem 0;
+    padding: 7px 17px 7px 17px;
+    width: 170px;
+  }
+
+  .invest_button {
+    padding: 7px 7px 7px 7px;
+    margin-top: 2rem;
+    font-weight: 300;
+    font-size: 12px;
+  }
+
+  ::placeholder {
+    font-size: 12px;
+    font-weight: 600;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .startBiddings {
+    margin: 2rem 0 0 5rem;
+    background-color: #e5e5e5;
+    padding: 2rem 5rem 0 0;
+    width: 100%;
+  }
+
+  .gigasec__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 2rem;
+  }
+
+  .calculator__container {
+    width: 250px;
+    margin-top: 2rem;
+    align-items: center;
+  }
+
+  .dashboard__container__container {
+    height: 170vh;
+  }
+
+  .gigasec__header_text {
+    width: 200px;
+  }
+
+  .gigasec__services_list {
+    padding-right: 0;
+
+    width: 250px;
+  }
+
+  .gigasec__header_text h3 {
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .text__icon {
+    height: 15px;
+    margin-top: 5px;
+  }
+
+  .gigasec__text h6 {
+    font-size: 10px;
+  }
+
+  .gigasec__text h5 {
+    font-size: 10px;
+  }
+
+  .gigasec__header_text p {
+    font-size: smaller;
+  }
+
+  .calculator__items {
+    padding: 5px 15px 0 15px;
+    margin-bottom: 1.5rem;
+  }
+
+  .calculator__items h6 {
+    font-size: 10px;
+  }
+
+  .calculator__items2 {
+    padding: 5px 15px 0 15px;
+    margin-bottom: 1.5rem;
+  }
+
+  .calculator__items2 h6 {
+    font-size: 10px;
+  }
+
+  .input__search {
+    margin: 1rem 0 1rem 0;
+    padding: 5px 15px 5px 15px;
+    width: 150px;
+  }
+
+  .line{
+    width: 200px;
+}
+  .invest_button {
+    padding: 5px 5px 5px 5px;
+    margin-top: 2rem;
+    font-weight: 300;
+    font-size: 10px;
+  }
+
+  ::placeholder {
+    font-size: 9px;
+    font-weight: 600;
+  }
+}

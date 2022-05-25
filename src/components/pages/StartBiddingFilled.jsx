@@ -96,7 +96,7 @@ export default function DashBoard() {
                     <h6>Percentage:</h6>
                     <h6>0%</h6>
                 </div>
-                <hr/>
+                <hr className="line"/>
                 <input type="text"  placeholder="Enter amount to invest"  className="input__search"/>
                 <button className="invest_button">Invest N70,000.00</button>
             </div>

@@ -1,5 +1,6 @@
 .emptyStartBiddingContainer{
     margin: 2rem 0 1rem 23rem;
+    height: 81vh;
   
 }
 
@@ -28,6 +29,11 @@
     font-family: Sen;
 }
 
+ 
+.empty__void{
+  width: 300px;
+  height: 300px;
+}
  
 .dropdown-content {
     display: none;
@@ -60,6 +66,7 @@
     display: block;
   }
 
+ 
   
 .profile__setting,.bank__setting {
     display: inline-block;
