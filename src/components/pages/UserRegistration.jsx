@@ -57,7 +57,7 @@ export default function UserRegistration() {
           <div className="col-lg-8">
             <h4>User Registration</h4>
             <br />
-            <form onSubmit={handleSubmit}>
+            <div className="userformdiv"><form onSubmit={handleSubmit}>
               <p ref={errRef} aria-live="assertive">
                 {/* {errMsg} */}
               </p>
@@ -106,7 +106,7 @@ export default function UserRegistration() {
               <Link to="/dashboard" className="btn btn-success">
                 Register
               </Link>
-            </form>
+            </form></div>
           </div>
         </div>
         <div className="col-lg-6">
