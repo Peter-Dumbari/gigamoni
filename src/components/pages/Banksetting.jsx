@@ -47,7 +47,7 @@ export default function DashBoard() {
                 <img src={Image} alt="" className="void__image" />
                 <h4 className="image__text">No Bank added yet</h4>
                 <Link to="/addBank">
-                <button className="btn btn-success">Add Bank</button>
+                <div className="button_div"><button className="btn btn-success">Add Bank</button></div>
                 </Link>
               </div>
             </div>
