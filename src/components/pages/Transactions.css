@@ -38,7 +38,7 @@
 }
 
 .buttons{
-    margin-right: 12rem;
+    margin-right: 5rem;
 }
 
 .investiment__button{
@@ -282,6 +282,227 @@ tr td{
   }
   
 
+  @media (min-width: 768px) and (max-width: 992px){
+    .transaction__container{
+        margin: 2rem 0 0 12rem;
+        height: 130vh;
+    }
+
+    .transactions{
+        padding: 2rem;
+        margin-right: 1rem;
+    }
+
+      
+  .dashboard__container__container {
+    height: auto;
+  }  
+  .dashboard__container__container {
+    height: auto;
+  }
+    
+.transaction__items{
+    display: flex;
+    flex-direction: column;
+}
+    
+    .transaction__heading h4{
+        font-weight: 600;
+        font-family: Sarala;
+    }
+    
+    .transaction__heading{
+        margin-bottom: 2rem;
+    }
+    
+    .transaction__heading h6{
+        font-family: Ruluko;
+        color: #6D6D6D;
+    }
+    
+    .transaction__managers{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+    
+    .buttons{
+        margin-right: 5rem;
+    }
+    
+    .investiment__button{
+        margin-right: 1rem;
+        border-radius: 5px;
+        padding: 3px 10px 3px  10px;
+        font-weight: 500;
+    }
+    
+    .withdraw__button{
+        border-radius: 5px;
+        padding: 3px 10px 3px  10px;
+        font-weight: 500;
+        border-color: #0E8A5E;
+        color: #0E8A5E;
+    }
+    
+    .investiment__button:hover{
+        background-color: #fff;
+        color: #0E8A5E;
+        transition: all 0.2s linear;
+    }
+    
+    .withdraw__button:hover{
+        background-color: #0E8A5E;
+        color: #fff;
+        transition: all 0.2s linear;
+    }
+    
+    .search__button{
+        background-color:#3C9DDA;
+        border-radius: 5px;
+        border-color: #3C9DDA;
+        margin-left: 1rem;
+    }
+    
+    
+    .search__container{
+        display: flex;
+        flex-direction: row;
+        height: 30px;
+        width: 200px;
+    }
+    .transactions__table{
+        width: 650px;
+    }
+    
+    
+    th{
+        background-color: #3C9DDA;
+        padding: 0 1.5rem 0 1.5rem ;
+        color: #fff;
+        align-content: center;
+    }
+    
+    tr td{
+        padding: 5px 10px 5px 10px;
+        color: #808080;
+        border-bottom:  0.30px solid;
+        text-align: center;
+    }
+    
+    .completed{
+        color: #0E8A5E;
+        border: 1px  solid;
+        padding: 4px 7px 4px 7px;
+        border-radius: 5px;
+    }
+    
+    .ongoing{
+        color: #FB1717;
+        border: 1px solid;
+        padding: 4px 7px 4px 7px;
+        border-radius: 5px;
+    }
+    
+
+.transactions{
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    
+}
+
+
+.transaction__last__row{
+    padding: 5px 5px 5px 5px;
+    width: 200px;
+    text-align: center;
+   
+}
+
+
+.row__image{
+    width: 60px;
+    text-align: center;
+}
+
+
+.row__text{
+    margin-bottom: 3rem;
+  }
+
+
+  
+.row__text h5{
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+
+.row__text h6{
+    font-size: 17px;
+   
+}
+
+
+.overlay{
+    margin-left: 10rem;
+}
+
+.wrapper{
+    margin: 2rem;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100px;
+}
+
+
+
+.withdraw__image{
+    width: 150px;
+    height: 50px;
+    margin-left: 4rem;
+    padding-right: 5rem;
+
+    
+}
+
+.content{
+    margin: 4rem 10px 5px 8rem;
+    padding: 2rem 2rem 4rem 2rem;
+    width: 400px;
+    height: 400px;
+}
+
+.withdraw__items h5{
+    font-size: 15px;
+    
+}
+
+.close{
+    margin-left: 5rem;
+}
+
+.withdraw__balance h6{
+font-size: 10px;
+width: 200px;
+padding-right: 6rem;
+}
+
+.withdraw__balance input{
+    margin-left: 0;
+    width: 350px;
+}
+
+.withdraw__button2{
+    margin-top: 1px;
+    padding: 2px;
+}
+
+  }
+
  @media (min-width: 320px) and (max-width: 767px){
     .transaction__container{
         margin: 2rem 0 0 5rem;
@@ -472,6 +693,10 @@ margin-top: 3px
 .withdraw__items h5{
     font-size: 15px;
     
+}
+
+.close{
+    margin-right: 6rem;
 }
 
 .withdraw__balance h6{
