@@ -1,5 +1,5 @@
 .transaction__container{
-    margin: 2rem 0 0 18rem;
+    margin: 2rem 0 0 15rem;
     height: 85vh;
 }
 
@@ -10,7 +10,7 @@
 
 .transactions{
     background-color: #fff;
-    padding: 4rem;
+    padding: 2rem;
     margin-right: 1rem;
     border-radius: 5px;
 }
@@ -92,7 +92,7 @@
 
 th{
     background-color: #3C9DDA;
-    padding: 0 1.5rem 0 1.5rem ;
+    padding: 0 1.2rem 0 1.2rem ;
     color: #fff;
     align-content: center;
 }
@@ -150,7 +150,7 @@ tr td{
 }
 
 .overlay{
-    margin-left: 17rem;
+    margin-left: 14rem;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -190,8 +190,9 @@ tr td{
     background-color: #fff;
     text-align: center;
     margin: 3rem 15rem 3rem 15rem;
-    padding: 2rem 2rem 4rem 2rem;
+    padding: 2rem 2rem 2rem 2rem;
     border-radius: 20px;
+    width: 400px;
 
 }
 
@@ -203,7 +204,9 @@ tr td{
 }
 
 .withdraw__image{
-    margin-left: 10rem;
+    margin-left: 4rem;
+    width: 180px;
+    padding-right: 4rem;
 }
 .withdraw__text{
     color:  #3C9DDA;
@@ -222,7 +225,7 @@ tr td{
 .withdraw__balance input{
     width: 300px;
     border-radius: 8px;
-    margin: 1rem 1rem 1rem 7.5rem;
+    margin: 1rem 1rem 1rem 1rem;
     
 }
 
@@ -290,7 +293,6 @@ tr td{
 
     .transactions{
         padding: 2rem;
-        margin-right: 1rem;
     }
 
       
