@@ -1,9 +1,16 @@
 .btn-success {
-  width: 100%;
+  width: 350px;
 }
+
 .userImage {
   margin-top: 20px;
 }
+
+::placeholder{
+  float: left;
+}
+
+
 .sidenav {
   height: 100vh;
   width: 35%;
@@ -216,6 +223,9 @@ a {
 
 .btn-success{
   margin-bottom: 2rem;
+  width: 380px;
+  
+
 }
 
 .row{
@@ -344,6 +354,7 @@ a {
 
 .btn-success{
   margin-bottom: 2rem;
+  width: auto;
 }
 
 .confirmEmail__Item{
