@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/Logo.png";
 import undraw_finance from "../assets/finance_image.svg";
-import "./style.css";
+import "../../App.css";
 
 export default function CompanyRegistration() {
   return (
@@ -51,7 +51,7 @@ export default function CompanyRegistration() {
 
 
           <div className="or_userRegistration">
-            <button className="or_User_Reg_btn">User Registration</button>
+            <Link to="/userregistration"><button className="or_User_Reg_btn">User Registration</button></Link>
           </div>
         </form>
       </div>

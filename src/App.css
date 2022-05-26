@@ -387,4 +387,51 @@ a {
   font-size: 0.9rem;
   font-weight: 700;
 }
+
+
+.companyreg__container{
+  display: flex;
+  flex-direction: column; 
+  margin: 0;
+  padding-bottom: 3rem;
+  align-items: center;
+}
+.gigamoni__logo{
+  width: 150px;
+  margin-top: 2rem;
+
+}
+
+
+.companyreg__form{
+  width: 300px;
+  margin-left: 3rem;
+}
+
+
+.or_User_Reg_btn{
+  padding: 2px;
+  font-weight: 500;
+}
+
+
+.company_reg_heading{
+  padding: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+
+.undraw__finance{
+  text-align: center;
+  width: 380px;
+  margin-left: 6rem;
+}
+
+
+.Registration_btn{
+  padding: 5px;
+  font-weight: 600;
+}
 }

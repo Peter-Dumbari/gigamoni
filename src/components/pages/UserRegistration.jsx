@@ -2,7 +2,7 @@ import gigmaoni from "../assets/gigamoni.svg";
 import userimage from "../assets/user-image.svg";
 import { useRef, useState, useEffect, useContext } from "react";
 import DashBoard from "./DashBoard";
-import "./style.css";
+import "../../App.css";
 import { Link } from "react-router-dom";
 
 const REGISTER_URL = "api/v1/accounts/register/person/";

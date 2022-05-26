@@ -2,7 +2,6 @@ import gigmaoni from "../assets/gigamoni.svg";
 import userimage from "../assets/user-image.svg";
 import "../../App.css";
 import { useRef, useState, useEffect, useContext } from "react";
-import "./style.css";
 import { Link } from "react-router-dom";
 // const VALIDEMAIL = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 const VALIDPASSWORD = /^ (?=.* [A - Za - z])(?=.*\d)[A - Za - z\d]{ 8, }$/;
