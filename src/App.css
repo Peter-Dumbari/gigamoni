@@ -84,6 +84,7 @@ a {
   border-color: #0e8a5e;
   color: #0e8a5e;
   font-weight: 700;
+  width: 400px;
 }
 
 .gigamoni__logo{
@@ -109,7 +110,7 @@ a {
 }
 
 .undraw__finance{
-  width: 700px;
+  width: 600px;
 }
 
 .Registration_btn{
@@ -254,6 +255,52 @@ a {
 }
 
 
+
+.companyreg__container{
+  display: flex;
+  flex-direction: column; 
+  margin: 0;
+  padding-bottom: 3rem;
+  align-items: center;
+}
+.gigamoni__logo{
+  width: 200px;
+  margin-top: 2rem;
+
+}
+
+
+.companyreg__form{
+  width: 400px;
+  margin-left: 3rem;
+}
+
+
+.or_User_Reg_btn{
+  padding: 3px;
+  font-weight: 600;
+}
+
+
+.company_reg_heading{
+  padding: 6px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 3.5rem;
+}
+
+
+.undraw__finance{
+  text-align: center;
+  width: 480px;
+  margin-left: 6rem;
+}
+
+
+.Registration_btn{
+  padding: 5px;
+  font-weight: 600;
+}
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
