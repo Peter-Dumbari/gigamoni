@@ -45,7 +45,7 @@ export default function DashBoard() {
           <div className="profile__items">
             <h3>Profile Settings</h3>
           </div>
-          <div className="profile__list">
+          <div className="holder"><div className="profile__list">
             <form>
               <div className="form__items">
                 <div className="firstline">
@@ -93,7 +93,7 @@ export default function DashBoard() {
               </div>
               <button className="btn btn-primary">Update</button>
             </form>
-          </div>
+          </div></div>
           </div>
         </div>
       </div>

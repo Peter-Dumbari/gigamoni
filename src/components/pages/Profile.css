@@ -1,5 +1,5 @@
 .profile__container{
-    margin: 2rem 0rem 2rem 25rem;
+    margin: 2rem 0rem 2rem 20rem;
     height: 80vh;
 }
 
@@ -14,11 +14,11 @@
 }
 
 .firstline{
-    margin-right: 10rem;
+    margin-right: 7rem;
 }
 
 .secondline{
-    margin-right: 10rem;
+    margin-right: 7rem;
 }
 
 .profile__items h3{
@@ -36,4 +36,116 @@ label{
     background-color: #fff;
     padding: 3rem;
     border-radius: 15px;
+}
+@media (min-width: 768px) and (max-width: 992px){
+    .profile__container{
+        margin: 2rem 0  0 17rem;
+        width: 450px;
+        align-self: center;
+    }
+    
+    
+    .dashboard__container__container{
+        height: 95vh;
+    }
+    
+.form__items{
+    margin: 0 0 1rem 0;
+}
+
+
+.btn-primary{
+    width: 100px;
+    font-size: 15px;
+    height: 30px;
+    margin-top: 1rem;
+    padding: 0;
+    
+}
+
+
+.firstline{
+    margin-right: 3rem;
+}
+
+.secondline{
+    margin-right: 3rem;
+}
+
+
+label{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.form__items input{
+    height: 25px;
+    width: 160px;
+    font-size: small;
+    margin-bottom: 1rem;
+   
+}
+
+
+.profile__items h3{
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+    .profile__container{
+        margin: 2rem 0  0 8rem;
+        width: 350px;
+        align-self: center;
+    }
+    
+    
+    .dashboard__container__container{
+        height: 95vh;
+    }
+    
+.form__items{
+    margin: 0 0 1rem 0;
+    margin-left: -1rem;
+}
+
+
+.btn-primary{
+    width: 70px;
+    font-size: 12px;
+    height: 20px;
+    padding: 0;
+    margin-top: 1rem;
+    
+}
+
+
+.firstline{
+    margin-right: 3rem;
+}
+
+.secondline{
+    margin-right: 3rem;
+}
+
+
+label{
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.form__items input{
+    height: 25px;
+    width: 120px;
+    font-size: small;
+   
+}
+
+
+.profile__items h3{
+    font-size: medium;
+    margin-bottom: 1rem;
+}
+
 }
