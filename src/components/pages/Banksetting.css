@@ -97,9 +97,7 @@
     }
 
 
-    .banksttng__header h5{
-        font-size: 1.5rem;
-    }
+
 
     
 .banksttng__header{
@@ -110,7 +108,9 @@
 
 
 .banksttng__header h5{
-    margin: 0 2rem 1rem 0;
+    margin: 0 5rem 1rem -8rem;
+    font-size: medium;
+    text-align: center;
   }
 
 

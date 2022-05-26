@@ -401,7 +401,7 @@ a {
 
 .btn-success{
   margin-bottom: 2rem;
-  width: 250px;
+  width: auto;
 }
 
 .confirmEmail__Item{
