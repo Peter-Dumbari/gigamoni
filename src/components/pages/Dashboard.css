@@ -6,7 +6,7 @@
     z-index: 999;
     max-width: 1500px;
     height: 60px;
-    box-shadow: 0 0 15px 0 #808080;
+   
 
 
 }
@@ -23,16 +23,23 @@
 
 }
 
+
 .side__Nav{
-    
     align-items: center;
     background-color: #fff;
-    padding-left: 20px;
+    padding-left: 50px;
     position: fixed;
-    padding-bottom: 5rem;
     box-shadow: 0 0 15px 0 #fff;
+    height: 88vh;
+    padding-top: 2rem;
   
-}
+} 
+
+
+.dropbtn{
+    font-weight: 00;
+  }
+
 
 ul {
     list-style-type: none;
@@ -48,11 +55,10 @@ ul {
   li a {
     display: block;
     color:  #808080;
-    padding: 30px 16px;
+    padding: 20px 16px;
     text-decoration: none;
     opacity: inherit;
     position: relative;
-    font-weight:600;
     font-size: 1.2rem;
   }
 
@@ -63,7 +69,6 @@ ul {
     text-decoration: none;
     opacity: inherit;
     position: relative;
-    font-weight:600;
     font-size: 1.2rem;
     cursor: pointer;
   }
@@ -72,9 +77,12 @@ ul {
     font-size: smaller;
   }
 
+  
+
   .sidenav__image{
       width: 200px;
-      padding: 10px 20px;
+      padding: 30px 20px;
+      margin-left: 2rem;
       
   }
   
@@ -89,25 +97,25 @@ ul {
   }
 
   .dashboards{
-      width: 1000px;
-      margin-left: 16rem;
+      width: 70%;
       display: flex;
-      justify-content: space-between;
-      margin-top: 2rem;
+      padding-bottom: 0.5rem
+
 
 }
 
 .dashboard__medle__items{
     width: 100%;
+    
 }
 .card1 {
     display: inline-flex;
     text-decoration-line: none;
     background-color: #fff;
-    width: 500px;
-    padding: 20px;
+    width: 90%;
+    padding: 15px;
     border-radius: 10px;
-    margin-bottom: 3rem;
+    margin-bottom: 0.8rem;
     cursor: pointer;
 
 }
@@ -118,8 +126,8 @@ ul {
 
 .cardText{
     margin-right: 30px;
-    margin-top: 2rem;
-    width: 500px;
+    margin-top: 3rem;
+    width: 200px;
     text-decoration: none;
 }
 .card1 h3{
@@ -138,10 +146,10 @@ ul {
     display: flex;
     flex-direction: row;
     background-color: #E0FFE7;
-    width: 500px;
-    padding: 10px;
+    width: 90%;
+    padding: 15px;
     border-radius: 10px;
-    margin-bottom: 3rem;
+    margin-bottom: 0.8rem;
     cursor: pointer;
 
 }
@@ -150,7 +158,8 @@ ul {
     transition: all 0.2s linear;
 }
 .card__image{
-    width: 300px;
+    width: 200px;
+    height: 100px;
 }
 .cardText{
     margin-right: 30px;
@@ -172,10 +181,10 @@ ul {
     display: flex;
     flex-direction: row;
     background-color: #B7FEA5;
-    width: 500px;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 3rem;
+    width: 90%;
+    padding: 15px;
+    border-radius: 19px;
+    margin-bottom: 0.8rem;
     cursor: pointer;
 
 }
@@ -201,33 +210,28 @@ ul {
 .middle_first{
     color: #0e8a5e;
     padding: 1rem 0 0 1rem;
+    margin-left: -1rem;
+
 }
 .middle_first p{
     color: #000;
     margin-right: 30px;
-    font-weight: 700;
+    font-weight: 500;
     font-family: Ruluko;
-    padding: 5px 0 0 5px;
-    font-size: 20px;
+    padding: 0 0 5px 5px;
+    font-size: 18px;
 }
 .middle_first h1{
     font-family: Sen;
-    font-size: 30px;
-    font-weight: 600;
+    font-size: 32px;
+    font-weight: 400;
 
 }
 
 .fund_wallet__button{
-    padding: 10px;
-    width: 150px;
-    margin: 2rem 0 2rem 2rem;
-    border-radius: 10px;
-    background-color: #0e8a5e;
-    color: #fff;
-    font-weight: 700;
-    border-color: #fff;
-    font-style: normal;
-    font-size: 1rem;
+    padding: 4px;
+    width: 250px;
+    margin: 2rem 0 2rem 0;
 
 
 }
@@ -235,35 +239,34 @@ ul {
 
 .dashboard__row{
     background-color: #fff;
-    padding: 2rem 0 0 0 ;
-    width: 200px;
-    margin-left: 15px;
+    padding: 2rem 0 2% 0 ;
+    width: 100%;
     border-radius: 10px;
+
  }
 
  .dashboard__row h4{
      text-align: center;
      color: #000000;
-     margin-bottom: 4rem;
+     margin-bottom: 1.2rem;
+     font-weight: 400;
  }
 
- .dashboard__last__items{
-     margin-right: 2rem;
- }
- 
  .analytics{
      display: flex;
      font-family: Sarala;
-     margin: 0 0 0 20px;
+     margin: 0 0 4.3rem 20px;
  }
 
  .analytics__items{
      margin-right: 2rem;
-     padding-bottom: 4rem;
+     margin-bottom: -2.2rem;
  }
 
  .analytics__items h6{
-     font-weight: 700;
+     font-weight: 500;
+     font-size: 1rem;
+
  }
 
  .Ball{
@@ -280,7 +283,7 @@ ul {
   }
   
   .profile__setting, .bank__setting{
-    color: black;
+    color: #0e8a5e;
     text-decoration: none;
     display: block;
     text-align: left;
@@ -306,20 +309,22 @@ ul {
 .profile__setting,.bank__setting {
     display: inline-block;
     text-align: center;
-    color:  #808080;
+    color:  #0e8a5e;
     padding: 10px 16px;
     text-decoration: none;
+    transition-delay: 250ms;
   }
   
   .profile__setting, .bank__setting, .dropdown {
     display: inline-block;
+
   }
 
   
 
 
   
-  @media (min-width: 768px) and (max-width: 992px){
+  @media (min-width: 867px) and (max-width: 1562px){
     .navbar__container{
         width: 100%;
         position: sticky;
@@ -333,7 +338,7 @@ ul {
 
     
 .navbar__container p{
-    margin: 10px 1rem 0 ;
+    margin: 20px 1rem 0 ;
     font-size: 20px;
     font-weight: 800;
 }
@@ -342,20 +347,20 @@ ul {
     align-items: center;
     padding-left: 20px;
     position: fixed;
-    padding-bottom: 3rem;
+    height: 88vh;
 }
 
 
 ul {
-    width: 120px;
+    width: 250px;
      overflow: auto;
      z-index: 1;
   }
 
-  li a {
+  .nav-links {
     padding: 20px 16px;
     font-weight:600;
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 
   
@@ -367,16 +372,16 @@ ul {
   }
 
   .dropbtn{
-    padding: 30px 16px;
+    padding: 20px 16px;
     font-weight:600;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   
   .sidenav__image{
-    width: 150px;
-    padding: 10px 20px;
-    margin-left: -1rem;
+    width: 200px;
+    padding: 10px 20px 2rem;
+    margin-left: 1rem;
     
 }
 
@@ -387,60 +392,54 @@ ul {
 }
 
 .card1, .card2, .card3 {
-    width: 500px;
-    padding: 12px;
+    width: 100%;
+    padding: 11px;
     margin-bottom: 30px;
+    justify-content: space-between;
+    margin-right: -10rem;
     
-  
-
 }
 
 .card__image{
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
 }
 
 .middle_first{
     padding: 9px 0 0 5px;
+   
 }
 
 .middle_first h1{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    margin-left: 1rem;
 }
 
 .middle_first p{
     font-size: 15px;
+    margin-left: 0.7rem;
 }
 
 
 .cardText {
-    margin-right: 3px;
+    margin-right: 3%;
     margin-top: 5px;
-    width: 500px;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .cardText h3{
     font-size: 20px;
   
 }
-
-.fund_wallet__button{
-    padding: 7px;
-    width: 150px;
-    margin: 0 0 30px 2px;
-    font-size: 10px;
-}
-
 .dashboard__container__container{
     width: 100%;
-    height: 90vh;
+    height: 100%;
     padding: 0 1rem 0 0;
 }
 
 .dashboard__row{
-    width: 150px;
-    margin-left: 1px;
+    width: 100%;
+ 
     }
 
 .dashboard__row h4{
@@ -450,36 +449,67 @@ ul {
 
 .analytics__items h6{
     font-weight: 700;
-    font-size: 10px;
+    font-size: 15px;
     margin-left: 1rem;
 }
 
 .Ball{
     margin-right: 3px;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     margin-left: 0;
 }
 
 
 .dashboard__medle__items{
-    margin-left: 11rem;
+    margin-left: 19rem;
+    margin-right: 2rem;
 }
 
 .dashboard__row h4{
-    margin-bottom: 3px;
+    margin-bottom: 1rem;
     padding-bottom: 0;
 }
 
 .analytics__items{
-    margin-right: 1rem;
-    padding-bottom: 3rem;
+    padding-bottom: 0.5rem;
 }
 
+.dashboard__last__items{
+    max-width: 100%;
+    margin-right: 3rem;
+    margin-left: 0;
+    
+}
+
+   
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 
   }
+
+  .profile__setting:hover {
+    background-color: #f1f1f1;
+  }
+
+  .bank__setting:hover{
+      background-color: #f1f1f1;
+  } 
+
+  .settings:hover .dropdown-content {
+      display: block;
+    }
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+  }
   
-  @media (min-width: 320px) and (max-width: 767px){
+  @media screen and (min-width: 120px) and (max-width:  868px){
     .navbar__container{
         width: 100%;
         position: sticky;
@@ -492,67 +522,123 @@ ul {
     }
 
     
+  .sidenav__image{
+    width: 200px;
+    padding: 10px 20px;
+    margin-left: -1rem;
+  }
+    .fa-bars {
+        color: #0e8a5e;
+      }
+    
 .navbar__container p{
     margin: 10px 1rem 0 ;
     font-size: 10px;
     font-weight: 800;
 }
-
-.side__Nav{
-    padding-left: 5px;
-    position: fixed;
-    padding-bottom: 5rem;
-    box-shadow: 0 0 3px 0 #fff;
-    width: 70px;  
-}
-
-
-ul {
-    width: 70px;
-     overflow: auto;
-     z-index: 1;
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 70vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    border-radius: 0 15px 0 0;
   }
 
-  li a {
-    padding: 15px 8px;
-    font-weight:600;
-    font-size: 10px;
+  .nav-menu.active {
+    background: #0e8a5e;
+    left: 0;
+    opacity: 0.9;
+    transition: all 0.5s ease;
+    z-index: 1;
   }
 
-  
-  .settings{
-    padding: 0 0;
-    font-weight:600;
-    font-size: 10px;
+  .nav-links {
+    padding: 1.1rem;
+    width: 50%;
+    display: table;
+    color: #ffff;
+    font-size: 0.9rem;
   }
+
+  .nav-links:hover{
+    background-color: #242424;
+    color: #0e8a5e;
+    border-radius: 0;
+  }
+
+
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+
+  .nav-links-mobile {
+    display: block;
+    text-align: center;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: #fff;
+    padding: 14px 20px;
+    border: 1px solid #fff;
+    transition: all 0.3s ease-out;
+  }
+
+  .nav-links-mobile:hover {
+    background: #fff;
+    color: #242424;
+    transition: 250ms;
+  }
+
 
   .dropbtn{
-    padding: 15px 8px;
-    font-weight:600;
-    font-size: 10px;
+    padding: 0 8px;
+    font-weight:400;
+    font-size: 0.9rem;
+    color: #ffff;
+    margin-left: -0.3rem;
   }
 
   
   .sidenav__image{
-    width: 100px;
-    padding: 10px 20px;
+    width: 110px;
     margin-left: -1rem;
     
 }
 
+.profile__setting, .bank__setting{
+    font-size: 12px;
+    color: #ffff;
+    padding: 0;
+  }
+
 .dashboards{
     width: 100%;
-    margin-left: 0;
+    margin-left: -0.2rem;
 
 }
 
-.card1, .card2, .card3 {
-    width: 150px;
-    padding: 5px;
-    margin-bottom: 20px;
-    
-  
 
+.card1, .card2, .card3 {
+    width: 90%;
+    padding: 17px;
+    margin-bottom: 35px;
+   
 }
 
 .card__image{
@@ -562,14 +648,15 @@ ul {
 
 .middle_first{
     padding: 5px 0 0 5px;
+    margin-left: 0.07rem;
 }
 
 .middle_first h1{
-    font-size: medium;
+    font-size: 20px;
 }
 
 .middle_first p{
-    font-size: 8px;
+    font-size: 10px;
 }
 
 
@@ -586,21 +673,24 @@ ul {
 }
 
 .fund_wallet__button{
-    padding: 5px;
-    width: 80px;
-    margin: 0 0 30px 2px;
+    width: 100%;
+}
+.fund_wallet__button button{
     font-size: 10px;
+    margin-bottom: 0;
+    width: 100%;
 }
 
 .dashboard__container__container{
     width: 100%;
-    height: 85vh;
+    height: 100%;
     padding: 0 1rem 0 0;
 }
 
 .dashboard__row{
-    width: 80px;
-    margin-left: 1px;
+   width: 100%;
+   padding: 5px;
+    
     }
 
 .dashboard__row h4{
@@ -608,32 +698,104 @@ ul {
     font-weight: 800;
 }
 
-.analytics__items h6{
-    font-weight: 700;
-    font-size: 6px;
+.dashboard__last__items{
+    width: 30%;
+    max-width: 100%;
+    margin-top: 2.5rem;
+    margin-left: 0.5rem;
+    
 }
 
+.analytics__items h6{
+    font-size: 10px;
+    padding: 0;
+    width: 100%;
+
+}
+
+
+.analytics__items{
+    margin-bottom: 18px;
+}
 .Ball{
-    margin-right: 3px;
     width: 10px;
     height: 10px;
     margin-left: 0;
+    padding: 0;
 }
 
 
 .dashboard__medle__items{
-    margin-left: 5rem;
+    margin-left: 1rem;
 }
 
 .dashboard__row h4{
-    margin-bottom: 3px;
+    margin-bottom: 1rem;
     padding-bottom: 0;
 }
 
-.analytics__items{
-    margin-right: 1rem;
-    padding-bottom: 1rem;
-}
+.analytics{
+    padding: 0;
+    margin: 0;}
 
 
+
+    .dashboard__medle__items{
+        width: 70%;
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+    .dashboard__container__container{
+        height: 180vh;
+        
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        min-width: 10px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .profile__setting:hover {
+          background-color: #f1f1f1;
+        }
+    
+        .bank__setting:hover{
+            background-color: #f1f1f1;
+        } 
+    
+        .settings:hover .dropdown-content {
+            display: block;
+          }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+    
+      
+    .profile__setting,.bank__setting {
+        display: inline-block;
+        text-align: center;
+        background-color:  #0e8a5e;
+        padding: 10px 16px;
+        text-decoration: none;
+        transition-delay: 250ms;
+      }
+      
+      .profile__setting, .bank__setting, .dropdown {
+        display: inline-block;
+    
+      }
+    
+      
+
+.side__Nav{
+    padding-left: 0;
+    position: static;
 }
+
+}
+  

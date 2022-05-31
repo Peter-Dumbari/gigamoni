@@ -239,53 +239,7 @@ tr td{
     padding: 5px;
 }
 
- 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    min-width: 10px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .profile__setting, .bank__setting{
-    color: black;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .profile__setting:hover {
-      background-color: #f1f1f1;
-    }
-
-    .bank__setting:hover{
-        background-color: #f1f1f1;
-    } 
-
-    .settings:hover .dropdown-content {
-        display: block;
-      }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-  
-.profile__setting,.bank__setting {
-    display: inline-block;
-    text-align: center;
-    color:  #808080;
-    padding: 10px 16px;
-    text-decoration: none;
-  }
-  
-  .profile__setting, .bank__setting, .dropdown {
-    display: inline-block;
-  }
-  
-
-  @media (min-width: 768px) and (max-width: 992px){
+@media (min-width: 867px) and (max-width: 1562px){
     .transaction__container{
         margin: 2rem 0 0 12rem;
         height: 130vh;
@@ -295,13 +249,6 @@ tr td{
         padding: 2rem;
     }
 
-      
-  .dashboard__container__container {
-    height: auto;
-  }  
-  .dashboard__container__container {
-    height: auto;
-  }
     
 .transaction__items{
     display: flex;
@@ -505,21 +452,20 @@ padding-right: 6rem;
  
   }
 
- @media (min-width: 320px) and (max-width: 767px){
+  @media screen and (min-width: 120px) and (max-width:  868px){
     .transaction__container{
-        margin: 2rem 0 0 5rem;
+        margin: 5rem 0 0 0;
     }
-
-    
-  .dashboard__container__container {
-    height: auto;
-  }
     
 .transactions{
     padding: 10px;
     margin-right: 1rem;
+    width: 100%;
 }
 
+.transaction__managers{
+    width: 100%;
+}
 
 .transaction__heading h4{
     font-weight: 600;
@@ -538,28 +484,30 @@ padding-right: 6rem;
 
 
 .buttons{
+    width: 100%;
     margin-right: 1rem;
+   
 }
 
 .investiment__button{
-    margin-right: 5px;
-    padding: 1px 5px 1px  2px;
-    width: 60px;
-    font-size: 10px;
+    margin-right: 5%;
+    width: 40%;
+    font-size: 60%;
+    padding: 3px 0 3px 0;
 }
 
 
 .withdraw__button{
-    padding: 1px 5px 1px  2px;
-    width: 60px;
-    font-size: 10px;
+    padding: 3px 0 3px  0;
+    width: 40%;
+    font-size: 60%;  
 }
 
 
 
 .search__button{
     margin-left: 5px;
-    width: 60px;
+    width: 50%;
     font-size: 10px;
     height: 20px;
 
@@ -568,17 +516,20 @@ padding-right: 6rem;
 
 .search__container{
     height: 20px;
-    width: 150px;
+    width: 100%;
     margin-top: 5px;
     font-size: xx-small;
    
 }
 
 .transactions__table{
-    width: 370px;
+    width: 100%;
+    padding: .55em
 }
 
-
+table{
+    width: 100%;
+}
 
 .transaction__items{
     display: flex;
@@ -586,37 +537,33 @@ padding-right: 6rem;
 }
 
 th{
-    align-content: center;
-    font-size: 9px;
-    padding-left: 12px;
-    padding-right: 12px;
+    align-items: center;
+    font-size: 50%;
+    max-width: 100%;
+    padding: 0 1rem 0 1rem ;
+
 }
 
 
 tr td{
-    padding: 0;
-    font-size: 7px;
-    font-weight: 500;
+    font-size:50%;
+    width: 90%;
+    align-items: center;
+   
 }
-
-td{
-    padding-left: 9px;
-    padding-top: 10px;
-}
-
 
 .completed{
-padding: 1px 5px 1px  2px;
+padding: 5%;
 font-size: 10px;
-width: 70px;
+width: 100%;
 margin-top: 3px
 }
 
 
 .ongoing{
-padding: 1px 5px 1px  2px;
+padding: 5%;
 font-size: 10px;
-width: 70px;
+width: 100%;
 margin-top: 3px
 }
 
@@ -624,20 +571,24 @@ margin-top: 3px
 .transactions{
     margin-bottom: 2rem;
     padding-bottom: 2rem;
+
     
 }
 
 
 .transaction__last__row{
     padding: 5px 5px 5px 5px;
-    width: 100px;
+    width: 100%;
     text-align: center;
    
 }
 
 
+.transaction__container{
+    width: 100%;
+}
 .row__image{
-    width: 30px;
+    width: 40%;
     text-align: center;
 }
 

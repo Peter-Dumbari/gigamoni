@@ -1,10 +1,12 @@
 .profile__container{
-    margin: 2rem 0rem 2rem 20rem;
-    height: 80vh;
+    margin: 2rem 0rem 2rem 40%;
+
 }
 
 .btn-primary{
-    width: 150px;
+    width: 30%;
+    padding: 0;
+    height: 40px;
 }
 
 .form__items{
@@ -31,23 +33,14 @@ label{
     font-weight: 600;
     font-family: Sen;
 }
-
-.profiles{
-    background-color: #fff;
-    padding: 3rem;
-    border-radius: 15px;
-}
 @media (min-width: 768px) and (max-width: 992px){
     .profile__container{
-        margin: 2rem 0  0 17rem;
-        width: 450px;
+        margin: 2rem 0  0 40%;
+        width: 100%;
         align-self: center;
     }
     
     
-    .dashboard__container__container{
-        height: 95vh;
-    }
     
 .form__items{
     margin: 0 0 1rem 0;
@@ -55,9 +48,9 @@ label{
 
 
 .btn-primary{
-    width: 100px;
-    font-size: 15px;
-    height: 30px;
+    width: 30%;
+    font-size: 20px;
+    height: 40px;
     margin-top: 1rem;
     padding: 0;
     
@@ -65,22 +58,22 @@ label{
 
 
 .firstline{
-    margin-right: 3rem;
+    margin-right: 5rem;
 }
 
 .secondline{
-    margin-right: 3rem;
+    margin-right: 5rem;
 }
 
 
 label{
     font-weight: 600;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .form__items input{
-    height: 25px;
-    width: 160px;
+    height: 50%;
+    width: 100%;
     font-size: small;
     margin-bottom: 1rem;
    
@@ -93,28 +86,35 @@ label{
 }
 }
 
-@media (min-width: 320px) and (max-width: 767px){
+@media screen and (min-width: 120px) and (max-width:  868px){
     .profile__container{
-        margin: 2rem 0  0 8rem;
-        width: 350px;
+        margin: 2rem 0  0 1rem;
+        width: 100%;
         align-self: center;
     }
     
-    
+
     .dashboard__container__container{
-        height: 95vh;
+        height: auto;
     }
-    
+    .profiles{
+        width: 100%;
+    }
+
+    .profiles__list{
+        width: 100%;
+    }
+
 .form__items{
     margin: 0 0 1rem 0;
-    margin-left: -1rem;
+    width: 100%;
 }
 
 
 .btn-primary{
-    width: 70px;
+    width: 20%;
     font-size: 12px;
-    height: 20px;
+    height: 30px;
     padding: 0;
     margin-top: 1rem;
     
@@ -122,24 +122,19 @@ label{
 
 
 .firstline{
-    margin-right: 3rem;
+    margin-right: 2rem;
+    width: 50%;
 }
 
 .secondline{
-    margin-right: 3rem;
+    margin-right: 2rem;
+    width: 50%;
 }
 
 
 label{
     font-weight: 600;
-    font-size: 12px;
-}
-
-.form__items input{
-    height: 25px;
-    width: 120px;
-    font-size: small;
-   
+    font-size: 90%;
 }
 
 

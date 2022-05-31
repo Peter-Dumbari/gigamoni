@@ -10,7 +10,6 @@
   float: left;
 }
 
-
 .sidenav {
   height: 100vh;
   width: 35%;
@@ -29,6 +28,11 @@
   margin-left: 40%;
   padding-top: 30px;
   padding-right: 40px;
+  
+}
+
+.home_items{
+  margin: 5rem;
 }
 
 h2 {
@@ -173,7 +177,57 @@ a {
   justify-content: baseline;
 }
 
+.userregistration__box{
+ border: 2px solid;
+ border-radius: 10px;
+ border-color: #ffff;
+ display: flex;
+ flex-direction: row;
+ padding: 5px;
+ width: 70%;
+ box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.25);
+ margin-bottom: 2rem;
+}
 
+.userregistration__box h5{
+  font-size: medium;
+  text-decoration: none;
+}
+
+.userregistration__box h6{
+  font-size: 13px;
+}
+
+.userbox_text{
+  margin-left: 4rem;
+}
+.angle__pic{
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+  background-color: #0e8a5e;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.greenball__pic{
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  border: 3px solid;
+  border-color: #0e8a5e;
+}
+
+.menu-icon{
+  display: block;
+}
+
+.fa-bars{
+  color: #fff;
+}
 
 
 /* MEDIA SCREEN */
@@ -220,13 +274,6 @@ a {
 .gigalogo{
   width: 150px;
   
-}
-
-.btn-success{
-  margin-bottom: 2rem;
-  width: 380px;
-  
-
 }
 
 .row{
@@ -308,6 +355,7 @@ a {
     width: 100px;
     align-items: center;
     padding: 15px 5px 0 5px;
+    
     }
 
     .home_image{
@@ -321,6 +369,24 @@ a {
       height: 70vh;
 
     }
+
+    
+    .menu-icon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+
+    .fa-times {
+      color: #fff;
+      font-size: 2rem;
+    }
+  
+  
 
     h2{
       font-size: 15px;

@@ -42,7 +42,7 @@
     margin-left: 1rem
 }
 
-@media (min-width: 768px) and (max-width: 992px){
+@media (min-width: 867px) and (max-width: 1562px){
     .banksetting{
         margin: 2rem 0 0 13rem;
         height: 85vh;
@@ -90,14 +90,11 @@
 }
 }
 
-@media (min-width: 320px) and (max-width: 767px){
+@media screen and (min-width: 120px) and (max-width:  868px){
     .banksetting{
         margin: 2rem 0 0 9rem;
         height: 85vh;
     }
-
-
-
 
     
 .banksttng__header{
