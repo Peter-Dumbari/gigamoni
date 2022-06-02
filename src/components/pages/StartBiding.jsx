@@ -86,7 +86,7 @@ export default function DashBoard() {
           <div className="startbidding__header">
             <h2>Start Bidding</h2>
             <h5>Choose from the list of available assets</h5>
-          </div>
+          </div> 
           <div className="startbidding__card">
             <img src={NairaSign} alt=""  width="100px" height="100px" className="startbbing__card__image" />
             <div className="card__text">

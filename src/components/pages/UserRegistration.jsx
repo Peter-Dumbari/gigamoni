@@ -99,12 +99,18 @@ export default function UserRegistration() {
               />
               <br />
               <p style={{ float: "right" }}>
-                Already a member? <Link to="/login">Login</Link>{" "}
+                Already a member? <Link to="/login" className="login__link">Login</Link>{" "}
               </p>
               <br /> <br />
+              <Link to="/dashboard"><button className="Registration_btn">Register</button></Link>
+          <div className="or_line">
+            <hr className="line"/>
+            <p className="hr_p">Or</p>
+            <hr className="line"/>
+          </div>
               {/* <button className="btn btn-success">Register</button> */}
-              <Link to="/dashboard" className="btn btn-success">
-                Register
+              <Link to="/companyregistration" className="btn btn-default">
+                Company Registration
               </Link>
             </form></div>
           </div>

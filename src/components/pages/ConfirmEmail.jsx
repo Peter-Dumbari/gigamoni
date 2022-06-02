@@ -33,7 +33,7 @@ export default function confirmEmail() {
 
           <div className="or_userRegistration">
             <Link to="/userregistration">
-              <button className="or_User_Reg_btn">User Registration</button>
+              <button className="btn btn-default">User Registration</button>
             </Link>
           </div>
         </form>

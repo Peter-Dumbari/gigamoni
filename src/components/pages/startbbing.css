@@ -1,17 +1,21 @@
 .startbbing__container{
-    margin: 2rem 0 0 20rem;
-    height: 120vh;
+    margin: 1rem 0 0 25rem;
+    height: 85vh;
 }
 
+
+.dashboard__container__container{
+    height: auto;
+}
 .startbidding__header{
-    margin: 1rem 0  2.5rem 0;
+    margin: 5px 0  1rem 0;
 }
 
 .startbidding__header h2{
     color: #0e8a5e;
     font-family: Sen;
     font: 400;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .startbidding__header  h5{
@@ -23,10 +27,10 @@
     display: flex;
     flex-direction: row;
     background-color: #fff;
-    padding: 1rem;
+    padding: 1%;
     border-radius: 10px;
-    width: 700px;
-    margin-bottom:1.5rem ;
+    width: 100%;
+    margin-bottom:1rem ;
     cursor: pointer;
     
 }
@@ -44,10 +48,12 @@
     color: #0e8a5e;
     font-weight: 500;
     font-family: Sarala;
+    font-size: 150%;
 }
 
 .startbidding__card p{
     font-family: Ruluko;
+    width: 100%;
 }
 
 .startbbing__container h4{
@@ -61,28 +67,85 @@
     border-color: #0e8a5e;
     border-radius: 5px;
     background-color: inherit;
-    width: 150px;
+    width: 50%;
     font-weight: 600;
     color: #0e8a5e;
 }
 
-  
-  @media (min-width: 768px) and (max-width: 992px){
+@media (min-width: 867px) and (max-width: 992px){
     .startbbing__container{
-        margin: 2rem 0 0 10rem;
+        margin: 1rem 0 0 20rem;
+    }
+    
+    .dashboard__container__container{
+        height: auto;
+    }
+    
+    .startbidding__header{
+        margin: 1rem 0  2rem 0;
+    }
+    
+    .startbidding__header h2{
+        font-size: 2rem;
+        margin: 0;
+    }
+    
+    .startbidding__header  h5{
+        font-family: Ruluko;
+        color: #000B00;;
+    }
+    
+    .startbidding__card{
+        border-radius: 10px;
+        width: 100%;
+        
+    }
+
+    
+    .startbbing__card__image{
+        padding-right: 3px;
+    }
+    
+    .startbidding__card h3{
+        font-size: 100%;
+    }
+    
+    .startbidding__card p{
+        width: 100%;
+    }
+    
+    .startbbing__container h4{
+        margin: 2.5rem 0 0 2rem
+    }
+
+    
+    
+    .card__button{
+        padding: 1%;
+        background-color: inherit;
+        width: 65%;
+        font-weight: 600;
+    }
+}
+
+
+@media screen and (min-width: 401px) and (max-width:  868px){
+    .startbbing__container{
+        margin: 2rem 0 0 0;
         padding-left: 1rem;
         width: 100%;    
     }
     
     .startbidding__header{
-        margin: 2rem 0  1rem 0;
+        margin: 5px 0  1rem 1.5rem;
+        text-align: justify;
     }
 
     
 .startbidding__header h2{
     font: 400;
-    font-size: 2rem;
-    margin-left: 1rem;
+    font-size: 30px;
+   
 }
 
 .clear_all_link{
@@ -93,10 +156,11 @@
 }
 
 .startbidding__card{
-    padding: 10px;
-    width: 500px;
+    padding: 5%;
+    width: 90%;
     margin-bottom: 20px ;
-    margin-left: 1rem;
+    margin-left: 1.5rem;
+    max-width: 3000px;
     
     
     
@@ -105,49 +169,48 @@
 
 .startbbing__card__image{
     padding-right: 5px;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 30px;
 }
 
 
 .startbidding__card h3{
     font-weight: 500;
-    font-size: 1rem;
+    font-size: small;
 }
 
 .startbidding__card h4{
-    font-size: 1rem;
-    padding-left: 3rem;
+    font-size: 15px;
     
 }
 
 .startbidding__card p{
-    font-size: 1rem;
-    font: 600;
-    width: 200px;
+    font-size: 15px;
+    font: 400;
+    width: 100%;
     margin: 0%;
 }
 
 .startbidding__header h5{
-    font-size: 1rem;
-    margin-left: 1rem;
+    font-size: small;
+   
 }
 
 
 .card__button{
-    padding: 5px;
+    padding: 2px;
     border-radius: 5px;
-    width: 90px;
+    width: 70px;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 10px;
 }
 
 
   }
 
-  @media (min-width: 320px) and (max-width: 767px){
+  @media screen and (min-width: 120px) and (max-width:  400px){
     .startbbing__container{
-        margin: 0 0 0 3rem;
+        margin: 0 0 0 0;
         padding-left: 1rem;
         width: 100%;    
     }
@@ -159,7 +222,8 @@
     
 .startbidding__header h2{
     font: 400;
-    font-size: 20px;
+    font-size: 17px;
+    
 }
 
 .clear_all_link{
@@ -170,10 +234,10 @@
 }
 
 .startbidding__card{
-    padding: 5px;
-    width: 350px;
+    padding: 2%;
+    width: 100%;
     margin-bottom: 10px ;
-    margin-left: 1rem;
+    margin-left:-0.5rem;
     
     
     
@@ -199,14 +263,14 @@
 
 .startbidding__card p{
     font-size: 10px;
-    font: 600;
-    width: 120px;
+    font: 400;
+    width: 100%;
     margin: 0%;
 }
 
 .startbidding__header h5{
     font-size: small;
-    margin-left: 1rem;
+    
 }
 
 

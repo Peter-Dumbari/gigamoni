@@ -1,18 +1,28 @@
 .profile__container{
     margin: 2rem 0rem 2rem 40%;
+    width: 100%;
 
 }
 
 .btn-primary{
-    width: 30%;
+    width: 20%;
     padding: 0;
     height: 40px;
+}
+
+.form__items input{
+    height: 50%;
+    width: 100%;
+    font-size: small;
+    margin-bottom: 2rem;
+   
 }
 
 .form__items{
     display: flex;
     flex-direction: row;
     margin: 3rem 0 5rem 0;
+    width: 100%;
 }
 
 .firstline{
@@ -33,19 +43,23 @@ label{
     font-weight: 600;
     font-family: Sen;
 }
-@media (min-width: 768px) and (max-width: 992px){
+@media (min-width: 701px) and (max-width: 868px)
+{
     .profile__container{
-        margin: 2rem 0  0 40%;
+        margin: -45rem  0  0 12%;
         width: 100%;
         align-self: center;
     }
     
     
+    .form__items input{
+        height: 50%;
+        width: 100%;
+        font-size: large;
+        margin-bottom: 1rem;
+       
+    }
     
-.form__items{
-    margin: 0 0 1rem 0;
-}
-
 
 .btn-primary{
     width: 30%;
@@ -58,11 +72,11 @@ label{
 
 
 .firstline{
-    margin-right: 5rem;
+    margin-right: 7rem;
 }
 
 .secondline{
-    margin-right: 5rem;
+    margin-right: 7rem;
 }
 
 
@@ -84,11 +98,23 @@ label{
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
 }
-}
 
-@media screen and (min-width: 120px) and (max-width:  868px){
+}
+@media screen and (min-width: 401px) and (max-width:  700px){
     .profile__container{
-        margin: 2rem 0  0 1rem;
+        margin: 0 0  0 1rem;
+        width: 100%;
+        height: 30%;
+    }
+
+
+    .dashboard__container__container{
+        height: auto;
+    }
+ }
+@media screen and (min-width: 120px) and (max-width:  401px){
+    .profile__container{
+        margin: -5rem 0  0 1rem;
         width: 100%;
         align-self: center;
     }
@@ -123,12 +149,12 @@ label{
 
 .firstline{
     margin-right: 2rem;
-    width: 50%;
+    width: 200px;
 }
 
 .secondline{
     margin-right: 2rem;
-    width: 50%;
+    width: 200px;
 }
 
 

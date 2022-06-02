@@ -88,14 +88,14 @@ export default function UserRegistration() {
               />
               <br />
               <p style={{ float: "right" }}>
-                <Link to="/confirmEmail">Forgot password</Link>
+                <Link to="/confirmEmail" className="forgot__password">Forgot password?</Link>
               </p>
               <br /> <br />
               <button className="btn btn-success ">Login</button>
               <br />
               <br />
               <p style={{ float: "right" }}>
-                No Account yet? <Link to="/userregistration">Signup</Link>{" "}
+                No Account yet? <Link to="/userregistration" className="signup__link">Signup</Link>{" "}
               </p>
             </form>
           </div>

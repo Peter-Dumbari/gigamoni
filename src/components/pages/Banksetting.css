@@ -92,15 +92,17 @@
 
 @media screen and (min-width: 120px) and (max-width:  868px){
     .banksetting{
-        margin: 2rem 0 0 9rem;
+        margin: 3rem 0 0 12%;
         height: 85vh;
+        width: 100%;
     }
 
     
 .banksttng__header{
     text-align: center;
-    padding: 3rem;
-    width: 300px;
+    padding: 2rem;
+    width: 80%;
+    height: 80%;
 }
 
 

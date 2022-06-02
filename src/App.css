@@ -2,6 +2,25 @@
   width: 100%;
 }
 
+.btn-default{
+  border: solid 1px;
+  border-color: #0e8a5e;
+  color: #0e8a5e;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.forgot__password{
+  text-decoration: none;
+  color: rgb(155, 1, 1);
+  font-style: italic;
+}
+
+.signup__link{
+  text-decoration: none;
+  color: #0e8a5e;
+  font-style: italic;
+}
 .userImage {
   margin-top: 20px;
 }
@@ -59,19 +78,16 @@ a {
   border-radius: 50%;
   background-color: #0e8a5e;
 }
-.chip {
-  margin-top: 40px;
-  display: inline-block;
-  padding: 0 25px;
-  height: 60px;
-  width: 50%;
-  font-size: 16px;
-  line-height: 50px;
-  border-radius: 25px;
-  background-color: #f1f1f1;
+
+.main_company_container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
-
+.company__image__container{
+  margin-left: 30%;
+}
 .or_userRegistration{
   display: flex;
   flex-direction: column;
@@ -92,25 +108,27 @@ a {
 }
 
 .gigamoni__logo{
-  width: 300px;
+  width: 200px;
 }
+
 .companyreg__container{
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  margin: 10px 0 0 70px; 
+  margin: 10px 0 0 70px;  
 }
 
 .companyreg__image{
   padding: 0 3rem 3rem 3rem;
-  text-align: center;
+ 
 }
 
 .company_reg_heading{
   padding: 10px;
-  font-size: 2rem;
+  font-size: 1.2rem;
   color: #0e8a5e;
   font-weight: 600;
+  margin-left: 5rem;
+  margin-top: 0;
+ padding: 0;
 }
 
 .undraw__finance{
@@ -232,7 +250,7 @@ a {
 
 /* MEDIA SCREEN */
 
-@media (min-width: 768px) and (max-width: 992px){
+@media (min-width: 867px) and (max-width: 992px){
   .sidenav {
   width: 300px;
   padding: 30px 50px 0 15px;
@@ -244,32 +262,15 @@ a {
     padding-top: 30px;
     padding-right: 40px;
 }
+
+
+
   
 .home_image{
   width: 250px;
   margin-top: 3rem;
 }
 
-.smallBox {
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-  background-color: #0e8a5e;
-  margin-right: 2rem;
-}
-
-   
-.chip {
-  margin-top: 40px;
-  padding: 0 25px;
-  height: 60px;
-  width: 300px;
-  font-size: 20px;
-  line-height: 50px;
-  border-radius: 25px;
-  background-color: #f1f1f1;
-  margin-right: 30px;
-}
 
 .gigalogo{
   width: 150px;
@@ -312,23 +313,31 @@ a {
 }
 .gigamoni__logo{
   width: 200px;
-  margin-top: 2rem;
-
+  margin-top: 1rem;
 }
 
 
 .companyreg__form{
-  width: 400px;
-  margin-left: 3rem;
+  width: 40%;
+  margin-left: 2rem;
 }
 
 
 .or_User_Reg_btn{
   padding: 3px;
   font-weight: 600;
+  width: 100%;
 }
 
+.userregistration__box{
+  border: 2px solid;
+  padding: 2px;
+  width: 100%;
+  margin-bottom: 2rem;
+  border-color: #fff;
+ }
 
+ 
 .company_reg_heading{
   padding: 6px;
   font-size: 1.5rem;
@@ -340,37 +349,256 @@ a {
 .undraw__finance{
   text-align: center;
   width: 480px;
-  margin-left: 6rem;
+  margin: 0;
 }
 
 
 .Registration_btn{
   padding: 5px;
   font-weight: 600;
-}
+  width: 100%;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+
+.main_company_container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.company__image__container{
+  margin-left: 12%;
+}
+
+}
+@media screen and (min-width: 401px) and (max-width:  868px){
+.sidenav{
+  width: 15%;
+}
+
+.home_items {
+  margin-top: 3rem;
+}
+
+.home_items h2{
+  font-size: 20px;
+  width: 100%;
+
+}
+
+.company_reg_heading{
+  margin: 2rem  0 1rem 1rem;
+}
+.home_items p{
+  font-size: 12px;
+  width: 170%;
+  text-align: justify;
+  margin-left: 0%;
+
+}
+
+
+.giga_Logo{
+  width: 200px;
+  margin-bottom: 2rem;
+}
+
+.confirmEmail__Item{
+  margin: 2rem 2rem 0 5rem;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.confirmEmail__header{
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.main_company_container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+.company__image__container{
+  margin: 2rem 2rem 0 0;
+}
+.home_image{
+  display: none;
+}
+
+.body {
+  margin-left: 0;
+  padding-top: 2px;
+  width: auto;
+  height: 70vh;
+  margin: 0 2rem 2rem 5rem;
+
+}
+
+.angle__pic{
+width: 50px;
+height: 50px;
+padding: 10px;
+}
+
+.userbox_text h5{
+font-size: 13px;
+font-weight: bold;
+}
+
+.userbox_text h6{
+font-size: 50%;
+width: 100%;
+}
+
+.sidenav p{
+  display: none;
+ }
+ 
+ .sidenav h1{
+   display: none;
+ }
+
+ .userbox_text{
+  margin-left: 1rem;
+  font-size: 20px;
+}
+
+.userregistration__box{
+  border: 2px solid;
+  padding: 2px;
+  min-width: 300px;
+  max-width: 170%;
+  margin-right: 10%;
+  border-color: #fff;
+ }
+
+ 
+ .userformdiv{
+   width: 70%;
+   margin-left: 3rem;
+ }
+
+ .col-lg-8 h4{
+   margin-left: 5rem;
+   font-size: larger;
+ }
+
+ .gigalogo{
+   width: 150px;
+ }
+
+ .companyreg__form{
+  width: 70%;
+}
+
+
+
+.or_User_Reg_btn{
+  width: 100%;
+  border-radius: 50px;
+  padding: 5px;
+  background-color: inherit;
+  border-color: #0e8a5e;
+  color: #0e8a5e;
+  font-weight: 700;
+}
+
+.col-lg-6{
+  display: flex;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  text-align: center;
+}
+
+
+.col-lg-8{
+  width: 70%;
+}
+
+.col-lg-8 h4{
+  margin-left: 0;
+  font-size: x-large;
+}
+
+.undraw__finance{
+  width: 370px;
+  margin-top: 2rem;
+}
+
+.gigamoni__logo{
+  width: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    max-width: 1500px;
+    height: 60px;
+    background-color: #ffffff;
+}
+
+.confirmEmail__container{
+  align-items: center;
+}
+} 
+
+
+@media screen and (min-width: 120px) and (max-width:  400px){
   .sidenav {
-    width: 100px;
+    width: 15%;
     align-items: center;
     padding: 15px 5px 0 5px;
     
     }
 
+    .home_items {
+      margin-top: 3rem;
+  
+    }
+
+    .home_items h2{
+      font-size: 12px;
+
+    }
+
+    .home_items p{
+      font-size: 12px;
+      width: 170%;
+      text-align: justify;
+      margin-left: 0%;
+  
+    }
+
     .home_image{
-      width: 90px;
+      display: none;
     }
 
     .body {
-      margin-left: 45%;
-      padding-top: 10px;
-      width: auto;
+      margin-left: 0;
+      padding-top: 2px;
+      width: 100%;
       height: 70vh;
+      margin: 0 2rem 2rem 0;
 
     }
 
-    
+    .angle__pic{
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+}
+
+.userbox_text h5{
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.userbox_text h6{
+  font-size: 50%;
+  width: 100%;
+}
+  
     .menu-icon {
       display: block;
       position: absolute;
@@ -403,20 +631,7 @@ a {
       border-radius: 50%;
     }
 
-    
-.chip {
-  margin-top: 2rem;
-  flex-direction: row;
-  height: 50px;
-  width: 170px;
-  font-size:10px;
-  font-weight: 600;
-  display: inline-block;
-  text-align: center;
-  margin-right: 10px;
 
-
-}
 
 .row{
   width: 300px;
@@ -433,20 +648,18 @@ a {
 
 
 .col-lg-8{
-  width: 250px;
+  width: 70%;
 }
 
 .userImage{
   width: 300px;
 }
 .sidenav p{
-  font-size: 12px;
-  font-weight: 600;
-  margin-top: 2rem;
+ display: none;
 }
 
 .sidenav h1{
-  font-size: 1rem;
+  display: none;
 }
 
 .headboss{
@@ -483,6 +696,7 @@ a {
 .giga_Logo{
   width: 100px;
   
+  
 }
 
 .Registration_btn{
@@ -503,22 +717,27 @@ a {
 
 
 .companyreg__container{
-  display: flex;
-  flex-direction: column; 
   margin: 0;
   padding-bottom: 3rem;
-  align-items: center;
-}
-.gigamoni__logo{
-  width: 150px;
-  margin-top: 2rem;
+  width: 100%;
 
+ 
+}
+
+
+.gigamoni__logo{
+  width: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    max-width: 1500px;
+    height: 60px;
 }
 
 
 .companyreg__form{
-  width: 300px;
-  margin-left: 3rem;
+  width: 70%;
+  margin: 0;
 }
 
 
@@ -533,13 +752,14 @@ a {
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 3rem;
+  margin-left: 2rem
 }
 
 
 .undraw__finance{
   text-align: center;
-  width: 380px;
-  margin-left: 6rem;
+  width: 280px;
+  margin-left: 1rem;
 }
 
 
@@ -547,4 +767,55 @@ a {
   padding: 5px;
   font-weight: 600;
 }
+
+.greenball__pic{
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+}
+
+
+.userregistration__box{
+  border: 2px solid;
+  padding: 2px;
+  min-width: 200px;
+  max-width: 170%;
+  margin-right: 10%;
+  border-color: #fff;
+ }
+
+ .userbox_text{
+  margin-left: 1.5rem;
+  font-size: 17px;
+}
+
+
+.main_company_container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  margin-left: 1rem;
+}
+
+
+.company__image__container{
+  margin: 3rem 2rem 0 0;
+}
+
+
+.or_User_Reg_btn{
+  padding: 3px;
+  font-weight: 600;
+  width: 100%;
+}
+
+
+.Registration_btn{
+  padding: 5px;
+  font-weight: 600;
+  width: 100%;
+}
+
+
 }
