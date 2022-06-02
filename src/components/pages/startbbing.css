@@ -1,6 +1,7 @@
 .startbbing__container{
-    margin: 1rem 0 0 25rem;
+    margin: 1rem 0 2rem 25rem;
     height: 85vh;
+    width: 100%;
 }
 
 
@@ -29,11 +30,12 @@
     background-color: #fff;
     padding: 1%;
     border-radius: 10px;
-    width: 100%;
+    width: 80%;
     margin-bottom:1rem ;
     cursor: pointer;
     
 }
+
 
 .startbidding__card:hover{
     transform: scale(1.05);
@@ -41,7 +43,9 @@
 }
 
 .startbbing__card__image{
-    padding-right: 5px;
+    padding-right: 10%;
+    width: 25%;
+    height: 25%;
 }
 
 .startbidding__card h3{
@@ -49,6 +53,7 @@
     font-weight: 500;
     font-family: Sarala;
     font-size: 150%;
+    width: 100%;
 }
 
 .startbidding__card p{
@@ -67,7 +72,7 @@
     border-color: #0e8a5e;
     border-radius: 5px;
     background-color: inherit;
-    width: 50%;
+    width: 100%;
     font-weight: 600;
     color: #0e8a5e;
 }
@@ -126,6 +131,8 @@
         width: 65%;
         font-weight: 600;
     }
+
+    
 }
 
 
@@ -169,8 +176,8 @@
 
 .startbbing__card__image{
     padding-right: 5px;
-    width: 50px;
-    height: 30px;
+    width: 20%;
+    height: 20%;
 }
 
 
@@ -246,8 +253,8 @@
 
 .startbbing__card__image{
     padding-right: 5px;
-    width: 30px;
-    height: 30px;
+    width: 20%;
+    height: 20%;
 }
 
 

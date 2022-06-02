@@ -1,6 +1,7 @@
 .startBiddings {
-  margin: 2rem 0 3rem 17rem;
-  padding-right: 5rem;
+  margin: 0 0 2rem 25rem;
+  padding: 1rem 2rem 0 0;
+  width: 100%;
 }
 
 .startbidding__card h4 {
@@ -8,32 +9,35 @@
   font-family: Reggae One;
   margin: 2.7rem 0 0 2rem;
   font-weight: 600;
+  width: 80%;
 }
 
 .gigasec__container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  width: 80%;
 }
 
 .calculator__container {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  padding: 3rem;
-  width: 300px;
+  padding: 2rem;
+  width:50%;
   border-radius: 10px;
+ 
 }
 
 .gigasec__header_text {
-  width: 300px;
+  width: 100%;
 }
 
 .gigasec__header_text h3 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-bottom: 2rem;
   font-family: Sarala;
   font-weight: 700;
+  width: 100%;
 }
 
 .gigasec__header_text p {
@@ -64,16 +68,17 @@
 .gigasec__items__container {
   display: flex;
   flex-direction: row;
-  width: 300px;
+  width: 100%;
   margin-bottom: 3rem;
 }
 
 .gigasec__services_list {
   background-color: #fff;
   padding: 2rem;
-  margin-right: 3rem;
+  margin-right: 5rem;
   align-items: center;
   border-radius: 10px;
+  width: 50%;
 }
 .text__icon {
   height: 25px;
@@ -87,14 +92,16 @@
 .gigasec__text h6 {
   font-size: 12px;
   color: #808080;
+  
+ 
 }
 
 .line{
-    width: 200px;
+    width: 100%;
 }
 
 .gigasec__text h5 {
-  font-size: 20px;
+  font-size: 100%;
   color: #3c9dda;
   margin: 0;
 }
@@ -105,13 +112,15 @@
   background-color: #f2f2f2;
   padding: 10px 30px 9px 30px;
   border-radius: 20px;
-  width: 200px;
+  width: 100%;
 }
+
+
 
 ::placeholder {
   color: #0e8a5e;
   text-align: center;
-  font-size: 13px;
+  font-size: 100%;
   font-weight: 600;
 }
 
@@ -125,36 +134,45 @@
   font-weight: 500;
 }
 
-
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 867px) and (max-width: 992px){
   .startBiddings {
-    margin: 2rem 0 0 13rem;
-    background-color: #e5e5e5;
-    padding: 2rem 5rem 0 0;
+    margin: 0 0 2rem 19rem;
+    padding: 1rem 2rem 0 0;
+    width: 100%;
   }
 
+  
   .gigasec__container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    width: 100%;
   }
 
+  
   .line{
-    width: 200px;
+    width: 100%;
 }
-
   .calculator__container {
-    width: 250px;
+    width: 100%;
     align-items: center;
   }
 
   .gigasec__header_text {
-    width: 200px;
+    width: 100%;
+  }
+
+  
+  .gigasec__header_text {
+    width: 100%;
+  }
+
+  .dashboard__container__container{
+    height: auto;
   }
 
   .gigasec__services_list {
     padding-right: 0;
-    width: 250px;
+    width: 100%;
+    padding: 1.5rem;
+    margin-right: 1.5rem;
   }
 
   .gigasec__header_text h3 {
@@ -170,6 +188,7 @@
 
   .gigasec__text h6 {
     font-size: 10px;
+    width: 100%;
   }
 
   .gigasec__text h5 {
@@ -178,20 +197,24 @@
 
   .gigasec__header_text p {
     font-size: 15px;
+    width: 90%;
   }
 
   .calculator__items {
     padding: 7px 17px 0 17px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
   }
 
   .calculator__items h6 {
     font-size: 12px;
+    width: 100%;
   }
 
   .calculator__items2 {
     padding: 7px 17px 0 17px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
   }
 
   .calculator__items2 h6 {
@@ -201,7 +224,97 @@
   .input__search {
     margin: 1rem 0 1rem 0;
     padding: 7px 17px 7px 17px;
-    width: 170px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width:  868px) {
+  .startBiddings {
+    margin: 2rem 0 2rem 1rem;
+    background-color: #e5e5e5;
+    padding: 2rem 2rem 0 0;
+    width: 100%;
+  }
+
+  .gigasec__container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .line{
+    width: 100%;
+}
+  .calculator__container {
+    width: 100%;
+    align-items: center;
+  }
+
+  .gigasec__header_text {
+    width: 100%;
+  }
+
+  .dashboard__container__container{
+    height: auto;
+  }
+
+  .gigasec__services_list {
+    padding-right: 0;
+    width: 100%;
+    padding: 2rem;
+    margin-right: 1.5rem;
+  }
+
+  .gigasec__header_text h3 {
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+
+  .text__icon {
+    height: 20px;
+    margin-top: 5px;
+  }
+
+  .gigasec__text h6 {
+    font-size: 10px;
+    width: 100%;
+  }
+
+  .gigasec__text h5 {
+    font-size: 15px;
+  }
+
+  .gigasec__header_text p {
+    font-size: 15px;
+    width: 90%;
+  }
+
+  .calculator__items {
+    padding: 7px 17px 0 17px;
+    margin-bottom: 1.5rem;
+    width: 100%;
+  }
+
+  .calculator__items h6 {
+    font-size: 12px;
+  
+  }
+
+  .calculator__items2 {
+    padding: 7px 17px 0 17px;
+    margin-bottom: 1.5rem;
+    width: 100%;
+  }
+
+  .calculator__items2 h6 {
+    font-size: 12px;
+  }
+
+  .input__search {
+    margin: 1rem 0 1rem 0;
+    padding: 7px 17px 7px 17px;
+    width: 100%;
   }
 
   .invest_button {
@@ -209,18 +322,28 @@
     margin-top: 2rem;
     font-weight: 300;
     font-size: 12px;
+    width: 100%;
   }
 
+  
   ::placeholder {
     font-size: 12px;
     font-weight: 600;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 120px) and (max-width:  400px){
   .startBiddings {
-    margin: 2rem 0 0 5rem;
+    margin: 2rem 0 0 0;
     background-color: #e5e5e5;
     padding: 2rem 5rem 0 0;
+    width: 100%;
+  }
+
+
+  .startbidding__card{
+    margin-left: 2rem;
+  }
+  .gigasec__services_list{
     width: 100%;
   }
 
@@ -232,19 +355,18 @@
   }
 
   .calculator__container {
-    width: 250px;
+    width: 100%;
     margin-top: 2rem;
     align-items: center;
   }
 
   .gigasec__header_text {
-    width: 200px;
+    width:100%;
   }
 
   .gigasec__services_list {
     padding-right: 0;
-
-    width: 250px;
+    width: 100%;
   }
 
   .gigasec__header_text h3 {
@@ -258,7 +380,7 @@
   }
 
   .gigasec__text h6 {
-    font-size: 10px;
+    font-size: 10%;
   }
 
   .gigasec__text h5 {
@@ -272,6 +394,7 @@
   .calculator__items {
     padding: 5px 15px 0 15px;
     margin-bottom: 1.5rem;
+    width: 100%;
   }
 
   .calculator__items h6 {
@@ -281,6 +404,7 @@
   .calculator__items2 {
     padding: 5px 15px 0 15px;
     margin-bottom: 1.5rem;
+    width: 100%;
   }
 
   .calculator__items2 h6 {
@@ -290,21 +414,24 @@
   .input__search {
     margin: 1rem 0 1rem 0;
     padding: 5px 15px 5px 15px;
-    width: 150px;
+    width: 100%;
   }
 
   .line{
-    width: 200px;
+    width: 100%;
 }
   .invest_button {
-    padding: 5px 5px 5px 5px;
+    padding: 0;
     margin-top: 2rem;
     font-weight: 300;
     font-size: 10px;
+    width: 100%;
+    height: 2rem;
+    
   }
-
+/* 
   ::placeholder {
-    font-size: 9px;
+    font-size: 30%;
     font-weight: 600;
-  }
+  } */
 }

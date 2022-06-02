@@ -1,6 +1,7 @@
 .transaction__container{
-    margin: 2rem 0 0 15rem;
-    height: 85vh;
+    margin: 2rem 0 0 24%;
+    height: 83vh;
+    width: 100%;
 }
 
 .transaction__items{
@@ -86,13 +87,13 @@
     width: 250px;
 }
 .transactions__table{
-    width: 600px;
+    width: 100%;
 }
 
 
 th{
     background-color: #3C9DDA;
-    padding: 0 1.2rem 0 1.2rem ;
+    padding: 0 40px 0 40px ;
     color: #fff;
     align-content: center;
 }
@@ -124,6 +125,7 @@ tr td{
     border-radius: 5px;
     align-items: center;
     margin-right: 1rem;
+    
 }
 .row__image{
     width: 100px;
@@ -239,21 +241,20 @@ tr td{
     padding: 5px;
 }
 
-@media (min-width: 867px) and (max-width: 1562px){
+@media (min-width: 867px) and (max-width: 992px){
     .transaction__container{
-        margin: 2rem 0 0 12rem;
         height: 130vh;
+        margin: 2rem 2rem 0 25%;
     }
 
     .transactions{
         padding: 2rem;
     }
 
-    
-.transaction__items{
-    display: flex;
-    flex-direction: column;
-}
+    .transaction__items{
+        display: flex;
+        flex-direction: column;
+    }
     
     .transaction__heading h4{
         font-weight: 600;
@@ -322,13 +323,13 @@ tr td{
         width: 200px;
     }
     .transactions__table{
-        width: 650px;
+        width: 40%;
     }
     
     
     th{
         background-color: #3C9DDA;
-        padding: 0 1.5rem 0 1.5rem ;
+        padding: 0 10px 0 10px ;
         color: #fff;
         align-content: center;
     }
@@ -452,9 +453,73 @@ padding-right: 6rem;
  
   }
 
-  @media screen and (min-width: 120px) and (max-width:  868px){
+  @media screen and (min-width: 401px) and (max-width:  868px){
+    
     .transaction__container{
-        margin: 5rem 0 0 0;
+        height: auto;
+        margin: 2rem 2rem 0 1rem;
+    }
+    .transaction__items{
+        display: flex;
+        flex-direction: column;
+    }
+
+     
+    th{
+        padding: 0 12px 0 12px ;
+        font-size: small;
+    }
+    
+    tr td{
+        padding: 5px 7px 5px 7px;
+        color: #808080;
+        border-bottom:  0.30px solid;
+        text-align: center;
+        font-size: small;
+    }
+    
+    
+.completed{
+    color: #0E8A5E;
+    border: 1px  solid;
+    padding: 0 3px 0 3px;
+    border-radius: 5px;
+}
+
+.ongoing{
+    color: #FB1717;
+    border: 1px solid;
+    padding: 0 3px 0 3px;
+    border-radius: 5px;
+}
+
+.transaction__last__row{
+    background-color: #fff;
+    padding: 35px 35px 2rem 35px;
+    border-radius: 5px;
+    align-items: center;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    width: 30%;
+    
+}
+.row__image{
+    width: 100px;
+    font-weight: 600;
+    text-align: center;
+}
+
+    .buttons{
+        margin-right: 2px;
+        width: 60%;
+    }
+  }
+
+  @media screen and (min-width: 120px) and (max-width:  400px){
+    .transaction__container{
+        margin: 2rem 0 0 7px;
+        width: 50%;
+        height: auto;
     }
     
 .transactions{
@@ -472,7 +537,9 @@ padding-right: 6rem;
     font-size: medium;
 }
 
-
+.dashboard__container__container{
+    height: fit-content;
+}
 .transaction__heading{
     margin-bottom: 1rem;
 }
@@ -524,11 +591,12 @@ padding-right: 6rem;
 
 .transactions__table{
     width: 100%;
-    padding: .55em
+    margin: 1px;
 }
 
 table{
-    width: 100%;
+    width: 10%;
+    padding: 3rem
 }
 
 .transaction__items{
@@ -538,17 +606,20 @@ table{
 
 th{
     align-items: center;
-    font-size: 50%;
-    max-width: 100%;
-    padding: 0 1rem 0 1rem ;
+    font-size: 9px;
+    width: 10%;
+    padding: 0 6px 0 6px ;
+
 
 }
 
 
 tr td{
-    font-size:50%;
-    width: 90%;
+    font-size:40%;
+    width: 10%;
     align-items: center;
+    padding: 0 4px 0 4px ;
+
    
 }
 
@@ -578,8 +649,9 @@ margin-top: 3px
 
 .transaction__last__row{
     padding: 5px 5px 5px 5px;
-    width: 100%;
+    width: 45%;
     text-align: center;
+    margin-bottom: 2rem;
    
 }
 

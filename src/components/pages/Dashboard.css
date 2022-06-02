@@ -32,6 +32,7 @@
     box-shadow: 0 0 15px 0 #fff;
     height: 88vh;
     padding-top: 2rem;
+    width: 20%;
   
 } 
 
@@ -45,7 +46,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 200px;
+    width: 30%;
      height: 500px;
      position: relative;
      overflow: auto;
@@ -77,14 +78,6 @@ ul {
     font-size: smaller;
   }
 
-  
-
-  .sidenav__image{
-      width: 200px;
-      padding: 30px 20px;
-      margin-left: 2rem;
-      
-  }
   
  
   .dashboard__container__container{
