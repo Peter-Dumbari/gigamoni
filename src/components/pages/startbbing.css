@@ -219,7 +219,8 @@
     .startbbing__container{
         margin: 0 0 0 0;
         padding-left: 1rem;
-        width: 100%;    
+        width: 100%;   
+        height: fit-content; 
     }
     
     .startbidding__header{
