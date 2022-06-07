@@ -24,9 +24,9 @@ export default function UserRegistration() {
   };
 
   const handleemail = (event) => {
-    const email_name = event.target.value;
-    console.log(email_name);
-    setEmail(email_name);
+    const email = event.target.value;
+    console.log(email);
+    setEmail(email);
   };
 
   const handlephone = (event) => {
@@ -76,17 +76,30 @@ export default function UserRegistration() {
 
     const userdata = {
       full_name: fullname,
-      email_name: email,
+      email: email,
       phone_number: phonenumber,
       password: pwrd,
     };
-
-    await axios
+    console.log(userdata);
+  
+      await axios
       .post(
-       ' http://gigamony.herokuapp.com/accounts/register/person/',
-        JSON.stringify(userdata) )
+       'http://127.0.0.1:8000/api/v1/accounts/register/person/',
+        userdata )
 
-      .then(result =>{setMessage(result.data.message); console.log(result.data);});
+      .then((response) =>{
+      
+        if (response.status === 200){
+          console.log(response);
+        }
+      }).catch(error =>{
+        console.log(error.response)
+      })
+      ;
+
+   
+
+    
   };
 
   return (
@@ -115,7 +128,7 @@ export default function UserRegistration() {
                   type="text"
                   id="fullname"
                   ref={userRef}
-                  // value={fullname}
+                  value={fullname}
                   className="form-control"
                   placeholder="Fullname"
                   onFocus={() => setUserFocus(true)}
@@ -128,7 +141,7 @@ export default function UserRegistration() {
                   type="email"
                   id="email"
                   ref={userRef}
-                  // value={email}
+                  value={email}
                   className="form-control"
                   placeholder="Email"
                   onFocus={() => setUserFocus(true)}
@@ -141,7 +154,7 @@ export default function UserRegistration() {
                   type="tel"
                   className="form-control"
                   placeholder="Phone"
-                  // value={phonenumber}
+                  value={phonenumber}
                   onChange={(e) => handlephone(e)}
                 />
                 <br />
