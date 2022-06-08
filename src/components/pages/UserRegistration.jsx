@@ -84,11 +84,9 @@ export default function UserRegistration() {
   
       await axios
       .post(
-       'http://127.0.0.1:8000/api/v1/accounts/register/person/',
-        userdata )
-
+       'https://127.0.0.1:8000/api/v1/accounts/register/person/',
+        userdata)
       .then((response) =>{
-      
         if (response.status === 200){
           console.log(response);
         }
@@ -119,6 +117,7 @@ export default function UserRegistration() {
           <div className="col-lg-8">
             <h4>User Registration</h4>
             <br />
+            <p>{JSON.response}</p>
             <div className="userformdiv">
               <form onSubmit={handleSubmit}>
                 <p ref={errRef} aria-live="assertive">
