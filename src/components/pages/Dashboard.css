@@ -72,7 +72,7 @@ ul {
   li a:hover{
     color: #0e8a5e;
     margin: 0;
-    border-bottom: 2px solid;
+    border-bottom: 1px solid;
     border-color: #0e8a5e;
     width: fit-content;
     padding-bottom: 2px;
