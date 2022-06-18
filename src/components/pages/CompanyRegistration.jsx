@@ -1,9 +1,9 @@
 import gigmaoni from "../assets/gigamoni.svg";
 import undraw_finance from "../assets/finance_image.svg";
 import { useRef, useState, useEffect, useContext } from "react";
-import DashBoard from "./DashBoard";
 import "../../App.css";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 const REGISTER_URL = "api/v1/accounts/register/person/";
 const VALIDEMAIL = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -12,41 +12,71 @@ export default function UserRegistration() {
   const userRef = useRef();
   const errRef = useRef();
 
-  const [user, setUser] = useState("");
+  const [companyname, setCompanyname] = useState("");
+  const [companytype, setCompanytype] = useState("");
   const [email, setEmail] = useState("");
-  const [fullname, setFullName] = useState("");
-  const [validEmail, setValidEmail] = useState(false);
+  const [rc, setRc] = useState("");
+  const [pwrd, setPwrd] = useState("");
+  const [error, setError] = useState("")
   const [userFocus, setUserFocus] = useState(false);
-
-  const [pwd, setPwd] = useState("");
-  const [validPwd, setValidPwd] = useState(false);
   const [pwdFocus, setPwdFocus] = useState(false);
+  
 
-  const [matchPwd, setMatchPwd] = useState("");
-  const [validMatch, setValidMatch] = useState(false);
-  const [matchFocus, setMatchFocus] = useState(false);
+  const handleCompanyname = (event) => {
+    const company_name = event.target.value;
+    console.log(company_name);
+    setCompanyname(company_name);
+  };
+  const handleCompanytype = (event) => {
+    const company_type = event.target.value;
+    console.log(company_type);
+    setCompanytype(company_type);
+  };
 
-  useEffect(() => {
-    userRef.current.focus();
-  }, []);
-  useEffect(() => {
-    const result = VALIDEMAIL.test(email);
+  const handleemail = (event) => {
+    const email = event.target.value;
     console.log(email);
-    console.log(result);
-    setValidEmail(email);
-  }, [email]);
+    setEmail(email);
+  };
 
-  useEffect(() => {
-    const result = VALIDPASSWORD.test(pwd);
-    console.log(pwd);
-    console.log(pwd);
-    setValidPwd(result);
-    const match = pwd === matchPwd;
-    setValidMatch(match);
-  }, [pwd, matchPwd]);
-  const handleSubmit = async (e) => {
+  const handlerc = (event) => {
+    const rc_no = event.target.value;
+    console.log(rc);
+    setRc(rc);
+  };
+  const handlepwrd = (event) => {
+    const password = event.target.value;
+    console.log(password);
+    setPwrd(password);
+  };
+  
+
+
+    const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(fullname);
+
+    const userdata = {
+      company_name: companyname,
+      company_type: companytype,
+      email: email,
+      rc_noy: rc,
+      password: pwrd,
+    };
+    console.log(userdata);
+  
+      await axios
+      .post(
+       'https://test-gig.herokuapp.com/api/v1/accounts/register/company1/',
+        userdata)
+      .then((response) =>{
+        if (response.status === 200){
+          throw Error(error.response);
+        }
+      }).catch(error =>{
+        console.log(error.response)
+        setError(error.message)
+      })
+      ;    
   };
 
   return (
@@ -57,20 +87,31 @@ export default function UserRegistration() {
           <div className="col-lg-8">
             <h4>Company Registration</h4>
             <br />
-            <div className="userformdiv"><form onSubmit={handleSubmit}>
+            <div className="userformdiv"><form>
               <p ref={errRef} aria-live="assertive">
                 {/* {errMsg} */}
               </p>
               <input
                 type="text"
-                id="fullname"
+                id="companyname"
                 ref={userRef}
-                value={fullname}
                 className="form-control"
-                placeholder="Fullname"
+                placeholder="Company Name"
                 onFocus={() => setUserFocus(true)}
                 onBlur={() => setUserFocus(false)}
-                onChange={(e) => setFullName(e.target.value)}
+                onChange={(e) => handleCompanyname(e)}
+                required
+              />
+              <br />
+              <input
+                type="text"
+                id="companytype"
+                ref={userRef}
+                className="form-control"
+                placeholder="Company Type"
+                onFocus={() => setUserFocus(true)}
+                onBlur={() => setUserFocus(false)}
+                onChange={(e) => handleCompanytype(e)}
                 required
               />
               <br />
@@ -80,14 +121,17 @@ export default function UserRegistration() {
                 ref={userRef}
                 value={email}
                 className="form-control"
-                placeholder="Email"
+                placeholder="Company Email"
                 onFocus={() => setUserFocus(true)}
                 onBlur={() => setUserFocus(false)}
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={(e) => handleemail(e)}
                 required
               />
               <br />
-              <input type="tel" className="form-control" placeholder="Phone" />
+              <input type="text" 
+              className="form-control" 
+              placeholder="Company RC"                   
+              onChange={(e) => handlerc(e)} />
               <br />
               <input
                 type="password"
@@ -95,14 +139,14 @@ export default function UserRegistration() {
                 placeholder="Password"
                 onFocus={() => setUserFocus(true)}
                 onBlur={() => setUserFocus(false)}
-                onChange={(e) => setPwd(e.target.value)}
-              />
+                onChange={(e) => handlepwrd(e)}
+                />
               <br />
               <p style={{ float: "right" }}>
                 Already a member? <Link to="/login" className="login__link">Login</Link>{" "}
               </p>
               <br /> <br />
-              <Link to="/dashboard"><button className="Registration_btn">Register</button></Link>
+              <button onClick={handleSubmit} className="Registration_btn">Register</button>
           <div className="or_line">
             <hr className="line"/>
             <p className="hr_p">Or</p>

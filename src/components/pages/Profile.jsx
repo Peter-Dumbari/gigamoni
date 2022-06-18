@@ -10,7 +10,8 @@ export default function DashBoard() {
   return (
        <>
        <Navbar/>
-        <div className="profile__container">
+       <div className="dashboard__container__container">
+       <div className="profile__container">
           <div className="profiles">
           <div className="profile__items">
             <h3>Profile Settings</h3>
@@ -65,6 +66,8 @@ export default function DashBoard() {
             </form>
           </div></div>
           </div>
-        </div></>
+        </div>
+       </div>
+       </>
   );
 }

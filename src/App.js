@@ -15,6 +15,9 @@ import Profile from "./components/pages/Profile";
 import Banksetting from "./components/pages/Banksetting";
 import Bankverification from "./components/pages/Bankverification";
 import AddBank from "./components/pages/AddBank";
+import Verifyemail from "./components/pages/Verifyemail";
+import { PrivateRoutes } from "./components/Privateroutes";
+import Logout from "./components/pages/Logout ";
 import "./App.css";
 
 function App() {
@@ -28,20 +31,24 @@ function App() {
           path="/companyregistration"
           element={<CompanyRegistration />}
         ></Route>
-        <Route path="/confirmEmail" element={<Confirmemail />}></Route>
-        <Route path="/dashboard" element={<DashBoard />}></Route>
-        <Route path="/startbiding" element={<Startbiding />}></Route>
-        <Route
-          path="/emptystartbidding"
-          element={<EmptystartBidding />}
-        ></Route>
-        <Route path="/startbiddings" element={<StartBiddingFilled />}></Route>
-        <Route path="/transactions" element={<Transactions />}></Route>
-        <Route path="/withdraw" element={<Withdrawpopup />}></Route>
-        <Route path="/Profile" element={<Profile />}></Route>
-        <Route path="/banksetting" element={<Banksetting />}></Route>
-        <Route path="/verification" element={<Bankverification />}></Route>
-        <Route path="/addBank" element={<AddBank />}></Route>
+        <Route element={<PrivateRoutes />}>
+          <Route path="/confirmEmail" element={<Confirmemail />}></Route>
+          <Route path="/dashboard" element={<DashBoard />}></Route>
+          <Route path="/startbiding" element={<Startbiding />}></Route>
+          <Route
+            path="/emptystartbidding"
+            element={<EmptystartBidding />}
+          ></Route>
+          <Route path="/startbiddings" element={<StartBiddingFilled />}></Route>
+          <Route path="/transactions" element={<Transactions />}></Route>
+          <Route path="/withdraw" element={<Withdrawpopup />}></Route>
+          <Route path="/Profile" element={<Profile />}></Route>
+          <Route path="/banksetting" element={<Banksetting />}></Route>
+          <Route path="/verification" element={<Bankverification />}></Route>
+          <Route path="/addBank" element={<AddBank />}></Route>
+          <Route path="/verifyemail" element={<Verifyemail />}></Route>
+          <Route path="/logout" element={<Logout />}></Route>
+        </Route>
       </Routes>
     </Router>
   );

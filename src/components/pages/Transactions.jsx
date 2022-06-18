@@ -5,9 +5,19 @@ import "../pages/Transactions.css";
 import NairaSign from "../assets/nairasign.png";
 import { Link } from "react-router-dom";
 import Navbar from "../Navbar";
+import axios from "axios";
 
 
 export default function DashBoard() {
+    const access = JSON.parse(localStorage.getItem('tokens')).access;
+    const transactions =  JSON.parse(localStorage.getItem('transactions'))
+
+    let items = {headers: {"Authorization": "Bearer "+access}}
+    axios.get('https://test-gig.herokuapp.com/api/v1/crowdfunding/transaction/', items)
+    .then(response =>{
+        console.log(response.data);
+        localStorage.setItem('transactions', JSON.stringify(response.data))
+    })
   return (
     <>
     <Navbar/>
@@ -43,10 +53,10 @@ export default function DashBoard() {
                                 </tr>
                                 <tr>
                                     <td>Eeo 1</td>
-                                    <td>N9,000.00</td>
-                                    <td>N9,600.00</td>
-                                    <td>9 days left</td>
-                                    <td>12%</td>
+                                    <td>{transactions.count}</td>
+                                    <td>{transactions.next}</td>
+                                    <td>{transactions.previous}</td>
+                                    <td>{transactions.result}%</td>
                                     <td><h6 className="completed">Completed</h6></td>
                                 </tr>
                                 <tr>
