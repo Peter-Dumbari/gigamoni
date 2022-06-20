@@ -841,5 +841,9 @@ width: 100%;
   width: 100%;
 }
 
+.forgot__password, .verifyaccount, .error__notifier{
+  font-size: 13px;
+}
+
 
 }
