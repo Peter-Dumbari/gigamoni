@@ -31,8 +31,9 @@ function App() {
           path="/companyregistration"
           element={<CompanyRegistration />}
         ></Route>
+        <Route path="/verifyemail" element={<Verifyemail />}></Route>
+        <Route path="/confirmEmail" element={<Confirmemail />}></Route>
         <Route element={<PrivateRoutes />}>
-          <Route path="/confirmEmail" element={<Confirmemail />}></Route>
           <Route path="/dashboard" element={<DashBoard />}></Route>
           <Route path="/startbiding" element={<Startbiding />}></Route>
           <Route
