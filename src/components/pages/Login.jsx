@@ -43,10 +43,6 @@ export default function UserRegistration() {
 
     .catch((error, res, detail) =>{
         console.log(error.response.data)
-       if(error.response.data.detail){
-        setError("This Account haven't been verified")
-      }
-
        if (error.response.data.detail){
           setError("Invalid Credentials try again")
         }
