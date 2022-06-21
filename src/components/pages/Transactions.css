@@ -1,5 +1,5 @@
 .transaction__container{
-    margin: 2rem 0 0 17%;
+    margin: 2rem 0 0 23%;
     height: 82vh;
     width: 100%;
 }
@@ -93,16 +93,21 @@
 
 th{
     background-color: #3C9DDA;
-    padding: 0 40px 0 40px ;
+    padding: 0 1em 0 40px ;
     color: #fff;
-    align-content: center;
+    text-align: center;
 }
 
 tr td{
-    padding: 5px 10px 5px 10px;
+    padding: 5px 1em 5px 10px;
     color: #808080;
     border-bottom:  0.30px solid;
     text-align: center;
+    width: 20%;
+}
+
+table{
+    width: 50%;
 }
 
 .completed{
@@ -235,16 +240,17 @@ tr td{
     background-color: #3C9DDA;
     width: 170px;
     color: #fff;
-    border-color: #3C9DDA;
-    border-radius: 20px;
+    border-color: #fff;
+    border-radius: 8px;
     margin-top: 2rem;
     padding: 5px;
 }
 
+
 @media (min-width: 867px) and (max-width: 992px){
     .transaction__container{
         height: 130vh;
-        margin: 2rem 2rem 0 15%;
+        margin: 2rem 2rem 0 27%;
     }
 
     .transactions{
@@ -326,12 +332,15 @@ tr td{
         width: 40%;
     }
     
+    table{
+        width: 0%;
+    }
     
     th{
         background-color: #3C9DDA;
-        padding: 0 10px 0 10px ;
+        padding: 0 ;
         color: #fff;
-        align-content: center;
+        text-align: center;
     }
     
     tr td{
@@ -339,6 +348,7 @@ tr td{
         color: #808080;
         border-bottom:  0.30px solid;
         text-align: center;
+        width: 20%;
     }
     
     .completed{
@@ -457,24 +467,29 @@ padding-right: 6rem;
     
     .transaction__container{
         height: auto;
-        margin: 2rem 2rem 0 1rem;
+        margin: 5rem 2rem 0 4.5%;
     }
     .transaction__items{
         display: flex;
         flex-direction: column;
     }
 
+    table{
+        width: 100%;
+    }
      
     th{
-        padding: 0 12px 0 12px ;
+        padding: 0 1em 0 3px ;
         font-size: small;
+        margin-left: 600%;
+        text-align: center;
     }
     
     tr td{
-        padding: 5px 7px 5px 7px;
+        padding: 15px 0% 0px 7px;
         color: #808080;
         border-bottom:  0.30px solid;
-        text-align: center;
+        margin-left: 100%;
         font-size: small;
     }
     
@@ -486,6 +501,7 @@ padding-right: 6rem;
     border-radius: 5px;
 }
 
+
 .ongoing{
     color: #FB1717;
     border: 1px solid;
@@ -495,12 +511,12 @@ padding-right: 6rem;
 
 .transaction__last__row{
     background-color: #fff;
-    padding: 35px 35px 2rem 35px;
+    padding: 25px 35px 3px 35px;
     border-radius: 5px;
     align-items: center;
     margin-right: 1rem;
     margin-top: 2rem;
-    width: 30%;
+    width: 40%;
     
 }
 .row__image{
@@ -511,8 +527,67 @@ padding-right: 6rem;
 
     .buttons{
         margin-right: 2px;
-        width: 60%;
+        width: 100%;
     }
+
+    .investiment__button{
+        margin-right: 5px;
+        border-radius: 5px;
+       width: 40%;
+       font-weight: 100;
+    }
+    
+    .withdraw__button{
+        border-radius: 5px;
+        padding: 3px 10px 3px  10px;
+        font-weight: 100;
+        width: 40%;
+    }
+
+    
+
+.overlay{
+    margin-left: 0;
+}
+
+.wrapper{
+    margin: 9px auto;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+}
+
+.withdraw__image{
+    width: 130px;
+    height: 50px;
+    margin-left: 4rem;
+    padding-right: 5rem;
+
+    
+}
+
+.content{
+    margin: 4rem 10px 5px 20%;
+    padding: 2rem 2rem 4rem 1rem;
+    width: 55%;
+    height: 300px;
+}
+
+.withdraw__items h5{
+    font-size: 15px;
+    
+}
+
+.close{
+    margin-right: 2rem;
+}
+
+.withdraw__balance input{
+    width: 90%;
+}
+
+    
   }
 
   @media screen and (min-width: 120px) and (max-width:  400px){
@@ -686,7 +761,7 @@ margin-top: 3px
 
 
 .overlay{
-    margin-left: 4.5rem;
+    margin-left: 0;
 }
 
 .wrapper{
@@ -700,7 +775,7 @@ margin-top: 3px
 
 
 .withdraw__image{
-    width: 150px;
+    width: 130px;
     height: 50px;
     margin-left: 4rem;
     padding-right: 5rem;
@@ -709,9 +784,9 @@ margin-top: 3px
 }
 
 .content{
-    margin: 4rem 10px 5px 3rem;
+    margin: 4rem 10px 5px 1.5rem;
     padding: 2rem 2rem 4rem 2rem;
-    width: 300px;
+    width: 270px;
     height: 300px;
 }
 
@@ -721,7 +796,7 @@ margin-top: 3px
 }
 
 .close{
-    margin-right: 6rem;
+    margin-right: 2rem;
 }
 
 .withdraw__balance h6{
@@ -732,7 +807,7 @@ padding-right: 6rem;
 
 .withdraw__balance input{
     margin-left: 0;
-    width: 250px;
+    width: 200px;
 }
 
 .withdraw__button2{

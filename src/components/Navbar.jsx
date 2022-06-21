@@ -25,23 +25,6 @@ export default function Navbar() {
     showButton();
   }, []);
 
-
-  function Logout (context) {
-    const refresh = JSON.parse(localStorage.getItem('tokens')).refresh
-    
-    const items = {headers: {"Authorization": "Bearer "+ refresh}}
-    console.log(items);
-    axios.post('https://test-gig.herokuapp.com/api/v1/accounts/logout/', items)
-    localStorage.clear('user_data');
-    context.commit("user_data", {
-      token: null,
-    });
-    this.axios.setHeader('Authorization', null)
-    return <Navigate to="/login" replace/>
-
-  } 
-
-
   window.addEventListener("resize", showButton);
   const balance = localStorage.getItem('balance')
   return (

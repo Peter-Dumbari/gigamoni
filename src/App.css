@@ -43,6 +43,7 @@ error{
 }
 .userImage {
   margin-top: 20px;
+  width: 100%;
 }
 
 ::placeholder{
@@ -61,6 +62,17 @@ error{
   overflow-x: hidden;
   padding-top: 60px;
   color: white;
+}
+
+
+.gigalogo{
+  width: 200px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: #fff;
+
 }
 
 .body {
@@ -268,6 +280,24 @@ a {
 }
 
 
+.col-lg-8 h4{
+  color: green;
+text-align: center;
+font-size: 2rem;
+
+}
+
+.col-lg-8{
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
+
+.loginheading_paragraph{
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
 /* MEDIA SCREEN */
 
 @media (min-width: 867px) and (max-width: 992px){
@@ -294,7 +324,6 @@ a {
 
 .gigalogo{
   width: 150px;
-  
 }
 
 .row{
@@ -504,6 +533,7 @@ width: 100%;
  .col-lg-8 h4{
    margin-left: 5rem;
    font-size: larger;
+   color: #0e8a5e;
  }
 
  .gigalogo{

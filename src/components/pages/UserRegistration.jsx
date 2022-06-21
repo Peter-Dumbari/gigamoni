@@ -28,7 +28,7 @@ export default function UserRegistration() {
     const userdata = {
       full_name: data.fullname,
       email: data.email,
-      phone_number: data.Phonenumber,
+      phone_number: data.Phonenumber,  
       password: data.password,
     };
     console.log(userdata);
@@ -120,11 +120,11 @@ export default function UserRegistration() {
                   onChange={(e) => handleemail(e)}
                   {...register("email", {required: true, pattern: /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i})}
                   />
+                <br />
                 <error>
                   {errors.email?.type === 'required' && 'Email is required'}
                   {errors.email?.type === 'pattern' && 'Entered Email is Wrong format'}
                 </error>
-                <br />
                 <input
                   type="int"
                   className="form-control"
