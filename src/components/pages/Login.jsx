@@ -48,16 +48,17 @@ export default function UserRegistration() {
       })
 
       .catch((error) => {
-        console.log(error.response.data);
-        if (error.response.data.detail) {
-          setError("This Account haven't been verified");
+        console.log(error.response);
+        
+         if (error.response.status === 400) {
+          setError("User does not Exit!");
         }
 
-        if (error.response.data.detail) {
-          setError("Invalid Credentials try again");
-        } else if (error.response.data) {
-          setError("User does not Exit!");
-        } else setError("Loading...");
+        else if(error.response.status === 401){
+          setError(error.response.data.detail)
+        }
+
+
       });
   }
 
@@ -104,9 +105,10 @@ export default function UserRegistration() {
                 type="password"
                 className="form-control"
                 placeholder="Password"
-                {...register("password", { minLength: 8, maxLength: 20 })}
+                {...register("password", { minLength: 8, maxLength: 20, required: true })}
               />
               <error>
+                {errors.password?.type === "required" && "Password is required"}
                 {errors.password?.type === "minLength" &&
                   "The password should not be less 8 digits"}
                 {errors.password?.type === "maxLength" &&

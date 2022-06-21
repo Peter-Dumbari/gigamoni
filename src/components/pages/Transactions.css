@@ -467,11 +467,12 @@ padding-right: 6rem;
     
     .transaction__container{
         height: auto;
-        margin: 5rem 2rem 0 4.5%;
+        margin: 5rem 1rem 0 2.5%;
     }
     .transaction__items{
         display: flex;
         flex-direction: column;
+        margin-left: 0;
     }
 
     table{
@@ -479,17 +480,18 @@ padding-right: 6rem;
     }
      
     th{
-        padding: 0 1em 0 3px ;
+        padding: 0 5px 0 3px ;
         font-size: small;
-        margin-left: 600%;
+        margin-left: 3%;
         text-align: center;
+        border: 1px solid;
     }
     
     tr td{
         padding: 15px 0% 0px 7px;
         color: #808080;
         border-bottom:  0.30px solid;
-        margin-left: 100%;
+        margin-left: 5%;
         font-size: small;
     }
     

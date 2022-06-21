@@ -333,9 +333,9 @@
 }
 @media screen and (min-width: 120px) and (max-width:  400px){
   .startBiddings {
-    margin: 2rem 0 0 0;
+    margin: 2rem 0 3rem 2rem;
     background-color: #e5e5e5;
-    padding: 2rem 5rem 0 0;
+    padding: 2rem 2rem 0 0;
     width: 100%;
   }
 
@@ -394,7 +394,7 @@
   }
 
   .calculator__items h6 {
-    font-size: 10px;
+    font-size: 15px;
   }
 
   .calculator__items2 {

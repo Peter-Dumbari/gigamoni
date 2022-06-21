@@ -75,7 +75,6 @@ export default function UserRegistration() {
         userdata)
       .then((response) =>{
         if (response.status === 200){
-          throw Error(error.response);
           console.log(response)
         }
       }).catch(error =>{
@@ -108,12 +107,12 @@ export default function UserRegistration() {
                 {...register("companyname",{required: true})}
               />
                <error>
-                  {errors.fullname?.type === 'required' && 'Companyname is required'}
+                  {errors.companyname?.type === 'required' && 'Companyname is required*'}
                 </error>
               <br />
                 <select {...register("companytype",{required: true})} className="form-control">
                 <option defaultValue>Computer Engineering</option>
-                <option >Mobile Banking</option>
+                <option>Mobile Banking</option>
                 <option >Graphic Designing</option>
                 <option >Farming</option>
                 <option>Mechanical Engineering</option>
@@ -123,7 +122,7 @@ export default function UserRegistration() {
                 <option >Others</option>
                 </select>
                  <error>
-                  {errors.companytype?.type === 'required' && 'Company-type is required'}
+                  {errors.companytype?.type === 'required' && 'Company-type is required*'}
                 </error>
               <br />
               <input
@@ -136,7 +135,7 @@ export default function UserRegistration() {
                 onBlur={() => setUserFocus(false)}
                 {...register("companyaddress",{required: true})}/>
                  <error>
-                  {errors.companyaddress?.type === 'required' && 'Company-Address is required'}
+                  {errors.companyaddress?.type === 'required' && 'Company-Address is required*'}
                 </error>
               <br />
               <input
@@ -150,7 +149,7 @@ export default function UserRegistration() {
                 {...register("email", {required: true, pattern: /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i})}
               />
               <error>
-                  {errors.email?.type === 'required' && 'Email is required'}
+                  {errors.email?.type === 'required' && 'Email is required*'}
                   {errors.email?.type === 'pattern' && 'Entered Email is Wrong format'}
                 </error>
               <br />
@@ -158,10 +157,10 @@ export default function UserRegistration() {
               className="form-control" 
               placeholder="Company RC"                   
               {...register("companyrc",{required: true})} />
-              <br />
               <error>
-              {errors.companyrc?.type === 'required' && 'Company-Rc is required'}
+              {errors.companyrc?.type === 'required' && 'Company-Rc is required*'}
               </error>
+              <br />
               <input
                 type="password"
                 className="form-control"
@@ -169,13 +168,14 @@ export default function UserRegistration() {
                 onFocus={() => setUserFocus(true)}
                 onBlur={() => setUserFocus(false)}
                 {...register("password",{minLength: 8,
-                  maxLength: 20})}
+                  maxLength: 20, required: true})}
                   />
-              <br />
               <error>
+                  {errors.password?.type ==="required" && "Password is required*"}
                   {errors.password?.type === "minLength" && "The password is should not be less 8 digits"}
                   {errors.password?.type === "maxLength" && "The password is should not be more than 20 digits"}
                 </error>
+                <br />
               <p style={{ float: "right" }}>
                 Already a Registered? <Link to="/login" className="login__link">Login</Link>{" "}
               </p>
