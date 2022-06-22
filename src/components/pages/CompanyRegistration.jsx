@@ -74,9 +74,7 @@ export default function UserRegistration() {
        'https://test-gig.herokuapp.com/api/v1/accounts/register/company1/',
         userdata)
       .then((response) =>{
-        if (response.status === 200){
-          console.log(response)
-        }
+       console.log(response);
       }).catch(error =>{
         console.log(error.response)
         setError(error.message)
