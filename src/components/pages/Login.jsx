@@ -33,7 +33,7 @@ export default function UserRegistration() {
     e.preventDefault();
     let items = { email: data.email, password: data.password };
     let result = await axios
-      .post("wss://test-gig.herokuapp.com/api/v1/accounts/login/", items)
+      .post("https://test-gig.herokuapp.com/api/v1/accounts/login/", items)
 
       .then((response) => {
         if (response.status === 200) {
