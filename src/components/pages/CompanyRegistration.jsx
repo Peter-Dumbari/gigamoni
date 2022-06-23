@@ -73,11 +73,16 @@ export default function UserRegistration() {
       .post(
        'https://test-gig.herokuapp.com/api/v1/accounts/register/company1/',
         userdata)
-      .then((response) =>{
-       console.log(response);
+      .then(response =>{
+       console.log(response)
       }).catch(error =>{
-        console.log(error.response)
-        setError(error.message)
+        if(error.response.status === 400){
+          setError("This Email already exit")
+        }
+
+        if(error === 500){
+          console.log(error)
+        }
       })
       ;    
   };
@@ -91,9 +96,8 @@ export default function UserRegistration() {
             <h4>Company Registration</h4>
             <br />
             <div className="userformdiv"><form>
-              <p ref={errRef} aria-live="assertive">
-                {/* {errMsg} */}
-              </p>
+              <div className="error__notifier">{error}</div>
+              <br />
               <input
                 type="text"
                 id="companyname"

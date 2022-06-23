@@ -33,7 +33,6 @@ export default function DashBoard() {
               </div>
               <h4>N70,000,000.00</h4>
             </div>
-            <div className="gigasec__container">
             <div className="gigasec__services_list">
               <div className="gigasec__header_text">
                 <h3>Gigasec Services Ltd</h3>
@@ -45,7 +44,7 @@ export default function DashBoard() {
               <div className="gigasec__items__container">
                   <img src={BlueBall} alt="" className="text__icon"/>
                     <div className="gigasec__text">
-                        <h6>Rate</h6>
+                        <h6>Margin</h6>
                         <h5>12%</h5>
                     </div>
               </div>
@@ -64,7 +63,7 @@ export default function DashBoard() {
                     </div>
               </div>
             </div>
-            <div className="calculator__container">
+            {/* <div className="calculator__container">
                 <div className="calculator__items">
                     <h6>Interest:</h6>
                     <h6>0</h6>
@@ -76,11 +75,10 @@ export default function DashBoard() {
                 <hr className="line"/>
                 <input type="text"  placeholder="Enter amount to invest"  className="input__search"/>
                 <button className="invest_button">Invest N70,000.00</button>
-            </div>
+            </div> */}
             </div>
           </div>
         </div>
-    </div>
     </>
   );
 }

@@ -18,6 +18,7 @@ import AddBank from "./components/pages/AddBank";
 import Verifyemail from "./components/pages/Verifyemail";
 import { PrivateRoutes } from "./components/Privateroutes";
 import Logout from "./components/pages/Logout ";
+import CreateIpos from "./components/pages/CreateIpos";
 import "./App.css";
 
 function App() {
@@ -49,6 +50,7 @@ function App() {
           <Route path="/addBank" element={<AddBank />}></Route>
           <Route path="/verifyemail" element={<Verifyemail />}></Route>
           <Route path="/logout" element={<Logout />}></Route>
+          <Route path="/createipos" element={<CreateIpos />}></Route>
         </Route>
       </Routes>
     </Router>

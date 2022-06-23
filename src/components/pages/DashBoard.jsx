@@ -38,13 +38,13 @@ export default function DashBoard() {
             <p>What do you want to do today?</p>
           </div>
           <Link
-            to="/startbiding"
+            to="/createipos"
             style={{ textDecoration: "none" }}
             className="cardlink"
           >
             <div className="card1">
               <div className="cardText">
-                <h3>Start Bidding</h3>
+                <h3>Create IPO</h3>
                 <p>You now start biding for IPOs as little as 5,000</p>
               </div>
               <img
