@@ -10,9 +10,29 @@
   border-radius: 15px;
 }
 
+error{
+  color: red;
+  font-size: small;
+}
+
+.success{
+  background-color: green;
+  color: #fff;
+  width: 100%;
+  border-radius: 6px;
+}
+.error__notifier{
+  margin: 0;
+  color: red;
+}
 .forgot__password{
   text-decoration: none;
-  color: rgb(155, 1, 1);
+  color: red;
+  font-style: italic;
+}
+.verifyaccount{
+  text-decoration: none;
+  color: green;
   font-style: italic;
 }
 
@@ -23,6 +43,7 @@
 }
 .userImage {
   margin-top: 20px;
+  width: 100%;
 }
 
 ::placeholder{
@@ -31,16 +52,27 @@
 
 .sidenav {
   height: 100vh;
-  width: 35%;
+  width: 30%;
   z-index: -1;
   position: fixed;
   text-align: center;
-  padding-right: 4em;
+  padding-right: 2em;
   padding-left: 4em;
   background-color: #0e8a5e;
   overflow-x: hidden;
   padding-top: 60px;
   color: white;
+}
+
+
+.gigalogo{
+  width: 200px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: #fff;
+
 }
 
 .body {
@@ -239,14 +271,32 @@ a {
   border-color: #0e8a5e;
 }
 
-.menu-icon{
+/* .menu-icon{
   display: block;
-}
+} */
 
-.fa-bars{
+/* .fa-bars{
   color: #fff;
+} */
+
+
+.col-lg-8 h4{
+  color: green;
+text-align: center;
+font-size: 2rem;
+
 }
 
+.col-lg-8{
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
+
+.loginheading_paragraph{
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
 
 /* MEDIA SCREEN */
 
@@ -274,7 +324,6 @@ a {
 
 .gigalogo{
   width: 150px;
-  
 }
 
 .row{
@@ -484,6 +533,7 @@ width: 100%;
  .col-lg-8 h4{
    margin-left: 5rem;
    font-size: larger;
+   color: #0e8a5e;
  }
 
  .gigalogo{
@@ -819,6 +869,10 @@ width: 100%;
   padding: 5px;
   font-weight: 600;
   width: 100%;
+}
+
+.forgot__password, .verifyaccount, .error__notifier{
+  font-size: 13px;
 }
 
 

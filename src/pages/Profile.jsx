@@ -3,14 +3,15 @@ import Logo from "../assets/Logo.png";
 import ".././pages/Dashboard.css";
 import "../pages/Transactions.css";
 import { Link } from "react-router-dom";
-import Navbar from "../Navbar";
+import Navbar from "../components/Navbar";
 import "./Profile.css";
 
 export default function DashBoard() {
   return (
        <>
        <Navbar/>
-        <div className="profile__container">
+       <div className="dashboard__container__container">
+       <div className="profile__container">
           <div className="profiles">
           <div className="profile__items">
             <h3>Profile Settings</h3>
@@ -65,6 +66,8 @@ export default function DashBoard() {
             </form>
           </div></div>
           </div>
-        </div></>
+        </div>
+       </div>
+       </>
   );
 }

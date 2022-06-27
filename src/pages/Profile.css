@@ -114,9 +114,10 @@ label{
  }
 @media screen and (min-width: 120px) and (max-width:  401px){
     .profile__container{
-        margin: -5rem 0  0 1rem;
+        margin: 2rem 0  0 1rem;
         width: 100%;
         align-self: center;
+        margin-bottom: 9rem;
     }
     
 

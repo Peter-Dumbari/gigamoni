@@ -1,7 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useNavigate} from "react";
 import { Link } from "react-router-dom";
-import "./pages/Dashboard.css";
-import Logo from "./assets/Logo.png";
+import "../pages/Dashboard.css";
+import Logo from "../assets/Logo.png";
+import axios from "axios";
+import { Navigate } from 'react-router'
+
 
 export default function Navbar() {
   const [click, setClick] = useState(false);
@@ -23,16 +26,18 @@ export default function Navbar() {
   }, []);
 
   window.addEventListener("resize", showButton);
+  const balance = localStorage.getItem('balance')
   return (
     <>
       <div className="navbar__container">
-        <p>Wallet Ballance N0:00</p>
-        <img src={Logo} alt="logo" className="sidenav__image" />
+        <p>Wallet Ballance N{balance}</p>
+
       </div>
       <div onClick={handleClick} className="menu-icon">
         <i className={click ? "fas fa-times" : "fas fa-bars"} />
       </div>
       <div className="side__Nav">
+      <img src={Logo} alt="logo" className="sidenav__image" />
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
             <Link
@@ -53,11 +58,15 @@ export default function Navbar() {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+            <Link to="/startbiding" className="nav-links" onClick={closeMobileMenu}>
               IPOs
             </Link>
             <Link to="/" className="nav-links" onClick={closeMobileMenu}>
               Wallet
+            </Link>
+
+            <Link to="/logout" className="nav-links" onClick={closeMobileMenu}>
+              Logout
             </Link>
           </li>
           <li className="settings">
@@ -76,3 +85,4 @@ export default function Navbar() {
     </>
   );
 }
+

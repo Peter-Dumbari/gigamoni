@@ -1,32 +1,28 @@
 .navbar__container{
     background-color: #fff;
     width: 100%;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 999;
     max-width: 1500px;
-    height: 60px;
-   
-
+    height: 50px;
 
 }
 
 
 .nav-links:focus{
     background-color: #0e8a5e;
-    width: 60%;
+    width: fit-content;
     color: #fff;
-    height: 5%;
+    padding: 6%;
 }
 .navbar__container p{
     float: right;
-    margin: 10px 2rem 0 ;
+    margin: 0 5rem 0 ;
     font-size: 1.5rem;
     color: #0e8a5e;
     font-weight: 600;
     font-family: Reggae One;
-    
-   
 
 }
 
@@ -37,9 +33,9 @@
     padding-left: 50px;
     position: fixed;
     box-shadow: 0 0 15px 0 #fff;
-    height: 88vh;
-    padding-top: 2rem;
-
+    height: 120vh;
+    padding-top: 1rem;
+    z-index: 999;
   
 } 
 
@@ -71,6 +67,10 @@ ul {
     
   }
 
+  li a:hover{
+    color: #0e8a5e;
+  }
+
   .settings{
     display: block;
     color:  #808080;
@@ -99,8 +99,9 @@ ul {
   .dashboard__container__container{
       display: flex;
       flex-direction: row;
-      background-color: #E5E5E5;;
+      background-color: #F4F4F4;
       height: auto;
+
       
       
   }
@@ -128,10 +129,7 @@ ul {
     cursor: pointer;
 
 }
-.card1:hover{
-    transform: scale(1.06);
-    transition: all 0.2s linear;
-}
+
 
 .cardText{
     margin-right: 30px;
@@ -149,6 +147,7 @@ ul {
 .card1 p{
     color:  #6D6D6D;
     text-decoration: none;
+    font-size: 15px;
 }
 
 .card2 {
@@ -162,10 +161,7 @@ ul {
     cursor: pointer;
 
 }
-.card2:hover{
-    transform: scale(1.06);
-    transition: all 0.2s linear;
-}
+
 .card__image{
     width: 200px;
     height: 100px;
@@ -184,6 +180,7 @@ ul {
 
 .card2 p{
     color: #6D6D6D;
+    font-size: 15px
     ;
 }
 .card3 {
@@ -197,20 +194,17 @@ ul {
     cursor: pointer;
 
 }
-.card3:hover{
-    transform: scale(1.06);
-    transition: all 0.2s linear;
-}
 
 
 .card3 h3{
     color: #0e8a5e;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
-
-
 }
 
+.card3 p{
+    font-size: 15px;
+}
 
 .header_container{
     align-content: center; 
@@ -231,8 +225,8 @@ ul {
     font-size: 18px;
 }
 .middle_first h1{
-    font-family: Sen;
-    font-size: 32px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
     font-weight: 400;
 
 }
@@ -264,7 +258,7 @@ ul {
  .analytics{
      display: flex;
      font-family: Sarala;
-     margin: 0 0 4.3rem 20px;
+     margin: 0 0 3.5rem 20px;
  }
 
  .analytics__items{
@@ -340,14 +334,13 @@ ul {
         top: 0;
         z-index: 999;
         max-width: 1500px;
-        height: 60px;
     
     
     }
 
     
 .navbar__container p{
-    margin: 20px 1rem 0 ;
+    margin: 10px 10rem 0 ;
     font-size: 20px;
     font-weight: 800;
 }
@@ -355,19 +348,21 @@ ul {
 .side__Nav{
     align-items: center;
     padding-left: 20px;
-    height: 88vh;
+    height: 100vh;
+    width: 260px;
+    top: 45px;
 }
 
 
 ul {
-    width: 250px;
+    width: 100%;
      overflow: auto;
      z-index: 1;
   }
 
   .nav-links {
     padding: 20px 16px;
-    font-weight:600;
+    font-weight:350;
     font-size: 1.3rem;
   }
 
@@ -380,36 +375,38 @@ ul {
   }
 
   .dropbtn{
-    padding: 20px 16px;
-    font-weight:600;
+    padding: 6px 16px;
+    font-weight:350;
     font-size: 1.2rem;
   }
 
   
   .sidenav__image{
-    width: 200px;
-    padding: 10px 20px 2rem;
-    margin-left: 1rem;
+    width: 230px;
+    padding: 2px 20px 1rem;
+    margin-left: -1rem;
     
 }
 
 .dashboards{
     width: 100%;
     margin-left: 0;
+    margin-bottom: 1rem;
 
 }
 
 .card1, .card2, .card3 {
-    width: 100%;
+    width: 85%;
+    height: 25%;
     padding: 11px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     justify-content: space-between;
     margin-right: -10rem;
     
 }
 
 .card__image{
-    width: 120px;
+    width: 186px;
     height: 120px;
 }
 
@@ -419,13 +416,17 @@ ul {
 }
 
 .middle_first h1{
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     margin-left: 1rem;
 }
 
 .middle_first p{
     font-size: 15px;
     margin-left: 0.7rem;
+}
+
+.menu-icon{
+    display: none;
 }
 
 
@@ -436,7 +437,7 @@ ul {
 }
 
 .cardText h3{
-    font-size: 20px;
+    font-size: 25px;
   
 }
 .dashboard__container__container{
@@ -452,7 +453,7 @@ ul {
 
 .dashboard__row h4{
     font-size: 20px;
-    font-weight: 800;
+    font-weight: 500;
 }
 
 .analytics__items h6{
@@ -475,7 +476,7 @@ ul {
 }
 
 .dashboard__row h4{
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     padding-bottom: 0;
 }
 
@@ -539,14 +540,13 @@ ul {
 .nav-menu {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 50%;
     height: 50vh;
     position: fixed;
-    top: 80px;
+    top: 30px;
     left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
-    border-radius: 0 15px 0 0;
   }
 
   .nav-menu.active {
@@ -555,7 +555,9 @@ ul {
     opacity: 0.9;
     transition: all 0.5s ease;
     z-index: 999;
+    height: 90%;
   }
+
 
   .nav-links {
     padding: 1.1rem;
@@ -563,13 +565,6 @@ ul {
     color: #ffff;
     font-size: 0.9rem;
   }
-
-  .nav-links:hover{
-    background-color: #242424;
-    color: #0e8a5e;
-    border-radius: 0;
-  }
-
 
 
   .menu-icon {
@@ -617,7 +612,8 @@ ul {
   .sidenav__image{
     width: 110px;
     margin-left: -1rem;
-    padding: 9px 30px;
+    top: 0;
+    margin-top: -3rem;
     
     
 }
@@ -631,6 +627,7 @@ ul {
 .dashboards{
     width: 100%;
     margin-left: -0.2rem;
+    margin-bottom: 9.5rem;
 
 }
 
@@ -653,7 +650,8 @@ ul {
 }
 
 .middle_first h1{
-    font-size: 20px;
+    font-size: 25px;
+    margin: 0;
 }
 
 .middle_first p{
@@ -684,7 +682,7 @@ ul {
 
 .dashboard__container__container{
     width: 100%;
-    height: 100%;
+    height: fit-content;
     padding: 0 1rem 0 0;
 }
 
@@ -795,7 +793,16 @@ ul {
 
 .side__Nav{
     padding-left: 0;
+    background-color: inherit;
+    box-shadow: none;
 }
+
+li a:hover{
+    color: #fff;
+    margin: 0;
+    border-bottom: 1px solid;
+    border: none;
+  }
 
 }
   

@@ -1,21 +1,61 @@
 import gigmaoni from "../assets/gigamoni.svg";
 import userimage from "../assets/user-image.svg";
 import { useRef, useState, useEffect, useContext } from "react";
-import "../../App.css";
+import "../App.css";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { useForm } from "react-hook-form";
+import { Navigate } from "react-router-dom";
 
-const VALIDEMAIL = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-const VALIDPASSWORD = /^ (?=.* [A - Za - z])(?=.*\d)[A - Za - z\d]{ 8, }$/;
+// const VALIDEMAIL = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+// const VALIDPASSWORD = /^ (?=.* [A - Za - z])(?=.*\d)[A - Za - z\d]{ 8, }$/;
 export default function UserRegistration() {
-  const userRef = useRef();
-  const errRef = useRef();
-
   const [fullname, setFulname] = useState("");
   const [email, setEmail] = useState("");
   const [phonenumber, setPhonenumber] = useState("");
   const [pwrd, setPwrd] = useState("");
-  const [message, setMessage] = useState("");
+  const [error, setError] = useState(null);
+  const [userFocus, setUserFocus] = useState(false);
+
+  const {
+    register,
+    formState: { errors },
+    handleSubmit,
+  } = useForm();
+
+  const handlingSubmit = async (data) => {
+    const userdata = {
+      full_name: data.fullname,
+      email: data.email,
+      phone_number: data.Phonenumber,
+      password: data.password,
+    };
+    console.log(userdata);
+
+    await axios
+      .post(
+        "https://test-gig.herokuapp.com/api/v1/accounts/register/person/",
+        userdata
+      )
+      .then((response) => {
+        if (response.status === null) {
+          console.log(response.status);
+          Navigate("/home");
+        }
+      })
+      .catch((error) => {
+        console.log(error.response);
+        if (error.response.data.email[0]) {
+          setError(error.response.data.email[0]);
+        }
+
+        if (error.response == null) {
+          setError(
+            "Your Account created successfully, checked your mail for verification"
+          );
+        }
+      });
+  };
 
   const handlefullname = (event) => {
     const full_name = event.target.value;
@@ -40,68 +80,6 @@ export default function UserRegistration() {
     setPwrd(password);
   };
 
-  const [validEmail, setValidEmail] = useState(false);
-  const [userFocus, setUserFocus] = useState(false);
-
-  const [pwd, setPwd] = useState("");
-  const [validPwd, setValidPwd] = useState(false);
-  const [pwdFocus, setPwdFocus] = useState(false);
-
-  const [matchPwd, setMatchPwd] = useState("");
-  const [validMatch, setValidMatch] = useState(false);
-  const [matchFocus, setMatchFocus] = useState(false);
-
-  useEffect(() => {
-    userRef.current.focus();
-  }, []);
-  useEffect(() => {
-    const result = VALIDEMAIL.test(email);
-    console.log(email);
-    console.log(result);
-    setValidEmail(email);
-  }, [email]);
-
-  useEffect(() => {
-    const result = VALIDPASSWORD.test(pwd);
-    console.log(pwd);
-    console.log(pwd);
-    setValidPwd(result);
-    const match = pwd === matchPwd;
-    setValidMatch(match);
-  }, [pwd, matchPwd]);
-
-
-    const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    const userdata = {
-      full_name: fullname,
-      email: email,
-      phone_number: phonenumber,
-      password: pwrd,
-    };
-    console.log(userdata);
-  
-      await axios
-      .post(
-       'http://127.0.0.1:8000/api/v1/accounts/register/person/',
-        userdata )
-
-      .then((response) =>{
-      
-        if (response.status === 200){
-          console.log(response);
-        }
-      }).catch(error =>{
-        console.log(error.response)
-      })
-      ;
-
-   
-
-    
-  };
-
   return (
     <div className="container">
       <div className="headboss">
@@ -120,43 +98,59 @@ export default function UserRegistration() {
             <h4>User Registration</h4>
             <br />
             <div className="userformdiv">
-              <form onSubmit={handleSubmit}>
-                <p ref={errRef} aria-live="assertive">
-                  {/* {errMsg} */}
-                </p>
+              <form>
+                {error && <div className="error__notifier">{error}</div>}
                 <input
                   type="text"
-                  id="fullname"
-                  ref={userRef}
-                  value={fullname}
                   className="form-control"
                   placeholder="Fullname"
-                  onFocus={() => setUserFocus(true)}
-                  onBlur={() => setUserFocus(false)}
                   onChange={(e) => handlefullname(e)}
-                  required
+                  {...register("fullname", { required: true })}
                 />
+                <error>
+                  {errors.fullname?.type === "required" &&
+                    "Fullname is required"}
+                </error>
                 <br />
                 <input
                   type="email"
                   id="email"
-                  ref={userRef}
-                  value={email}
                   className="form-control"
                   placeholder="Email"
                   onFocus={() => setUserFocus(true)}
                   onBlur={() => setUserFocus(false)}
                   onChange={(e) => handleemail(e)}
-                  required
+                  {...register("email", {
+                    required: true,
+                    pattern:
+                      /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
+                  })}
                 />
+                <error>
+                  {errors.email?.type === "required" && "Email is required"}
+                  {errors.email?.type === "pattern" &&
+                    "Entered Email is Wrong format"}
+                </error>
                 <br />
                 <input
-                  type="tel"
+                  type="int"
                   className="form-control"
                   placeholder="Phone"
-                  value={phonenumber}
                   onChange={(e) => handlephone(e)}
+                  {...register("Phonenumber", {
+                    minLength: 11,
+                    maxLength: 11,
+                    required: true,
+                  })}
                 />
+                <error>
+                  {errors.Phonenumber?.type === "required" &&
+                    "Phone Number is required"}
+                  {errors.Phonenumber?.type === "minLength" &&
+                    "Entered number is less than 11 digits"}
+                  {errors.Phonenumber?.type === "maxLength" &&
+                    "Entered number is more than 11 digits"}
+                </error>
                 <br />
                 <input
                   type="password"
@@ -165,7 +159,20 @@ export default function UserRegistration() {
                   onFocus={() => setUserFocus(true)}
                   onBlur={() => setUserFocus(false)}
                   onChange={(e) => handlepwrd(e)}
+                  {...register("password", {
+                    minLength: 8,
+                    maxLength: 20,
+                    required: true,
+                  })}
                 />
+                <error>
+                  {errors.password?.type === "required" &&
+                    "Password is required"}
+                  {errors.password?.type === "minLength" &&
+                    "The password is should not be less 8 digits"}
+                  {errors.password?.type === "maxLength" &&
+                    "The password is should not be more than 20 digits"}
+                </error>
                 <br />
                 <p style={{ float: "right" }}>
                   Already a member?{" "}
@@ -174,7 +181,12 @@ export default function UserRegistration() {
                   </Link>{" "}
                 </p>
                 <br /> <br />
-                <button className="Registration_btn">Register</button>
+                <button
+                  onClick={handleSubmit(handlingSubmit)}
+                  className="Registration_btn"
+                >
+                  Register
+                </button>
                 <div className="or_line">
                   <hr className="line" />
                   <p className="hr_p">Or</p>
