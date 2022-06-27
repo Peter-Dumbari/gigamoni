@@ -1,5 +1,5 @@
 import React from "react";
-import "../../App.css";
+import "../App.css";
 import welcome from "../assets/welcome.svg";
 import { Link } from "react-router-dom";
 import users from "../assets/angle.png";

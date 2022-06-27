@@ -1,10 +1,11 @@
 import React from "react";
 import Logo from "../assets/Logo.png";
 import { Link } from "react-router-dom";
-import "../../App.css";
+import "../App.css";
 import axios from "axios";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import Loaders from "../components/loaders/Loaders";
 
 
 
@@ -13,6 +14,8 @@ export default function ConfirmEmail() {
   const [otp, setOtp] = useState("");
   const [error, setError] = useState("");
   const [optError, setOptError] = useState("")
+  const [loading, setLoading] = useState(false);
+
 
   const {register, formState:{errors}, handleSubmit} = useForm()
 
@@ -31,6 +34,7 @@ export default function ConfirmEmail() {
       email: data.email,
       otp: parseInt (data.otp)
     };
+    setLoading(true);
     console.log(items);
     let result = await axios.post("https://test-gig.herokuapp.com/api/v1/accounts/verify/", items)
     
@@ -38,16 +42,7 @@ export default function ConfirmEmail() {
         console.log(error.response.data)
         if(error.response.data){
           setError("The OTP is Invalid")
-
-        // if (error.response.data.email[0]){
-        //   setError('Please Enter your Email Address!')
-        // }
-  
-        // if (error.response.data.otp[0]){
-        //   setOptError('Please Enter the OTP!')
-        // }
-
-        
+          setLoading(false);
         }
     
       })
@@ -88,9 +83,9 @@ export default function ConfirmEmail() {
                   {errors.otp?.type === 'maxLength' && 'OTP cannt be more than 6 digits'}
                 </error>
           <br />
-          <button onClick={handleSubmit(handleSubmiting)} className="Registration_btn">
+          { loading ? <Loaders/> : <button onClick={handleSubmit(handleSubmiting)} className="Registration_btn">
             Register
-          </button>
+          </button> }
         </form>
         <div className="or_line">
           <hr className="line" />

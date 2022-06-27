@@ -6,7 +6,7 @@ import "../pages/StartBiddingFilled.css";
 import BlueBall from "../assets/BlueEllipse.png"
 import NairaSign from "../assets/nairasign.png";
 import { Link } from "react-router-dom";
-import Navbar from "../Navbar";
+import Navbar from "../components/Navbar";
 
 export default function DashBoard() {
   return (

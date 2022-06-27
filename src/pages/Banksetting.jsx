@@ -4,7 +4,7 @@ import ".././pages/Dashboard.css";
 import { Link } from "react-router-dom";
 import "./Banksetting.css";
 import Image from "../assets/empty_void.svg";
-import Navbar from "../Navbar";
+import Navbar from "../components/Navbar";
 
 export default function DashBoard() {
   return (

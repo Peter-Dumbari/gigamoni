@@ -7,8 +7,8 @@ import BlueBall from "../assets/BlueEllipse.png";
 import RedBall from "../assets/RedEllipse.png";
 import YellowBall from "../assets/YellowEllipse.png";
 import PurpleBall from "../assets/PurpleEcllipse.png";
-import ".././pages/Dashboard.css";
-import Navbar from "../Navbar";
+import "./Dashboard.css";
+import Navbar from "../components/Navbar";
 import axios from "axios";
 
 
@@ -50,13 +50,12 @@ export default function DashBoard() {
               <img
                 src={Realtime}
                 alt="/"
-                width="200px"
-                height="100px"
                 className="card__image"
               />
             </div>
           </Link>
 
+          <Link to="" style={{ textDecoration: "none" }}>
           <div className="card2">
             <div className="cardText">
               <h3>Current IPOs</h3>
@@ -69,8 +68,8 @@ export default function DashBoard() {
               height="100px"
               className="card__image"
             />
-          </div>
-
+          </div></Link>
+      
           <div className="card3">
             <div className="cardText">
               <h3>Transaction History</h3>

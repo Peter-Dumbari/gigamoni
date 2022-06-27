@@ -1,11 +1,12 @@
 import gigmaoni from "../assets/gigamoni.svg";
 import userimage from "../assets/user-image.svg";
-import "../../App.css";
+import "../App.css";
 import { useNavigate } from "react-router-dom";
 import { useRef, useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { useForm } from "react-hook-form";
+import Loaders from "../components/loaders/Loaders";
 
 
 // const VALIDEMAIL = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -17,6 +18,7 @@ export default function UserRegistration() {
   const [error, setError] = useState(null);
   const [emailErrorMessage, setEmailErrorMessage] = useState("");
   const [passwordErrorMessage, setPasswordErrorMessage] = useState("");
+  const [loading, setLoading] = useState(false);
   const {
     register,
     formState: { errors },
@@ -32,6 +34,7 @@ export default function UserRegistration() {
   async function handleSubmiting(data, e) {
     e.preventDefault();
     let items = { email: data.email, password: data.password };
+    setLoading(true);
     let result = await axios
       .post("https://test-gig.herokuapp.com/api/v1/accounts/login/", items)
 
@@ -42,6 +45,7 @@ export default function UserRegistration() {
             "user_data",
             JSON.stringify(response.data.user_data)
           );
+          setLoading(false);
           navigate("/dashboard");
           console.log(response.data.user_data);
         }
@@ -49,6 +53,7 @@ export default function UserRegistration() {
 
       .catch((error) => {
         console.log(error.response);
+        setLoading(false);
         
          if (error.response.status === 400) {
           setError("User does not Exit!");
@@ -77,6 +82,9 @@ export default function UserRegistration() {
         <div className="col-lg-6">
           <div className="col-lg-8">
             <h4>Welcome!</h4>
+
+         
+
             <p className="loginheading_paragraph">
               Enter your Credentials to continue
             </p>
@@ -126,9 +134,9 @@ export default function UserRegistration() {
                 </Link>
               </p>
               <br /> <br />
-              <div className="login_btn__container">
-                <button className="btn btn-success ">Login</button>
-              </div>
+              { loading ? <Loaders/> :  <button className="btn btn-success ">Login</button>}
+               
+            
             </form>
             <br />
             <br />

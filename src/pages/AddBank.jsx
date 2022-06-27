@@ -3,26 +3,27 @@ import Logo from "../assets/Logo.png";
 import ".././pages/Dashboard.css";
 import "../pages/Transactions.css";
 import { Link } from "react-router-dom";
-import Navbar from "../Navbar";
 import "./Profile.css";
+import Navbar from "../components/Navbar";
 
 export default function DashBoard() {
+ 
   return (
-       <>
-       <Navbar/>
-       <div className="dashboard__container__container">
-       <div className="profile__container">
+    <>
+    <Navbar/>
+    <div className="dashboard__container__container">
+        <div className="profile__container">
           <div className="profiles">
           <div className="profile__items">
-            <h3>Profile Settings</h3>
+            <h3>Add Bank</h3>
           </div>
-          <div className="holder"><div className="profile__list">
+          <div className="profile__list">
             <form>
               <div className="form__items">
                 <div className="firstline">
-                  <label htmlFor="firstname">First Name:</label>
+                  <label htmlFor="firstname">BVN:</label>
                   <input
-                    type="text"
+                    type="password"
                     name=""
                     id=""
                     className="form-control"
@@ -30,7 +31,7 @@ export default function DashBoard() {
                   />
                 </div>
                 <div>
-                  <label htmlFor="firstname">Last Name:</label>
+                  <label htmlFor="firstname">Account Name:</label>
                   <input
                     type="text"
                     name=""
@@ -42,9 +43,9 @@ export default function DashBoard() {
               </div>
               <div className="form__items">
                 <div className="secondline">
-                  <label htmlFor="emailaddress">Email Address:</label>
+                  <label htmlFor="emailaddress">Account Number:</label>
                   <input
-                    type="email"
+                    type="text"
                     name=""
                     id=""
                     className="form-control"
@@ -62,12 +63,12 @@ export default function DashBoard() {
                   />
                 </div>
               </div>
-              <button className="btn btn-primary">Update</button>
+              <button className="btn btn-primary">Add Bank</button>
             </form>
-          </div></div>
+          </div>
           </div>
         </div>
-       </div>
-       </>
+      </div>
+    </>
   );
 }

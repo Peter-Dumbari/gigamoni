@@ -1,38 +1,34 @@
 import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
-import Logo from "../assets/Logo.png";
 import ".././pages/Dashboard.css";
 import "../pages/startbbing.css";
 import NairaSign from '../assets/nairasign.png';
-import Navbar from "../Navbar";
+import Navbar from "../components/Navbar";
+import axios from "axios";
 
-export default function DashBoard() {
-  const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
 
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false)
 
-  const showButton = () => {
-    if (window.innerWidth <= 960) {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
-  };
+export default function CreatedIpos() {
+const access = JSON.parse(localStorage.getItem('tokens')).access;
 
-  useEffect(() => {
-    showButton();
-  }, []);
+let items = {headers: {"Authorization": "Bearer "  +    access}}
+axios.get('https://test-gig.herokuapp.com/api/v1/crowdfunding/current_ipo/', items)
+.then(response =>{
+  console.log(response)
+})
 
-  window.addEventListener("resize", showButton);
+.catch(error =>{
+  console.log(error);
+})
+
+
   return (
         <>
         <Navbar/>
         <div className="dashboard__container__container">
         <div className="startbbing__container">
           <div className="startbidding__header">
-            <h2>Start Bidding</h2>
+            <h2>Created IPO</h2>
             <h5>Choose from the list of available assets</h5>
           </div> 
           <div className="startbidding__card">

@@ -1,11 +1,11 @@
 import gigmaoni from "../assets/gigamoni.svg";
 import undraw_finance from "../assets/finance_image.svg";
 import { useRef, useState, useEffect, useContext } from "react";
-import "../../App.css";
+import "../App.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { useForm } from "react-hook-form";
-
+import Loaders from "../components/loaders/Loaders";
 
 
 const REGISTER_URL = "api/v1/accounts/register/person/";
@@ -24,9 +24,11 @@ export default function UserRegistration() {
   const [userFocus, setUserFocus] = useState(false);
   const [pwdFocus, setPwdFocus] = useState(false);
   const {register, formState: {errors}, handleSubmit} = useForm();
+  const [message, setMessage] = useState("");
 
 
   
+  const [loading, setLoading] = useState(false);
 
   const handleCompanyname = (event) => {
     const company_name = event.target.value;
@@ -59,6 +61,7 @@ export default function UserRegistration() {
 
 
     const handleSubmiting = async ( data) => {
+      setLoading(true);
     const userdata = {
       company_name: data.companyname,
       company_type: data.companytype,
@@ -75,9 +78,14 @@ export default function UserRegistration() {
         userdata)
       .then(response =>{
        console.log(response)
+       if(response.status === 201){
+        setMessage("Account Created")
+        setLoading(false)
+       }
       }).catch(error =>{
         if(error.response.status === 400){
           setError("This Email already exit")
+          setLoading(false)
         }
 
         if(error === 500){
@@ -96,7 +104,7 @@ export default function UserRegistration() {
             <h4>Company Registration</h4>
             <br />
             <div className="userformdiv"><form>
-              <div className="error__notifier">{error}</div>
+              <div className="error__notifier">{error}</div><p className="success">{message}</p>
               <br />
               <input
                 type="text"
@@ -182,7 +190,7 @@ export default function UserRegistration() {
                 Already a Registered? <Link to="/login" className="login__link">Login</Link>{" "}
               </p>
               <br /> <br />
-              <button onClick={handleSubmit(handleSubmiting)} className="Registration_btn">Register</button>
+                  {loading ? <Loaders/> : <button onClick={handleSubmit(handleSubmiting)} className="Registration_btn">Register</button> }
           <div className="or_line">
             <hr className="line"/>
             <p className="hr_p">Or</p>

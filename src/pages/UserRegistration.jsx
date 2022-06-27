@@ -1,7 +1,7 @@
 import gigmaoni from "../assets/gigamoni.svg";
 import userimage from "../assets/user-image.svg";
 import { useRef, useState, useEffect, useContext } from "react";
-import "../../App.css";
+import "../App.css";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";

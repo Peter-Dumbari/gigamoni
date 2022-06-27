@@ -4,7 +4,7 @@ import EmptyImage from "../assets/undraw_empty_re_opql.svg";
 import ".././pages/Dashboard.css";
 import '../pages/EmptyStartBidding.css';
 import { Link } from "react-router-dom";
-import Navbar from "../Navbar";
+import Navbar from "../components/Navbar";
 
 export default function DashBoard() {
     return (
