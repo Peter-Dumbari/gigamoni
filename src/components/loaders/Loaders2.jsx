@@ -5,7 +5,7 @@ export default function Loaders2() {
   return (
     <center>
       <div class="lds-spinner">
-        <div></div>
+        <div></div> 
         <div></div>
         <div></div>
         <div></div>

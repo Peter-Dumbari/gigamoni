@@ -518,7 +518,7 @@ ul {
 }
   }
   
-  @media screen and (min-width: 120px) and (max-width:  868px){
+  @media screen and (min-width: 401px) and (max-width:  868px){
     .navbar__container{
         width: 100%;
         position: sticky;
@@ -736,6 +736,305 @@ ul {
 .analytics{
     padding: 0;
     margin: 0;}
+
+
+
+    .dashboard__medle__items{
+        width: 70%;
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+    .dashboard__container__container{
+        height: 180vh;
+        
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        min-width: 10px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .profile__setting:hover {
+          background-color: #f1f1f1;
+        }
+    
+        .bank__setting:hover{
+            background-color: #f1f1f1;
+        } 
+    
+        .settings:hover .dropdown-content {
+            display: block;
+          }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+    
+      
+    .profile__setting,.bank__setting {
+        display: inline-block;
+        text-align: center;
+        background-color:  #0e8a5e;
+        padding: 10px 16px;
+        text-decoration: none;
+        transition-delay: 250ms;
+      }
+      
+      .profile__setting, .bank__setting, .dropdown {
+        display: inline-block;
+    
+      }
+    
+      
+
+.side__Nav{
+    padding-left: 0;
+    background-color: inherit;
+    box-shadow: none;
+}
+
+li a:hover{
+    color: #fff;
+    margin: 0;
+    border-bottom: 1px solid;
+    border: none;
+  }
+
+}
+  
+  @media screen and (min-width: 120px) and (max-width:  400px){
+    .navbar__container{
+        width: 100%;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        max-width: 1500px;
+        height: 30px;
+    }
+
+    .fa-bars {
+        color: #0e8a5e;
+      }
+    
+.navbar__container p{
+    margin: 10px 1rem 0 ;
+    font-size: 10px;
+    font-weight: 800;
+}
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 50vh;
+    position: fixed;
+    top: 30px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    background: #0e8a5e;
+    left: 0;
+    opacity: 0.9;
+    transition: all 0.5s ease;
+    z-index: 999;
+    height: 90%;
+  }
+
+
+  .nav-links {
+    padding: 1.1rem;
+    display: table;
+    color: #ffff;
+    font-size: 0.9rem;
+  }
+
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+
+  .nav-links-mobile {
+    display: block;
+    text-align: center;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: #fff;
+    padding: 14px 20px;
+    border: 1px solid #fff;
+    transition: all 0.3s ease-out;
+  }
+
+  .nav-links-mobile:hover {
+    background: #fff;
+    color: #242424;
+    transition: 250ms;
+  }
+
+
+  .dropbtn{
+    padding: 0 8px;
+    font-weight:400;
+    font-size: 0.9rem;
+    color: #ffff;
+    margin-left: -0.3rem;
+  }
+
+  
+  .sidenav__image{
+    width: 110px;
+    margin-left: -1rem;
+    top: 0;
+    margin-top: -3rem;
+    
+    
+}
+
+.profile__setting, .bank__setting{
+    font-size: 12px;
+    color: #ffff;
+    padding: 0;
+  }
+
+.dashboards{
+    width: 100%;
+    margin-left: -0.2rem;
+    margin-bottom: 1.5rem;
+
+}
+
+
+.card1, .card2, .card3 {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 35px;
+    border-radius: 4px;
+   
+}
+
+.card1 p{
+    font-size: 7px;
+}
+
+.card2 p{
+    font-size: 6px;
+}
+
+.card__image{
+    width: 50px;
+    height: 60px;
+}
+
+.middle_first{
+    padding: 5px 0 0 5px;
+    margin-left: 0.07rem;
+}
+
+.middle_first h1{
+    font-size: 15px;
+    margin: 1rem 0 0 0;
+}
+
+.middle_first p{
+    font-size: 10px;
+}
+
+
+.cardText {
+    margin-right: 3px;
+    margin-top: 5px;
+    width: 500px;
+    font-size:10px;
+}
+
+.cardText h3{
+    font-size: 10px;
+  
+}
+
+.fund_wallet__button{
+    width: 100%;
+}
+.fund_wallet__button button{
+    font-size: 10px;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.dashboard__container__container{
+    width: 100%;
+    height: fit-content;
+    padding: 0 1rem 0 0;
+}
+
+.dashboard__row{
+   width: 100%;
+   padding: 5px;
+    
+    }
+
+.dashboard__row h4{
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.dashboard__last__items{
+    width: 30%;
+    max-width: 100%;
+    margin-top: 2.5rem;
+    margin: 2.5rem  4rem 0 -0.5rem;
+    
+}
+
+.analytics__items h6{
+    font-size: 8px;
+    padding: 0;
+    width: 100%;
+
+}
+
+
+.analytics__items{
+    margin-bottom: 13px;
+}
+.Ball{
+    width: 10px;
+    height: 10px;
+    margin-left: 0;
+    padding: 0;
+}
+
+
+.dashboard__medle__items{
+    margin-left: 1rem;
+}
+
+.dashboard__row h4{
+    margin-bottom: 1rem;
+    padding-bottom: 0;
+}
+
+.analytics{
+    padding: 0;
+    margin: 0 0.5rem;
+
+}
 
 
 
