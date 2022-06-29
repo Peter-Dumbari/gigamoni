@@ -699,6 +699,7 @@ width: 100%;
 
 .col-lg-8{
   width: 70%;
+  margin-top: 0;
 }
 
 .col-lg-8 h4{
@@ -838,9 +839,12 @@ width: 100%;
   border-color: #fff;
  }
 
+ .userformdiv{
+  margin-top: -3rem;
+ }
  .userbox_text{
   margin-left: 1.5rem;
-  font-size: 17px;
+  font-size: 10px;
 }
 
 
@@ -871,9 +875,11 @@ width: 100%;
   width: 100%;
 }
 
+p{
+  font-size: 12px;
+}
 .forgot__password, .verifyaccount, .error__notifier{
   font-size: 13px;
 }
-
 
 }
