@@ -55,12 +55,12 @@
     font-weight: 500;
     font-family: Sarala;
     font-size: 200%;
-    width: 420px;
+    width: 100%;
 }
 
 .startbidding__card p{
     font-family: Ruluko;
-    width: 75%;
+    width: 100%;
     margin-right: 14rem;
 }
 
