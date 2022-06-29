@@ -9,15 +9,14 @@ import axios from "axios";
 
 
 export default function DashBoard() {
-    // const access = JSON.parse(localStorage.getItem('tokens')).access;
-    // const transactions =  JSON.parse(localStorage.getItem('transactions'))
+     const[transactions, setTransactions] = useState("");
+     const access = JSON.parse(localStorage.getItem('tokens'));
 
-    // let items = {headers: {"Authorization": "Bearer "+access}}
-    // axios.get('https://test-gig.herokuapp.com/api/v1/crowdfunding/transaction/', items)
-    // .then(response =>{
-    //     console.log(response.data);
-    //     localStorage.setItem('transactions', JSON.stringify(response.data))
-    // })
+     let items = {headers: {"Authorization": "Token "+access}}
+    axios.get('https://test-gig.herokuapp.com/api/v1/crowdfunding/ipo/', items)
+    .then(response =>{
+    console.log(response.data);
+    })
   return (
     <>
     <Navbar/>

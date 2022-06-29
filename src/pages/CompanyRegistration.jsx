@@ -2,10 +2,11 @@ import gigmaoni from "../assets/gigamoni.svg";
 import undraw_finance from "../assets/finance_image.svg";
 import { useRef, useState, useEffect, useContext } from "react";
 import "../App.css";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 import axios from "axios";
 import { useForm } from "react-hook-form";
 import Loaders from "../components/loaders/Loaders";
+import { useNavigate } from "react-router-dom";
 
 
 const REGISTER_URL = "api/v1/accounts/register/person/";
@@ -25,6 +26,7 @@ export default function UserRegistration() {
   const [pwdFocus, setPwdFocus] = useState(false);
   const {register, formState: {errors}, handleSubmit} = useForm();
   const [message, setMessage] = useState("");
+  const navigate = useNavigate();
 
 
   
@@ -79,8 +81,8 @@ export default function UserRegistration() {
       .then(response =>{
        console.log(response)
        if(response.status === 201){
-        setMessage("Account Created")
         setLoading(false)
+        navigate('/login')
        }
       }).catch(error =>{
         if(error.response.status === 400){
