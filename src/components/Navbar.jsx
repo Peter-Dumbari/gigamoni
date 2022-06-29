@@ -30,7 +30,7 @@ export default function Navbar() {
   return (
     <>
       <div className="navbar__container">
-        <p>Wallet Ballance N{balance}</p>
+        <p>Wallet Ballance  ₦{balance}</p>
 
       </div>
       <div onClick={handleClick} className="menu-icon">

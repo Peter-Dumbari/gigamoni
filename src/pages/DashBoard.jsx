@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import React, { useState} from "react";
+import React, { useState, useEffect} from "react";
 import Realtime from "../assets/real-time-bidding 1.png";
 import image2 from "../assets/image2.png";
 import construction from "../assets/construction-bidding 1.png";
@@ -13,20 +13,22 @@ import axios from "axios";
 
 
 export default function DashBoard() {
-  const access = JSON.parse(localStorage.getItem('tokens')).access;
+  const access = JSON.parse(localStorage.getItem('tokens'));
   const user_data = JSON.parse(localStorage.getItem('user_data'));
   const [wallet, setWallet] = useState("");
 
-
-  let items = {headers: {"Authorization": "Bearer "+access}}
- axios.get("https://test-gig.herokuapp.com/api/v1/crowdfunding/dashboard/", items)
+  useEffect(() =>{
+    let items = {headers: {"Authorization": "Token "+access}}
+ axios.get("https://test-gig.herokuapp.com/api/v1/crowdfunding/companydash/", items)
  .then(response =>{
   setWallet(response.data);
-  localStorage.setItem('balance', wallet.wallet_amount);
+  console.log(response.data)
  })
- .catch(err =>{
-  console.warn(err)
+ .catch(error =>{
+  console.warn(error)
  })
+  },[])
+  
 
 
   return (<> <Navbar/>
@@ -100,7 +102,7 @@ export default function DashBoard() {
                 />
                 <div className="analytics__items">
                   <h6>Total Active IPOs</h6>
-                  <h6>{wallet.active_IPO}</h6>
+                  <h6>{wallet.total_ipo}</h6>
                 </div>
               </div>
               <div className="analytics">
@@ -113,7 +115,7 @@ export default function DashBoard() {
                 />
                 <div className="analytics__items">
                   <h6>Total Bid</h6>
-                  <h6>{wallet.total_IPO}</h6>
+                  <h6>{wallet.active_ipo}</h6>
                 </div>
               </div>
               <div className="analytics">

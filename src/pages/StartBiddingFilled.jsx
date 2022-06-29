@@ -15,24 +15,18 @@ export default function DashBoard() {
     <div className="dashboard__container__container">
     <div className="startBiddings">
           <div className="startBidding__container">
-            <div className="startbidding__card">
-              <img
-                src={NairaSign}
-                alt=""
-                width="100px"
-                height="100px"
-                className="startbbing__card__image"
-              />
-              <div className="card__text">
-                <h3>Asset Title</h3>
-                <p>
-                  This is the asset descriptin the user should know before the
-                  can bid
-                </p>
-                <button className="card__button"> view more</button>
-              </div>
-              <h4>N70,000,000.00</h4>
+          <div className="startbidding__card">
+            <img src={NairaSign} alt=""  width="100px" height="100px" className="startbbing__card__image" />
+            <div className="card__text">
+              <h3>Asset Title</h3>
+              <p>
+                This is the asset descriptin the user should know before the can
+                bid
+              </p>
+              <Link to='/startbiddings' style={{textDecortion: 'none'}}><button className="card__button"> view more</button></Link>
             </div>
+            <h4>N70,000,000.00</h4>
+          </div>
             <div className="gigasec__services_list">
               <div className="gigasec__header_text">
                 <h3>Gigasec Services Ltd</h3>

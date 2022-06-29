@@ -13,11 +13,11 @@
     background-color: #fff;
     padding: 2rem;
     margin-right: 1rem;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 .transaction__heading h4{
-    color: #0E8A5E;
+    color: #3C9DDA;
     font-weight: 600;
     font-family: Sarala;
 }
@@ -45,29 +45,29 @@
 .investiment__button{
     margin-right: 1rem;
     border-radius: 5px;
-    background-color: #0E8A5E;
+    background-color: #3C9DDA;
     padding: 3px 10px 3px  10px;
     color: #fff;
     font-weight: 500;
-    border-color: #0E8A5E;
+    border-color: #3C9DDA;
 }
 
 .withdraw__button{
     border-radius: 5px;
     padding: 3px 10px 3px  10px;
     font-weight: 500;
-    border-color: #0E8A5E;
-    color: #0E8A5E;
+    border-color: #3C9DDA;
+    color: #3C9DDA;
 }
 
 .investiment__button:hover{
     background-color: #fff;
-    color: #0E8A5E;
+    color: #3C9DDA;
     transition: all 0.2s linear;
 }
 
 .withdraw__button:hover{
-    background-color: #0E8A5E;
+    background-color: #3C9DDA;
     color: #fff;
     transition: all 0.2s linear;
 }
@@ -127,7 +127,7 @@ table{
 .transaction__last__row{
     background-color: #fff;
     padding: 35px 35px 2rem 35px;
-    border-radius: 5px;
+    border-radius: 15px;
     align-items: center;
     margin-right: 1rem;
     
@@ -298,13 +298,13 @@ table{
         border-radius: 5px;
         padding: 3px 10px 3px  10px;
         font-weight: 500;
-        border-color: #0E8A5E;
-        color: #0E8A5E;
+        border-color: #3C9DDA;
+        color: #3C9DDA;
     }
     
     .investiment__button:hover{
         background-color: #fff;
-        color: #0E8A5E;
+        color: #3C9DDA;
         transition: all 0.2s linear;
     }
     

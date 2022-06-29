@@ -4,13 +4,12 @@
   width: 100%;
 }
 
-.startbidding__card h4 {
-  color: #73a738;
+/* .startbbing__container h4{
+  color:#0e8a5e;
   font-family: Reggae One;
   margin: 2.7rem 0 0 2rem;
-  font-weight: 600;
-  width: 80%;
-}
+  font-weight: 700;
+} */
 
 .gigasec__container {
   display: flex;
