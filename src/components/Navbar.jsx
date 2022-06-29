@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useNavigate} from "react";
 import { Link } from "react-router-dom";
 import "../pages/Dashboard.css";
-import Logo from "../assets/Logo.png";
+import Logo from "../assets/gigamonilogo.jpeg";
 import axios from "axios";
 import { Navigate } from 'react-router'
 

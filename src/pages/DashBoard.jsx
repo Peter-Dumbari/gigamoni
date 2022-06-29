@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom"
 import React, { useState, useEffect} from "react";
-import Realtime from "../assets/real-time-bidding 1.png";
-import image2 from "../assets/image2.png";
-import construction from "../assets/construction-bidding 1.png";
+import Realtime from "../assets/create ipo.jpeg";
+import image2 from "../assets/my active ipo.jpeg";
+import construction from "../assets/startbidding image.jpeg";
 import BlueBall from "../assets/BlueEllipse.png";
 import RedBall from "../assets/RedEllipse.png";
 import YellowBall from "../assets/YellowEllipse.png";
