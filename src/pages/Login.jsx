@@ -142,7 +142,7 @@ export default function UserRegistration() {
             <br />
             <p style={{ float: "right" }}>
               No Account yet?{" "}
-              <Link to="/userregistration" className="signup__link">
+              <Link to="/companyregistration" className="signup__link">
                 Signup
               </Link>{" "}
             </p>

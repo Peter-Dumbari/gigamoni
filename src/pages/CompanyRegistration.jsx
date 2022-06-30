@@ -193,15 +193,6 @@ export default function UserRegistration() {
               </p>
               <br /> <br />
                   {loading ? <Loaders/> : <button onClick={handleSubmit(handleSubmiting)} className="Registration_btn">Register</button> }
-          <div className="or_line">
-            <hr className="line"/>
-            <p className="hr_p">Or</p>
-            <hr className="line"/>
-          </div>
-              {/* <button className="btn btn-success">Register</button> */}
-              <Link to="/userregistration" className="btn btn-default">
-                 Users Registration
-              </Link>
             </form></div>
           </div>
         </div>

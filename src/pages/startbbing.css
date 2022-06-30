@@ -223,7 +223,7 @@
 
   @media screen and (min-width: 120px) and (max-width:  400px){
     .startbbing__container{
-        margin: 0 0 0 0;
+        margin: 2rem 0 0 0;
         padding-left: 1rem;
         width: 100%;   
         height: fit-content; 
@@ -236,7 +236,8 @@
     
 .startbidding__header h2{
     font: 400;
-    font-size: 17px;
+    font-size: 15px;
+    margin: 0 0 0 -2rem;
     
 }
 
