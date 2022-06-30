@@ -45,7 +45,7 @@ export default function DashBoard() {
                                 <tr>
                                     <th>IPO</th>
                                     <th>Deposit</th>
-                                    <th>Expected</th>  ;l
+                                    <th>Expected</th>  
                                     <th>Duration</th>
                                     <th>Percentage</th>
                                     <th>Status</th>

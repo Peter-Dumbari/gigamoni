@@ -286,7 +286,7 @@ ul {
   }
   
   .profile__setting, .bank__setting{
-    color: #0e8a5e;
+    color: #0e8a5e;  
     text-decoration: none;
     display: block;
     text-align: left;
@@ -396,7 +396,7 @@ ul {
 }
 
 .card1, .card2, .card3 {
-    width: 85%;
+    width: 75%;
     height: 25%;
     padding: 11px;
     margin-bottom: 20px;
@@ -472,7 +472,7 @@ ul {
 
 .dashboard__medle__items{
     margin-left: 19rem;
-    margin-right: 2rem;
+    margin-right: -2%;
 }
 
 .dashboard__row h4{
@@ -518,7 +518,7 @@ ul {
 }
   }
   
-  @media screen and (min-width: 401px) and (max-width:  868px){
+  @media screen and (min-width: 401px) and (max-width:  866px){
     .navbar__container{
         width: 100%;
         position: sticky;
@@ -636,12 +636,13 @@ ul {
     width: 90%;
     padding: 17px;
     margin-bottom: 35px;
+    border-radius: 10px;
    
 }
 
 .card__image{
-    width: 50px;
-    height: 60px;
+    width: 60px;
+    height: 80px;
 }
 
 .middle_first{
@@ -650,8 +651,8 @@ ul {
 }
 
 .middle_first h1{
-    font-size: 25px;
-    margin: 0;
+    font-size: 20px;
+    margin: 2rem  0 0 0;
 }
 
 .middle_first p{
@@ -714,7 +715,7 @@ ul {
 
 
 .analytics__items{
-    margin-bottom: 18px;
+    margin-bottom: 40%;
 }
 .Ball{
     width: 10px;
