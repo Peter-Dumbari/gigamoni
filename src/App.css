@@ -88,7 +88,9 @@ error{
 
 h2 {
   padding: 0px;
-  margin: 0px;
+  margin: 0 0 3rem 0;
+  color: #0e8a5e;
+  margin-left: 2rem;
 }
 .card {
   margin-top: 30px;
@@ -236,7 +238,12 @@ a {
  padding: 5px;
  width: 70%;
  box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.25);
- margin-bottom: 2rem;
+ margin-bottom: 4rem;
+}
+
+.gigaimage{
+  width: 30%;
+  margin-left: 10rem;
 }
 
 .userregistration__box h5{
@@ -254,8 +261,7 @@ a {
 .angle__pic{
   width: 60px;
   height: 60px;
-  padding: 1rem;
-  background-color: #0e8a5e;
+  padding: 5px;
   border-radius: 10px;
   text-align: center;
 }
@@ -263,12 +269,10 @@ a {
 .greenball__pic{
   width: 60px;
   height: 60px;
-  padding: 10px;
+  padding: 5px;
   background-color: #fff;
   border-radius: 10px;
   text-align: center;
-  border: 3px solid;
-  border-color: #0e8a5e;
 }
 
 /* .menu-icon{

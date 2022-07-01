@@ -22,7 +22,7 @@ useEffect(()=>{
 axios.get('https://test-gig.herokuapp.com/api/v1/crowdfunding/ipo/', items)
 .then(response =>{
   setData(response.data.results)
-  console.warn(response)
+  console.warn(response.data.results)
   setLoading(false)
 
   if (response.data.results.length === 0){

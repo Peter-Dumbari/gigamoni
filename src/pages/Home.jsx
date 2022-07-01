@@ -2,8 +2,9 @@ import React from "react";
 import "../App.css";
 import welcome from "../assets/welcome.svg";
 import { Link } from "react-router-dom";
-import users from "../assets/angle.png";
-import greenball from "../assets/greenball.png";
+import users from "../assets/profile.png";
+import greenball from "../assets/office-building.png";
+import Logo from "../assets/gigamonilogo.jpeg"
 
 export default function Home() {
   return (
@@ -24,11 +25,9 @@ export default function Home() {
         />
       </div>
       <div className="body">
+      <img src={Logo} alt="" className="gigaimage"/>
         <div className="home_items"><h2>Choose your account type</h2>
-        <p>
-          This is a dummy text that will be replaced by another text. <br /> It
-          is a placeholder that used beacuse real text are not available
-        </p>
+       
         <Link  style={{ textDecoration: 'none'}} to="/userregistration">
           <div className="userregistration__box">
             <img src={users} alt="" className="angle__pic" />
