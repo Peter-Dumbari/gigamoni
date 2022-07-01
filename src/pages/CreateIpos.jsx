@@ -40,6 +40,9 @@ function CreateIpos() {
         .then(response =>{
             console.log(response)
             setLoading(false)
+          if(response.status === 201){
+            alert("Your IPOs have been successfully created!")
+          }
           
         })
 

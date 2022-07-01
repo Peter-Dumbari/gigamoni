@@ -23,7 +23,6 @@ export default function DashBoard() {
               </div>
             </div >
             </div>
-            <Link to="/startbiddings">Samples</Link>
           </div>
       </div>
       </>

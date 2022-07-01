@@ -6,6 +6,7 @@ import NairaSign from '../assets/nairasign.png';
 import Navbar from "../components/Navbar";
 import axios from "axios";
 import Loaders2 from "../components/loaders/Loaders2";
+import { useNavigate } from "react-router-dom";
 
 
 
@@ -13,6 +14,7 @@ export default function CreatedIpos() {
 const [loading, setLoading] = useState(false)
 const[data, setData] =  useState([]);
 const access = JSON.parse(localStorage.getItem('tokens'));
+const navigate = useNavigate();
 
 useEffect(()=>{
   setLoading(true)
@@ -20,8 +22,13 @@ useEffect(()=>{
 axios.get('https://test-gig.herokuapp.com/api/v1/crowdfunding/ipo/', items)
 .then(response =>{
   setData(response.data.results)
-  // console.log(response.data.results)
+  console.warn(response)
   setLoading(false)
+
+  if (response.data.results.length === 0){
+    navigate('/emptystartbidding')
+    // console.log("never end")
+  }
 })
 
 .catch(error =>{
@@ -55,8 +62,6 @@ axios.get('https://test-gig.herokuapp.com/api/v1/crowdfunding/ipo/', items)
             )
         }
             </div>
-    
-            <p className="clear_all_link"><Link to="/emptystartbidding">X</Link></p>
           </div>
           </div>
         </>
