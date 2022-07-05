@@ -12,8 +12,9 @@ export default function Home() {
       <div className="sidenav">
         <h1>Welcome</h1>
         <p>
-          This is a dummy text that will be replaced by another text. It is a
-          placeholder that used beacuse real text are not available
+        Start investing and get a reward for your returns
+        Gigamoni a trusted platform that gives you 
+
         </p>
 
         <img
@@ -25,9 +26,8 @@ export default function Home() {
         />
       </div>
       <div className="body">
-      <img src={Logo} alt="" className="gigaimage"/>
         <div className="home_items"><h2>Choose your account type</h2>
-       
+        
         <Link  style={{ textDecoration: 'none'}} to="/userregistration">
           <div className="userregistration__box">
             <img src={users} alt="" className="angle__pic" />

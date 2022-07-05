@@ -90,6 +90,7 @@
     flex-direction: row;
     height: 30px;
     width: 100%;
+    margin-left: 65%;
 }
 
 .search__container form{

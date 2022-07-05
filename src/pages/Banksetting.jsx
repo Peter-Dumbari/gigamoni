@@ -9,23 +9,23 @@ import Navbar from "../components/Navbar";
 export default function DashBoard() {
   return (
     <>
-    <Navbar/>
-     <div className="dashboard__container__container">
-     <div className="banksetting">
-        <div className="banksttng__header">
-          <h5>Bank Setting</h5>
+      <Navbar />
+      <div className="banksetting">
+        <div className="dasboard__container__container">
+          <div className="left_setter">
+            <h4 style={cl}>Bank setting</h4>
+          </div>
           <div className="banksettings">
             <img src={Image} alt="" className="void__image" />
             <h4 className="image__text">No Bank added yet</h4>
+            <br />
+            <br />
             <Link to="/addBank">
-              <div className="button_div">
-                <button className="btn btn-success">Add Bank</button>
-              </div>
+              <button className="btn btn-success">Add Bank</button>
             </Link>
           </div>
         </div>
       </div>
-     </div>
     </>
   );
 }

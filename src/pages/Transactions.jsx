@@ -39,13 +39,13 @@ export default function DashBoard() {
                           </div>
                       </div>   
                             <div className="transactions__table">
-                            <table>
+                            <table className="table ">
                                 <tr>
-                                    <th>IPO ID</th>
-                                    <th>Asset Amount</th>
-                                    <th>Repay Amount</th>  
-                                    <th>Amount Received</th>  
-                                    <th>Status</th>
+                                    <th scope="col">IPO ID</th>
+                                    <th scope="col">Asset Amount</th>
+                                    <th scope="col">Repay Amount</th>  
+                                    <th scope="col">Amount Received</th>  
+                                    <th scope="col">Status</th>
                                 </tr>
                             { data.map((items)=>
                                 <tr>

@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom"
 import React, { useState, useEffect} from "react";
-import Realtime from "../assets/create ipo.jpeg";
-import image2 from "../assets/my active ipo.jpeg";
-import construction from "../assets/startbidding image.jpeg";
+import Realtime from "../assets/bugmoney.png";
+import image2 from "../assets/scatteredmoney.png";
+import construction from "../assets/newmoney.png";
 import BlueBall from "../assets/BlueEllipse.png";
 import RedBall from "../assets/RedEllipse.png";
 import YellowBall from "../assets/YellowEllipse.png";
@@ -16,6 +16,8 @@ export default function DashBoard() {
   const access = JSON.parse(localStorage.getItem('tokens'));
   const user_data = JSON.parse(localStorage.getItem('user_data'));
   const [wallet, setWallet] = useState("");
+  const [verified, setVerified] = useState("");
+  const [notverified, setNotVerified] = useState("");
 
   useEffect(() =>{
     let items = {headers: {"Authorization": "Token "+access}}
@@ -23,6 +25,8 @@ export default function DashBoard() {
  .then(response =>{
   setWallet(response.data);
   console.log(response.data)
+  localStorage.setItem("verified", response.data.verified);
+
  })
  .catch(error =>{
   console.warn(error)

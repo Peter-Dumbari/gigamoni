@@ -1,6 +1,7 @@
 .banksetting{
     margin: 2rem 0 0 18rem;
     height: 85vh;
+    text-align: center;
 }
 
 .banksttng__header h5{
@@ -11,10 +12,10 @@
 }
 
 .banksttng__header{
-    text-align: center;
+    align-items: center;
     background-color: #fff;
     padding: 3rem;
-    width: 550px;
+    width: 100%;
     border-radius: 15px;
 }
 
@@ -23,7 +24,7 @@
 }
 
 .void__image{
-    width: 250px;
+    width: 50%;
 }
 
 .image__text{
@@ -33,9 +34,6 @@
     font-size: 2rem;
 }
 
-.btn-success{
-    text-align: center;
-}
 
 .button_div{
     width: 100%;
@@ -45,8 +43,9 @@
 
 @media (min-width: 867px) and (max-width: 1562px){
     .banksetting{
-        margin: 2rem 0 0 30rem;
+        margin: 2rem 0 0 20rem;
         height: 85vh;
+        text-align: center;
     }
 
 
@@ -58,9 +57,21 @@
 .banksttng__header{
     text-align: center;
     padding: 3rem;
-    width: 500px;
 }
 
+.banksettings{
+text-align: center;
+width: 30%;
+padding: 2rem;
+margin-left: 10rem;
+}
+
+.left_setter{
+    left: 0;
+    text-align: left ;
+    width: 20%;
+
+}
 
 .banksttng__header h5{
     margin: 0 2rem 1rem 0;
@@ -68,7 +79,7 @@
 
 
 .void__image{
-    width: 250px;
+    width: 70%;
     margin-bottom: 2.8rem;
 }
 
@@ -81,14 +92,6 @@
 }
 
 
-.button_div{
-    width: 150px;
-    margin-left: 1.5rem;
-    margin-top: 3rem;
-    height: 30px;
-   
-
-}
 }
 
 @media screen and (min-width: 120px) and (max-width:  868px){

@@ -118,9 +118,6 @@
 
 ::placeholder {
   color: #0e8a5e;
-  text-align: center;
-  font-size: 100%;
-  font-weight: 600;
 }
 
 .invest_button {
@@ -327,7 +324,6 @@
   
   ::placeholder {
     font-size: 12px;
-    font-weight: 600;
   }
 }
 @media screen and (min-width: 120px) and (max-width:  400px){

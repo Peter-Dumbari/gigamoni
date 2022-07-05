@@ -42,13 +42,10 @@ error{
   font-style: italic;
 }
 .userImage {
-  margin-top: 20px;
+  margin-top: 70px;
   width: 100%;
 }
 
-::placeholder{
-  float: left;
-}
 
 .sidenav {
   height: 100vh;
@@ -89,8 +86,6 @@ error{
 h2 {
   padding: 0px;
   margin: 0 0 3rem 0;
-  color: #0e8a5e;
-  margin-left: 2rem;
 }
 .card {
   margin-top: 30px;
@@ -247,7 +242,7 @@ a {
 }
 
 .userregistration__box h5{
-  font-size: medium;
+  font-size: 1.5rem;
   text-decoration: none;
 }
 
@@ -256,7 +251,11 @@ a {
 }
 
 .userbox_text{
-  margin-left: 4rem;
+  margin-left: 3rem;
+}
+
+.userbox_text:hover{
+  color: #0e8a5e;
 }
 .angle__pic{
   width: 60px;
@@ -287,13 +286,13 @@ a {
 .col-lg-8 h4{
   color: green;
 text-align: center;
-font-size: 2rem;
+font-size: 1.5rem;
 
 }
 
 .col-lg-8{
-  margin-top: 6rem;
-  margin-bottom: 3rem;
+  margin-top: 3.7rem;
+  margin-bottom: 1rem;
 }
 
 .loginheading_paragraph{

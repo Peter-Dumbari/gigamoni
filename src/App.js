@@ -19,6 +19,7 @@ import Verifyemail from "./pages/Verifyemail";
 import { PrivateRoutes } from "./components/Privateroutes";
 import Logout from "./pages/Logout ";
 import CreateIpos from "./pages/CreateIpos";
+import CompanyVerification from "./pages/CompanyVerification/CompanyVerification";
 import "./App.css";
 
 function App() {
@@ -34,6 +35,10 @@ function App() {
         ></Route>
         <Route path="/verifyemail" element={<Verifyemail />}></Route>
         <Route path="/confirmEmail" element={<Confirmemail />}></Route>
+        <Route
+          path="/CompanyVerification"
+          element={<CompanyVerification />}
+        ></Route>
         <Route element={<PrivateRoutes />}>
           <Route path="/dashboard" element={<DashBoard />}></Route>
           <Route path="/startbiding" element={<Startbiding />}></Route>

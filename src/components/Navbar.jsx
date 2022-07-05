@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useNavigate} from "react";
 import { Link } from "react-router-dom";
 import "../pages/Dashboard.css";
-import Logo from "../assets/gigamonilogo.jpeg";
+import Logo from "../assets/Logo.png";
 import axios from "axios";
 import { Navigate } from 'react-router'
 
@@ -9,7 +9,7 @@ import { Navigate } from 'react-router'
 export default function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
-
+  
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
@@ -26,11 +26,11 @@ export default function Navbar() {
   }, []);
 
   window.addEventListener("resize", showButton);
-  const balance = localStorage.getItem('balance')
+  const Notifier = localStorage.getItem('verified')
   return (
     <>
       <div className="navbar__container">
-        <p>Wallet Ballance  ₦{balance}</p>
+        <p>{Notifier}</p>
 
       </div>
       <div onClick={handleClick} className="menu-icon">
@@ -61,15 +61,7 @@ export default function Navbar() {
             <Link to="/startbiding" className="nav-links" onClick={closeMobileMenu}>
               IPOs
             </Link>
-            <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-              Wallet
-            </Link>
-
-            <Link to="/logout" className="nav-links" onClick={closeMobileMenu}>
-              Logout
-            </Link>
-          </li>
-          <li className="settings">
+            <li className="settings">
             <h5 className="dropbtn">Settings</h5>
             <div class="dropdown-content">
               <Link to="/profile" className="profile__setting">
@@ -79,6 +71,10 @@ export default function Navbar() {
                 Bank Setting
               </Link>
             </div>
+          </li>
+            <Link to="/logout" className="nav-links" onClick={closeMobileMenu}>
+              Logout
+            </Link>
           </li>
         </ul>
       </div>

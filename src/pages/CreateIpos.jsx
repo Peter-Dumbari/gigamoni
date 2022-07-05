@@ -33,7 +33,6 @@ function CreateIpos() {
         items.append("asset_title", assettitle)
         
         console.log (items);
-        console.log(items.po)
         const info = {headers: {"Authorization": "Token "+access}}
         console.log(info);
         axios.post('https://test-gig.herokuapp.com/api/v1/crowdfunding/ipo/', items, info)

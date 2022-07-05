@@ -9,6 +9,7 @@ import Loaders from "../components/loaders/Loaders";
 import { useNavigate } from "react-router-dom";
 
 
+
 const REGISTER_URL = "api/v1/accounts/register/person/";
 const VALIDEMAIL = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 const VALIDPASSWORD = /^ (?=.* [A - Za - z])(?=.*\d)[A - Za - z\d]{ 8, }$/;
@@ -73,20 +74,22 @@ export default function UserRegistration() {
       password: data.password,
     };
     console.log(userdata);
+    console.log(email);
   
       await axios
       .post(
-       'https://test-gig.herokuapp.com/api/v1/accounts/register/company1/',
-        userdata)
+       'https://test-gig.herokuapp.com/api/v1/accounts/register/company/', userdata
+  )
       .then(response =>{
        console.log(response)
        if(response.status === 201){
         setLoading(false)
-        navigate('/login')
+        navigate('/CompanyVerification')
        }
       }).catch(error =>{
+        console.log(error);
         if(error.response.status === 400){
-          setError("This Email already exit")
+          setError('email already exit')
           setLoading(false)
         }
 
@@ -188,11 +191,11 @@ export default function UserRegistration() {
                   {errors.password?.type === "maxLength" && "The password is should not be more than 20 digits"}
                 </error>
                 <br />
-              <p style={{ float: "right" }}>
-                Already a Registered? <Link to="/login" className="login__link">Login</Link>{" "}
-              </p>
+                <p style={{ float: "right" }}>
+                Already Register? <Link to="/login" className="login__link">Login</Link>{" "}
+                  </p>
               <br /> <br />
-                  {loading ? <Loaders/> : <button onClick={handleSubmit(handleSubmiting)} className="Registration_btn">Register</button> }
+                  {loading ? <Loaders/> : <button onClick={handleSubmit(handleSubmiting)} className="btn btn-success">Register</button> }
             </form></div>
           </div>
         </div>
