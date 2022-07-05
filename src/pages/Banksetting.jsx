@@ -13,7 +13,7 @@ export default function DashBoard() {
       <div className="banksetting">
         <div className="dasboard__container__container">
           <div className="left_setter">
-            <h4 style={cl}>Bank setting</h4>
+            <h4 style={{color:"green"}}>Bank setting</h4>
           </div>
           <div className="banksettings">
             <img src={Image} alt="" className="void__image" />
