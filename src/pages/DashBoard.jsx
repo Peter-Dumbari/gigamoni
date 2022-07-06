@@ -12,7 +12,12 @@ import Navbar from "../components/Navbar";
 import axios from "axios";
 
 
+
+
 export default function DashBoard() {
+
+  const Notifier = localStorage.getItem('verified')
+
   const access = JSON.parse(localStorage.getItem('tokens'));
   const user_data = JSON.parse(localStorage.getItem('user_data'));
   const [wallet, setWallet] = useState("");
@@ -24,7 +29,8 @@ export default function DashBoard() {
  axios.get("https://test-gig.herokuapp.com/api/v1/crowdfunding/companydash/", items)
  .then(response =>{
   setWallet(response.data);
-  console.log(response.data)
+  console.warn(response)
+  console.log(response.data.verified)
   localStorage.setItem("verified", response.data.verified);
 
  })
@@ -61,7 +67,7 @@ export default function DashBoard() {
             </div>
           </Link>
 
-          <Link to="" style={{ textDecoration: "none" }}>
+          <Link to="/startbiding" style={{ textDecoration: "none" }}>
           <div className="card2">
             <div className="cardText">
               <h3>Current IPOs</h3>
@@ -76,18 +82,22 @@ export default function DashBoard() {
             />
           </div></Link>
       
+          <Link to='/transactions' style={{ textDecoration: "none" }}>
+
           <div className="card3">
             <div className="cardText">
               <h3>Transaction History</h3>
+              <p>The list of successfull transactions</p>
             </div>
             <img
               src={construction}
-              alt="/"
+              alt="/transactions"
               width="200px"
               height="100px"
               className="card__image"
             />
           </div>
+          </Link>
         </div>
         <div className="dashboard__last__items">
           <div className="fund_wallet__button">
@@ -105,8 +115,8 @@ export default function DashBoard() {
                   className="Ball"
                 />
                 <div className="analytics__items">
-                  <h6>Total Active IPOs</h6>
-                  <h6>{wallet.total_ipo}</h6>
+                  <h6>Active IPOs</h6>
+                  <h6>{wallet.active_ipo}</h6>
                 </div>
               </div>
               <div className="analytics">
@@ -118,8 +128,8 @@ export default function DashBoard() {
                   className="Ball"
                 />
                 <div className="analytics__items">
-                  <h6>Total Bid</h6>
-                  <h6>{wallet.active_ipo}</h6>
+                  <h6>Total IPOs</h6>
+                  <h6>{wallet.total_ipo}</h6>
                 </div>
               </div>
               <div className="analytics">
@@ -131,8 +141,8 @@ export default function DashBoard() {
                   className="Ball"
                 />
                 <div className="analytics__items">
-                  <h6>Total withdraw</h6>
-                  <h6>{wallet.total_amount_withdrawn}</h6>
+                  <h6>Total Requested</h6>
+                  <h6>{wallet.total_requested}</h6>
                 </div>
               </div>
               <div className="analytics">

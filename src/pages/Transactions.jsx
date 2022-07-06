@@ -4,9 +4,11 @@ import "../pages/Transactions.css";
 import NairaSign from "../assets/nairasign.png";
 import Navbar from "../components/Navbar";
 import axios from "axios";
+import swal from 'sweetalert'
 
 
 export default function DashBoard() {
+    const Notifier = localStorage.getItem('verified')
     const[data, setData] =  useState([]);
     const access = JSON.parse(localStorage.getItem('tokens'));
 
@@ -21,7 +23,15 @@ export default function DashBoard() {
   return (
     <>
     <Navbar/>
-     <div className="dashboard__container__container">
+    {Notifier ===  'NOT YET VERIFIED'? 
+           swal({
+              title: "Account Not yet Verified",
+              text: "verified to get access this page",
+              icon: "warning",
+            }).then(function() {
+              window.location = "/dashboard";
+          }) : 
+          <div className="dashboard__container__container">
           <div className="transaction__container">
               <div className="transaction__items">
                   <div className="transactions">
@@ -62,24 +72,11 @@ export default function DashBoard() {
                             
             
                   </div>
-                  <div className="transaction__last__row">
-                        <img src={NairaSign} alt="" className="row__image"/>
-                        <div className="row__text">
-                            <h5>N900,000.00</h5>
-                            <h6>Total Invesmtent</h6>
-                        </div>
-                        <div className="row__text">
-                            <h5>N900,000.00</h5>
-                            <h6>Withdrawals</h6>
-                        </div>
-                        <div className="row__text">
-                            <h5>N900,000.00</h5>
-                            <h6>Deposit</h6>
-                        </div>
-                  </div>
+                  
               </div>
           </div>
-      </div>
+      </div>}
+     
     </>
   );
 }

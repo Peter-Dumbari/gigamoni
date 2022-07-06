@@ -7,10 +7,13 @@ import Navbar from "../components/Navbar";
 import axios from "axios";
 import Loaders2 from "../components/loaders/Loaders2";
 import { useNavigate } from "react-router-dom";
+import swal from 'sweetalert'
 
 
 
 export default function CreatedIpos() {
+  const Notifier = localStorage.getItem('verified')
+
 const [loading, setLoading] = useState(false)
 const[data, setData] =  useState([]);
 const access = JSON.parse(localStorage.getItem('tokens'));
@@ -39,6 +42,13 @@ axios.get('https://test-gig.herokuapp.com/api/v1/crowdfunding/ipo/', items)
   return (
         <>
         <Navbar/>
+        {Notifier === 'NOT YET VERIFIED'? swal({
+              title: "Account Not yet Verified",
+              text: "verified to get access this page",
+              icon: "warning",
+            }).then(function() {
+              window.location = "/dashboard";
+          }) :
           <div className="dashboard__container__container">
           <div className="startbbing__container">
             <div className="startbidding__header">
@@ -64,6 +74,7 @@ axios.get('https://test-gig.herokuapp.com/api/v1/crowdfunding/ipo/', items)
             </div>
           </div>
           </div>
+          }
         </>
   );
 }

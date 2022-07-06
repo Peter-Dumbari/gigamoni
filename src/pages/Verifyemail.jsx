@@ -52,8 +52,6 @@ export default function ConfirmEmail() {
   return (
     <div className="confirmEmail__container">
       <div className="confirmEmail__Item">
-        <img src={Logo} className="giga_Logo" />
-
         <h3 className="confirmEmail__header">Email Confirmation</h3>
         <form >
         <p className="error__notifier">{error}</p>
@@ -83,7 +81,7 @@ export default function ConfirmEmail() {
                   {errors.otp?.type === 'maxLength' && 'OTP cannt be more than 6 digits'}
                 </error>
           <br />
-          { loading ? <Loaders/> : <button onClick={handleSubmit(handleSubmiting)} className="Registration_btn">
+          { loading ? <Loaders/> : <button onClick={handleSubmit(handleSubmiting)} className="btn btn-success">
             Register
           </button> }
         </form>

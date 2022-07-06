@@ -4,6 +4,7 @@ import undraw_finance from "../../assets/finance_image.svg";
 import gigmaoni from "../../assets/gigamoni.svg"
 import swal from 'sweetalert';
 import axios from 'axios';
+import Loaders from '../../components/loaders/Loaders';
 
 
 
@@ -11,38 +12,56 @@ export default function CompanyVerification() {
   const [utilityBill, setUtilityBil] = useState('')
   const [referenceLetter, setReferenceLetter] = useState('')
   const [contactPersonName, setContactPersonName] = useState('')
-  const [contactPersonEmail, setContactPersonEmail] = useState('')
+  const [contact_person_email, setContact_person_email] = useState('')
   const [contactPersonNumber, setContactPersonNumber] = useState('')
+  const [loading, setLoading] = useState(false);
 
 
-  const HandleSubmit= async(e)=>{
+  const HandleSubmit= (e)=>{
+    setLoading(true)
     e.preventDefault();
 
-    // swal({
-    //   title: "Account Created Successfully!",
-    //   text: "You clicked the button!",
-    //   icon: "success",
-    // });
+    
 
     let items = {}
+    const Email = localStorage.getItem('email')
+    
+    items =  new FormData()
 
-         items = new FormData();
-        items.append("utility_bill", utilityBill);
-        items.append("reference_letter", referenceLetter)
-        items.append("contact_person_name", contactPersonName)
-        items.append("contact_person_email", contactPersonEmail)
-        items.append("contact_person_number", contactPersonNumber)
+   items.append('utility_bill', utilityBill)
+   items.append('reference_letter', referenceLetter)
+   items.append('contact_person_name', contactPersonName)
+   items.append('contact_person_number', contactPersonNumber)
+   items.append('contact_person_email', contact_person_email)
 
-        console.log(items);
-        await axios
-        .post(
-         'https://test-gig.herokuapp.com/api/v1/accounts/register/company1/', items)
-        .then(response =>{
-          console.log(response)
-        })
-        .catch(error=>{
-          console.log(error);
-        })
+    console.log(items)
+
+     axios
+      .post(
+       `https://test-gig.herokuapp.com/api/v1/accounts/register/company1/`, items, 
+       { params: 
+        {
+        email:Email,
+        }} 
+      )
+       .then(response =>{
+        if(response.statusText === 'OK'){
+          setLoading(false);
+            swal({
+              title: "Account Created Successfully!",
+              text: "You clicked the button!",
+              icon: "success",
+            })  .then(function() {
+              window.location = "verifyemail";
+          }) 
+        }
+        console.log(response)
+      })
+      .catch(error=>{
+        setLoading(false)
+        console.log(error);
+      })
+       
   }
 
     return (
@@ -58,7 +77,7 @@ export default function CompanyVerification() {
                   <label>Upload your Utility bill</label>
                   <input
                     type="file"
-                    accept='jpeg'
+                    accept='image'
                     id="companyname"
                     className="form-control"
                     placeholder="Utility bill "
@@ -70,7 +89,7 @@ export default function CompanyVerification() {
                    <label>Refrence Letter in PDF format</label>
                   <input
                     type="file"
-                    accept='pdf'
+                    accept='PDF'
                     id="companyaddress"
                     className="form-control"
                     placeholder="Reference letter "
@@ -89,7 +108,7 @@ export default function CompanyVerification() {
                   <input type="text" 
                   className="form-control" 
                   placeholder="Contact person email"
-                  onChange={(e)=>{setContactPersonEmail(e.target.value)}} 
+                  onChange={(e)=>{setContact_person_email(e.target.value)}} 
                   required
                    />
                   <br />
@@ -105,7 +124,7 @@ export default function CompanyVerification() {
                     <Link to="/login" className="login__link">Skip</Link>{" "}
                   </p>
                   <br /> <br />
-                  <button className='btn btn-success' onClick={HandleSubmit}>Continue</button>
+                  {loading? <Loaders/> : <button className='btn btn-success' onClick={HandleSubmit}>Continue</button>}
                 </form></div>
               </div>
             </div>

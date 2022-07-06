@@ -80,7 +80,8 @@ export default function UserRegistration() {
       </div>
       <div className="row">
         <div className="col-lg-6">
-          <div className="col-lg-8">
+         <div className="login_container">
+         <div className="col-lg-8">
             <h4>Welcome!</h4>
 
          
@@ -138,8 +139,6 @@ export default function UserRegistration() {
                
             
             </form>
-            <br />
-            <br />
             <p style={{ float: "right" }}>
               No Account yet?{" "}
               <Link to="/companyregistration" className="signup__link">
@@ -147,6 +146,7 @@ export default function UserRegistration() {
               </Link>{" "}
             </p>
           </div>
+         </div>
         </div>
         <div className="col-lg-6">
           <br />

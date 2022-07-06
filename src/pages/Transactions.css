@@ -115,7 +115,6 @@ tr th{
 
 tr td{
     color: #808080;
-    border-bottom:  0.30px solid;
     text-align: center;
     width: 100%;
     padding: 10px 1% 10px 1%;
@@ -361,9 +360,9 @@ table{
     tr td{
         padding: 5px 10px 5px 10px;
         color: #808080;
-        border-bottom:  0.30px solid;
         text-align: center;
         width: 20%;
+        border-color: #fff;
     }
     
     .completed{
@@ -505,7 +504,6 @@ padding-right: 6rem;
     tr td{
         padding: 15px 0% 0px 7px;
         color: #808080;
-        border-bottom:  0.30px solid;
         margin-left: 5%;
         font-size: small;
     }

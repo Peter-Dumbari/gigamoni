@@ -27,6 +27,8 @@ export default function Navbar() {
 
   window.addEventListener("resize", showButton);
   const Notifier = localStorage.getItem('verified')
+  console.log(Notifier)
+  
   return (
     <>
       <div className="navbar__container">

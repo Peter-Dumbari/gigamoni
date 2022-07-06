@@ -43,7 +43,7 @@ error{
 }
 .userImage {
   margin-top: 70px;
-  width: 100%;
+  width: 81%;
 }
 
 
@@ -198,14 +198,19 @@ a {
 
 .confirmEmail__Item{
   text-align: center;
-  width: 500px;
-  margin: 5rem 10rem 0 25rem;
+  width: 22%;
+  margin: 5rem 10rem 0 29rem;
   justify-content: space-between;
+}
+.login_container{
+  margin-top: 6rem;
+  width: 90%;
 }
 
 .confirmEmail__header{
   padding: 2rem;
   color: #0e8a5e;
+  font-size: 1.5rem;
 }
 .resend__p{
   padding: 0 0 3rem 0;
@@ -354,7 +359,10 @@ font-size: 1.5rem;
   width: 250px;
 }
 
-
+.login_container{
+  margin-top: 2rem;
+  width: 90%;
+}
 
 .companyreg__container{
   display: flex;
@@ -421,6 +429,7 @@ font-size: 1.5rem;
 .company__image__container{
   margin-left: 12%;
 }
+
 
 }
 @media screen and (min-width: 401px) and (max-width:  868px){
@@ -518,6 +527,7 @@ width: 100%;
   font-size: 20px;
 }
 
+
 .userregistration__box{
   border: 2px solid;
   padding: 2px;
@@ -593,6 +603,12 @@ width: 100%;
 
 .confirmEmail__container{
   align-items: center;
+}
+
+
+.login_container{
+  margin-top: 2rem;
+  width: 85%;
 }
 } 
 
@@ -738,7 +754,6 @@ width: 100%;
 
 .btn-success{
   margin-bottom: 2rem;
-  width: auto;
 }
 
 .confirmEmail__Item{
@@ -778,8 +793,11 @@ width: 100%;
   margin: 0;
   padding-bottom: 3rem;
   width: 100%;
+}
 
- 
+.login_container{
+  margin-top: 0;
+  width: 100%;
 }
 
 
@@ -876,6 +894,10 @@ width: 100%;
   padding: 5px;
   font-weight: 600;
   width: 100%;
+}
+.loginheading_paragraph{
+  font-size: 12px;
+  margin-bottom: 1px;
 }
 
 p{

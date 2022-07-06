@@ -74,7 +74,8 @@ export default function UserRegistration() {
       password: data.password,
     };
     console.log(userdata);
-    console.log(email);
+    console.log(data.email);
+    localStorage.setItem('email', data.email)
   
       await axios
       .post(
