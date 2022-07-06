@@ -15,10 +15,27 @@ export default function DashBoard() {
         <div className="profile__container">
           <div className="profiles">
           <div className="profile__items">
-            <h3>Add Bank</h3>
+            <h3>Settings</h3>
           </div>
           <div className="profile__list">
             <form>
+              <div className="settings_form">
+              <div className="formscontainer1">
+                  <label>BVN</label>
+                  <input type="" className="form-control" required/>
+                  <label>Account Name:</label>
+                  <input type="text" className="form-control" required />
+      
+                </div>
+                <div className="formscontainer2">
+                  <label>BVN</label>
+                  <input type="" className="form-control" required/>
+                  <label>Account Name:</label>
+                  <input type="text" className="form-control" required/>
+                </div>
+              </div>
+                <button className="btn btn-primary">SEND</button>
+{/* 
               <div className="form__items">
                 <div className="firstline">
                   <label htmlFor="firstname">BVN:</label>
@@ -62,8 +79,7 @@ export default function DashBoard() {
                     required
                   />
                 </div>
-              </div>
-              <button className="btn btn-primary">Add Bank</button>
+              </div> */}
             </form>
           </div>
           </div>

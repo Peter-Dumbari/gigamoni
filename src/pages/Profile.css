@@ -1,13 +1,31 @@
 .profile__container{
-    margin: 2rem 0rem 2rem 40%;
+    margin: 2rem 0rem 2rem 30%;
     width: 100%;
 
+}
+
+
+.settings_form{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 3%;
+}
+
+.formscontainer1{
+    width: 35%;
+    margin: 0 7% 0 0;
+}
+
+.formscontainer2{
+    width: 35%;
 }
 
 .btn-primary{
     width: 20%;
     padding: 0;
     height: 40px;
+    margin-top: 2rem;
 }
 
 .form__items input{

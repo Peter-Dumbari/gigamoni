@@ -63,17 +63,13 @@ export default function Navbar() {
             <Link to="/startbiding" className="nav-links" onClick={closeMobileMenu}>
               IPOs
             </Link>
-            <li className="settings">
-            <h5 className="dropbtn">Settings</h5>
-            <div class="dropdown-content">
-              <Link to="/profile" className="profile__setting">
-                Profile Setting
-              </Link>
-              <Link to="/banksetting" className="bank__setting">
-                Bank Setting
-              </Link>
-            </div>
-          </li>
+          </li>            
+          <li className="nav-item">
+            <Link to="/addBank" className="nav-links" onClick={closeMobileMenu}>
+              Settings
+            </Link>
+          </li>            
+          <li>
             <Link to="/logout" className="nav-links" onClick={closeMobileMenu}>
               Logout
             </Link>
