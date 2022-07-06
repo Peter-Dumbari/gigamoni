@@ -6,11 +6,12 @@ import axios from "axios";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import Loaders from "../components/loaders/Loaders";
+import swal from "sweetalert";
 
 
 
 export default function ConfirmEmail() {
-  const [email, setEmail] = useState("");
+  const Email = localStorage.getItem('email')
   const [otp, setOtp] = useState("");
   const [error, setError] = useState("");
   const [optError, setOptError] = useState("")
@@ -19,10 +20,7 @@ export default function ConfirmEmail() {
 
   const {register, formState:{errors}, handleSubmit} = useForm()
 
-  const handleemail = (event) => {
-    const email = event.target.value;
-    setEmail(email);
-  };
+  
 
   const handleotp = (event) => {
     const otp = event.target.value;
@@ -31,12 +29,26 @@ export default function ConfirmEmail() {
 
   const handleSubmiting = async (data) => {
     const items = {
-      email: data.email,
+      email: Email,
       otp: parseInt (data.otp)
     };
     setLoading(true);
     console.log(items);
     let result = await axios.post("https://test-gig.herokuapp.com/api/v1/accounts/verify/", items)
+
+    .then(response =>{
+      console.log(response);
+      if(response.statusText === 'OK'){
+        swal({
+          title: "Email confirmation successful",
+          text: "you can now login with the correct credentials",
+          icon: "success",
+        })
+        .then(function() {
+          window.location = "/login";
+      })
+      }
+    })
     
     .catch(error =>{
         console.log(error.response.data)
@@ -56,18 +68,6 @@ export default function ConfirmEmail() {
         <form >
         <p className="error__notifier">{error}</p>
           <input
-            type="email"
-            className="form-control"
-            placeholder="Email Address"
-            {...register("email", {required: true, pattern: /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i})}
-          />
-           <error>
-                  {errors.email?.type === 'required' && 'Email is required'}
-                  {errors.email?.type === 'pattern' && 'Entered Email is Wrong format'}
-                 
-          </error>
-          <br />
-          <input
             type="number"
             className="form-control"
             placeholder="Enter OTP Code Here"
@@ -82,20 +82,9 @@ export default function ConfirmEmail() {
                 </error>
           <br />
           { loading ? <Loaders/> : <button onClick={handleSubmit(handleSubmiting)} className="btn btn-success">
-            Register
+            Send
           </button> }
         </form>
-        <div className="or_line">
-          <hr className="line" />
-          <p className="hr_p">Or</p>
-          <hr className="line" />
-        </div>
-
-        <div className="or_userRegistration">
-          <Link to="/userregistration">
-            <button className="btn btn-default">User Registration</button>
-          </Link>
-        </div>
       </div>
     </div>
   );
