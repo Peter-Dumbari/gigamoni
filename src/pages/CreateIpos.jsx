@@ -5,6 +5,7 @@ import "../pages/CreateIpos.css";
 import "../App.css";
 import Loaders from "../components/loaders/Loaders";
 import swal from "sweetalert";
+import { useNavigate } from "react-router";
 
  
 
@@ -17,6 +18,7 @@ function CreateIpos() {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('');
   const [messenger, setMessenger] = useState('');
+  const navigate = useNavigate();
    
   const Notifier = localStorage.getItem('verified')
 
@@ -42,8 +44,8 @@ function CreateIpos() {
         .then(response =>{
             console.log(response)
             setLoading(false)
-          if(response.status === 201){
-            alert("Your IPOs have been successfully created!")
+          if(response.statusText === 'OK'){
+            navigate("/startbiding")
           }
           
         })
@@ -109,7 +111,7 @@ function CreateIpos() {
                 </div>
               </div>
               
-              {loading ? <Loaders/> : <button className="btn btn-success">Register</button>}
+              {loading ? <Loaders/> : <button className="btn btn-success">Create</button>}
             </form>
           </div>
         </div>}

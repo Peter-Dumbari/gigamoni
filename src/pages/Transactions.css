@@ -1,5 +1,5 @@
 .transaction__container{
-    margin: 1rem 0 3rem 25%;
+    margin: 1rem 0 9rem 25%;
     height: 80vh;
     width: 100%;
 }
@@ -39,41 +39,6 @@
     margin-bottom: 2rem;
 }
 
-.buttons{
-    margin-right: 5rem;
-}
-
-.investiment__button{
-    margin-right: 1rem;
-    border-radius: 5px;
-    background-color: #3C9DDA;
-    padding: 3px 10px 3px  10px;
-    color: #fff;
-    font-weight: 500;
-    border-color: #3C9DDA;
-}
-
-.withdraw__button{
-    border-radius: 5px;
-    padding: 3px 10px 3px  10px;
-    font-weight: 500;
-    border-color: #3C9DDA;
-    color: #3C9DDA;
-}
-
-.investiment__button:hover{
-    background-color: #fff;
-    color: #3C9DDA;
-    transition: all 0.2s linear;
-}
-
-.withdraw__button:hover{
-    background-color: #3C9DDA;
-    color: #fff;
-    transition: all 0.2s linear;
-}
-
-
 
 .search__button{
     background-color:#3C9DDA;
@@ -90,7 +55,7 @@
     flex-direction: row;
     height: 30px;
     width: 100%;
-    margin-left: 65%;
+    margin-left: 70%;
 }
 
 .search__container form{
@@ -109,19 +74,20 @@ tr th{
     background-color: #3C9DDA;
     padding: 0 1em 0 20px ;
     color: #fff;
-    text-align: center;
     width: 100%;    
 }
 
 tr td{
     color: #808080;
-    text-align: center;
     width: 100%;
     padding: 10px 1% 10px 1%;
+    border-bottom: 1px solid;
 }
 
 table{
     width: 100%;
+    border: 1px solid;
+    border-collapse: separate;
 }
 
 .completed{
