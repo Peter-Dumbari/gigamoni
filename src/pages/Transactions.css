@@ -50,8 +50,8 @@
 .search__container{
     display: flex;
     flex-direction: row;
-    width: 30%;
-    margin-left: 70%;
+    width: 25%;
+    margin-left: 75%;
 }
 
 
@@ -60,7 +60,8 @@
         background-position: 10px center;
         background-repeat: no-repeat;
         border: 1px solid #ccc;
-    
+        height: 50%;
+
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;
         -ms-border-radius: 4px;
