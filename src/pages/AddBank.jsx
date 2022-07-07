@@ -28,58 +28,13 @@ export default function DashBoard() {
       
                 </div>
                 <div className="formscontainer2">
-                  <label>BVN</label>
+                  <label>Account Number:</label>
                   <input type="" className="form-control" required/>
-                  <label>Account Name:</label>
-                  <input type="text" className="form-control" required/>
+                  <label>Phone Number:</label>
+                  <input type="number" className="form-control" required/>
                 </div>
               </div>
                 <button className="btn btn-primary">SEND</button>
-{/* 
-              <div className="form__items">
-                <div className="firstline">
-                  <label htmlFor="firstname">BVN:</label>
-                  <input
-                    type="password"
-                    name=""
-                    id=""
-                    className="form-control"
-                    required
-                  />
-                </div>
-                <div>
-                  <label htmlFor="firstname">Account Name:</label>
-                  <input
-                    type="text"
-                    name=""
-                    id=""
-                    className="form-control"
-                    required
-                  />
-                </div>
-              </div>
-              <div className="form__items">
-                <div className="secondline">
-                  <label htmlFor="emailaddress">Account Number:</label>
-                  <input
-                    type="text"
-                    name=""
-                    id=""
-                    className="form-control"
-                    required
-                  />
-                </div>
-                <div>
-                  <label htmlFor="phonenumber">Phone Number:</label>
-                  <input
-                    type="text"
-                    name=""
-                    id=""
-                    className="form-control"
-                    required
-                  />
-                </div>
-              </div> */}
             </form>
           </div>
           </div>

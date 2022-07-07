@@ -14,13 +14,16 @@
 
 .formscontainer1{
     width: 35%;
-    margin: 0 7% 0 0;
+    margin: 0 12% 0 0;
 }
 
 .formscontainer2{
     width: 35%;
 }
 
+input{
+    margin-bottom: 1rem;
+}
 .btn-primary{
     width: 20%;
     padding: 0;
