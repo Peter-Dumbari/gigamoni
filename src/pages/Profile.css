@@ -24,12 +24,12 @@
 input{
     margin-bottom: 1rem;
 }
-.btn-primary{
+/* .btn-primary{
     width: 20%;
     padding: 0;
     height: 40px;
     margin-top: 2rem;
-}
+} */
 
 .form__items input{
     height: 50%;
@@ -82,14 +82,7 @@ label{
     }
     
 
-.btn-primary{
-    width: 30%;
-    font-size: 20px;
-    height: 40px;
-    margin-top: 1rem;
-    padding: 0;
-    
-}
+
 
 
 .firstline{
@@ -159,14 +152,14 @@ label{
 }
 
 
-.btn-primary{
+/* .btn-primary{
     width: 20%;
     font-size: 12px;
     height: 30px;
     padding: 0;
     margin-top: 1rem;
     
-}
+} */
 
 
 .firstline{

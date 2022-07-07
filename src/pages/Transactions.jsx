@@ -42,14 +42,11 @@ export default function DashBoard() {
                       <div className="transaction__managers">
         
                           <div className="search__container">
-                              <form>
-                              <input type="search" className="form-control" required/>
-                              <button className="search__button">search</button>
-                              </form>
+                            <input type="search" className="form-control" placeholder="Search" rel="search"/>
                           </div>
                       </div>   
                             <div className="transactions__table">
-                            <table className="table ">
+                            <table className="table">
                                 <tr>
                                     <th scope="col">IPO ID</th>
                                     <th scope="col">Asset Amount</th>
@@ -59,7 +56,7 @@ export default function DashBoard() {
                                 </tr>
                             { data.map((items)=>
                                 <tr>
-                                    <td>{items.ipo_id}</td>
+                                    <td >{items.ipo_id}</td>
                                     <td>{items.asset_amount}</td>
                                     <td>{items.repay_amount}</td>
                                     <td>{items.amount_received}</td>
