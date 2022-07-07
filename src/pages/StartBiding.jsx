@@ -44,7 +44,7 @@ axios.get('https://test-gig.herokuapp.com/api/v1/crowdfunding/ipo/', items)
         <Navbar/>
         {Notifier === 'NOT YET VERIFIED'? swal({
               title: "Account Not yet Verified",
-              text: "verified to get access this page",
+              text: "Verify to get access this page",
               icon: "warning",
             }).then(function() {
               window.location = "/dashboard";

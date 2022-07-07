@@ -61,7 +61,7 @@ function CreateIpos() {
       <Navbar />
       {Notifier === 'NOT YET VERIFIED'? swal({
               title: "Account Not yet verified",
-              text: "verified to be able to create IPO",
+              text: "Verify to be able to create IPO",
               icon: "warning",
             })
             .then(function() {

@@ -15,11 +15,11 @@ export default function DashBoard() {
       <div className="emptyStartBiddingContainer">
             <div className="biddingContainer">
             <div className="emtpty_header_text">
-              <h4>Start Bidding</h4>
+              <h4>Created IPOs</h4>
               <div className="container__items">
                 <img src={EmptyImage} alt="" width="400px" height="400px" className="empty__void"/>
-                <h3>No Investment Yet</h3>
-                <h4>Check back later for new bidding</h4>
+                <h3>No IPO Created Yet</h3>
+                <h4>Check back later after creating IPO</h4>
               </div>
             </div >
             </div>
