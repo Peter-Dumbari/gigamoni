@@ -1,5 +1,5 @@
 .profile__container{
-    margin: 2rem 0rem 2rem 30%;
+    margin: 2rem 0rem 2rem 22rem;
     width: 100%;
 
 }
@@ -21,7 +21,7 @@
     width: 35%;
 }
 
-input{
+.formscontainer1 input,.formscontainer2 input{
     margin-bottom: 1rem;
 }
 /* .btn-primary{
@@ -60,6 +60,11 @@ input{
     font-weight: 600;
 }
 
+.button_container{
+    width: 20%;
+    margin-top: 1%;
+    
+}
 label{
     font-weight: 600;
     font-family: Sen;
@@ -67,7 +72,7 @@ label{
 @media (min-width: 701px) and (max-width: 868px)
 {
     .profile__container{
-        margin: -45rem  0  0 12%;
+        margin: 3rem  0  0 5rem;
         width: 100%;
         align-self: center;
     }
@@ -116,7 +121,7 @@ label{
 }
 @media screen and (min-width: 401px) and (max-width:  700px){
     .profile__container{
-        margin: 0 0  0 1rem;
+        margin: 3rem 0  0 3rem;
         width: 100%;
         height: 30%;
     }

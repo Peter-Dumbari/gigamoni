@@ -34,7 +34,7 @@ export default function DashBoard() {
                   <input type="number" className="form-control" required/>
                 </div>
               </div>
-                <button className="btn btn-primary">SEND</button>
+              <div className="button_container"> <button className="btn btn-primary">SEND</button></div>
             </form>
           </div>
           </div>

@@ -9,6 +9,7 @@ import { Navigate } from 'react-router'
 export default function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
+  const [indicator, setIndicator] =useState('');
   
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -27,12 +28,12 @@ export default function Navbar() {
 
   window.addEventListener("resize", showButton);
   const Notifier = localStorage.getItem('verified')
-  console.log(Notifier)
+  // console.log(Notifier)
   
   return (
     <>
       <div className="navbar__container">
-        <p>{Notifier}</p>
+        <p>{indicator}</p>
 
       </div>
       <div onClick={handleClick} className="menu-icon">
