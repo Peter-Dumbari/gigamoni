@@ -49,7 +49,7 @@ export default function CompanyVerification() {
           setLoading(false);
             swal({
               title: "Account Created Successfully!",
-              text: "You clicked the button!",
+              text: "Check your mail an OTP have been sent!",
               icon: "success",
             })  .then(function() {
               window.location = "verifyemail";

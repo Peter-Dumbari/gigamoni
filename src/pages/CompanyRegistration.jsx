@@ -7,6 +7,8 @@ import axios from "axios";
 import { useForm } from "react-hook-form";
 import Loaders from "../components/loaders/Loaders";
 import { useNavigate } from "react-router-dom";
+import ReactSelect from 'react-select';
+
 
 
 
@@ -29,8 +31,12 @@ export default function UserRegistration() {
   const [message, setMessage] = useState("");
   const navigate = useNavigate();
 
-
-  
+  const computerEngineering = [
+    { value: "india", label: "India" },
+    { value: "us", label: "US" },
+    { value: "australia", label: "Australia" }
+  ];
+  const [selectedValue, setSelectedValue] = useState();
   const [loading, setLoading] = useState(false);
 
   const handleCompanyname = (event) => {
@@ -44,7 +50,7 @@ export default function UserRegistration() {
     setCompanytype(company_type);
   };
 
-  const handleemail = (event) => {
+  const handle = (event) => {
     const email = event.target.value;
     console.log(email);
     setEmail(email);
@@ -126,6 +132,15 @@ export default function UserRegistration() {
                   {errors.companyname?.type === 'required' && 'Companyname is required*'}
                 </error>
               <br />
+              {/* <ReactSelect
+                
+                options={computerEngineering}
+                onSelect {...register("companytype",{required: true})}
+                // value={handleCompanytype}
+              />
+              <error>
+                  {errors.companytype?.type === 'required' && 'Company-type is required*'}
+                </error> */}
                 <select {...register("companytype",{required: true})} className="form-control">
                 <option defaultValue>Computer Engineering</option>
                 <option>Mobile Banking</option>
@@ -136,7 +151,7 @@ export default function UserRegistration() {
                 <option >Transportation Company</option>
                 <option >Software Engineering</option>
                 <option >Others</option>
-                </select>
+                </select> 
                  <error>
                   {errors.companytype?.type === 'required' && 'Company-type is required*'}
                 </error>
