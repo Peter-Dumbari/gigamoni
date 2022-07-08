@@ -33,7 +33,7 @@ export default function Navbar() {
   return (
     <>
       <div className="navbar__container">
-        <p>{indicator}</p>
+        <p>{Notifier}</p>
 
       </div>
       <div onClick={handleClick} className="menu-icon">
