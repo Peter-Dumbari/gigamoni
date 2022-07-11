@@ -29,11 +29,12 @@ export default function Navbar() {
   window.addEventListener("resize", showButton);
   const Notifier = localStorage.getItem('verified')
   // console.log(Notifier)
-  
+
+
   return (
     <>
       <div className="navbar__container">
-        <p>{Notifier}</p>
+        <p>{Notifier === "VERIFIED"? <p style={{color: 'green'}}>VERIFIED</p> : <p style={{color: 'red'}}>NOT YET VERIFIED</p>}</p>
 
       </div>
       <div onClick={handleClick} className="menu-icon">

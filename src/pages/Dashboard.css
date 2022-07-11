@@ -4,7 +4,7 @@
     position: fixed;
     top: 0;
     z-index: 999;
-    height: 50px;
+    height: 40px;
     text-align: right;
 
 }
@@ -18,8 +18,7 @@
 } */
 .navbar__container p{
     float: right;
-    font-size: 1.5rem;
-    color: #0e8a5e;
+    font-size: 1.2rem;
     font-weight: 200;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
