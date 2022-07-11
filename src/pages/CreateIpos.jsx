@@ -20,11 +20,30 @@ function CreateIpos() {
   const [messenger, setMessenger] = useState('');
   const navigate = useNavigate();
    
+
+
   const Notifier = localStorage.getItem('verified')
 
+  const onChangeFile = event => {
+    let file = event.target.files[0];
+   
+ if (file.type.match(/\.(jpeg||jpg)$/)) {
+      setError("File does not support. You must use .png or .jpg ");
+      return false;
+   }
+   else if (file.size > 2e6) {
+     setError("Image Size too big");
+   }
+   else{
+    setError(null)
+    setPo(file)
+   }
+  };
+
+
     const handleSubmit =  (e) =>{
-      setLoading(true)
       e.preventDefault();
+      setLoading(true)
       const access = JSON.parse(localStorage.getItem('tokens'));
 
       
@@ -54,6 +73,8 @@ function CreateIpos() {
           console.log(error.response);
           setLoading(false)
         })
+
+      
     }
 
   return (
@@ -70,8 +91,7 @@ function CreateIpos() {
           <div className="create__ipos__container">
             <h2>Create your IPO</h2>
             <h5>What do you want to do today?</h5>
-            <div className="error__notifier">{error}</div>
-            <form className="create__ipos__form" onSubmit={handleSubmit} method="post" enctype="multipart/FormData" >
+            <form className="create__ipos__form" onSubmit={handleSubmit} method="post" encType="multipart/FormData" >
               <div className="input__first__line">
                 <input
                   type="text"
@@ -81,7 +101,7 @@ function CreateIpos() {
                   required
                 />
                 <input
-                  type="text"
+                  type="number"
                   placeholder="Asset amount"
                   className="form-control"
                   onChange={(e) => {setAssetamount(e.target.value)}}
@@ -101,12 +121,13 @@ function CreateIpos() {
                   />
                 </div>
                 <div className="second__input">
-                  <input type="text" className="form-control" placeholder="PO Value" onChange={e => setPovalue(e.target.value)} required/>
-                  <label htmlFor="">Select your PO image:</label>
+                  <input type="number" className="form-control" placeholder="PO Value" onChange={e => setPovalue(e.target.value)} required/>
+                  <label htmlFor="">Select your PO image not more than 2MB:</label>
+                  <div className="error__notifier">{error}</div>
                   <input type="file" 
-                  accept="image/png, image/jpeg" 
+                  accept="image/jpeg" 
                   className="form-control" 
-                  onChange={(e)=>{setPo(e.target.files[0])}} 
+                  onChange= {onChangeFile} 
                   required/>
                 </div>
               </div>

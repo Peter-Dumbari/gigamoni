@@ -15,7 +15,62 @@ export default function CompanyVerification() {
   const [contact_person_email, setContact_person_email] = useState('')
   const [contactPersonNumber, setContactPersonNumber] = useState('')
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("")
+  const [err, setErr] = useState("")
+  const [num, setNum] =  useState("")
 
+
+
+  const _validateNumber = (e) =>{
+    const Number = (e.target.value);
+    if(!Number){
+      setNum("Number is required")
+    }
+    else if(Number.length < 11){
+      setNum("Numbers most be up to 11 digits")
+    }
+    else if(Number.length > 11){
+      setNum("Numbers most not be morethan 11 digits")
+    }
+    else{
+      setNum(null)
+      setContactPersonNumber(Number)
+    }
+  }
+
+  const onChangeFile = event => {
+    let file = event.target.files[0];
+   
+ if (file.type.match(/\.(jpeg||jpg)$/)) {
+      setError("File does not support. jpeg format only");
+      return false;
+   }
+   else if (file.size > 2e6) {
+     setError("Image Size should not be morethan 2MB");
+   }
+   else{
+    setError(null)
+    setUtilityBil(file)
+
+   }
+  };
+
+  const _onChangeFile = event => {
+    let file = event.target.files[0];
+   
+ if (file.type.match(/\.(jpeg||jpg)$/)) {
+      setErr("File does not support. jpeg format only ");
+      return false;
+   }
+   else if (file.size > 2e6) {
+     setErr("Image size should not be morethan 2MB")
+   }
+   else{
+    setErr(null)
+    setReferenceLetter(file)
+
+   }
+  };
 
   const HandleSubmit= (e)=>{
     setLoading(true)
@@ -81,21 +136,23 @@ export default function CompanyVerification() {
                     id="companyname"
                     className="form-control"
                     placeholder="Utility bill "
-                    onChange={(e)=>{setUtilityBil(e.target.files[0])}} 
+                    onChange={onChangeFile} 
                     required
                   />      
+                  <div className='error__notifier'>{error}</div>
                   <br />
                    
-                   <label>Refrence Letter in PDF format</label>
+                   <label>Upload your Refrence Letter</label>
                   <input
                     type="file"
-                    accept='PDF'
+                    accept='image'
                     id="companyaddress"
                     className="form-control"
                     placeholder="Reference letter "
-                    onChange={(e)=>{setReferenceLetter(e.target.files[0])}} 
+                    onChange={_onChangeFile} 
                     required
                     />
+                    <div className='error__notifier'>{err}</div>
                     <br />
                   <input
                     type="text"
@@ -116,9 +173,10 @@ export default function CompanyVerification() {
                     type="number"
                     className="form-control"
                     placeholder="Contact person number"
-                    onChange={(e)=>{setContactPersonNumber(e.target.value)}} 
+                    onChange={_validateNumber} 
                     required
-                    />                  
+                    />     
+                    <div className="error__notifier">{num}</div>             
                     <br />
                   <p style={{ float: "right" }}>
                     <Link to="/login" className="login__link">Skip</Link>{" "}

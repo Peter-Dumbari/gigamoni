@@ -57,8 +57,8 @@ axios.get('https://test-gig.herokuapp.com/api/v1/crowdfunding/ipo/', items)
             </div> 
             { loading ? <Loaders2/> : null}
            <div className="cards">
-             {data.map((item) =>
-               <div className="startbidding__card">
+             {data.map((item, index) =>
+               <div className="startbidding__card" key={index}>
                <img src={NairaSign} alt=""  width="100px" height="100px" className="startbbing__card__image" />
                <div className="card__text">
                    <h3>{item.asset_title}</h3>
