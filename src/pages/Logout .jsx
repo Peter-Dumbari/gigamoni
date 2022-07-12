@@ -2,17 +2,25 @@ import axios from 'axios'
 import { useNavigate } from 'react-router'
 
 
-function Logout (context) {
+function Logout () {
+  const access = JSON.parse(localStorage.getItem('tokens'));
+  const reFresh = localStorage.getItem('tokens')
+  let items = new FormData();
+
+  items.append('refresh', reFresh)
+
+
     const navigate = useNavigate();
-    const refresh = JSON.parse(localStorage.getItem('tokens')).refresh
-    const items = {headers: {"Authorization": "Bearer "+ refresh}}
-    console.log(items);
-    axios.post('https://test-gig.herokuapp.com/api/v1/accounts/logout/', items)
-    localStorage.clear("balance");
-    window.location.reload(false);
-    context.commit("user_data", {
-      token: null,  }); 
-      navigate('/login')
+    let info = {headers: {"Authorization": "Token " + access} }
+    axios.post('https://test-gig.herokuapp.com/api/v1/accounts/logout/', items, info)
+    .then((response)=>{
+      if(response.status === 200){
+        navigate('/login')
+      }
+    })
+    .catch((error) =>{
+      console.log(error)
+    })
 
   } 
 

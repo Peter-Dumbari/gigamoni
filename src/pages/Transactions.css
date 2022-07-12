@@ -88,7 +88,7 @@
 tr th{
     background-color: #3C9DDA;
     color: #fff;
-   
+    padding-left: 2%;
 }
 
 
@@ -100,6 +100,8 @@ table{
 
 tr td{
     border-bottom: 1px solid;
+    padding-left: 2%;
+
 }
 
 /* tr{
