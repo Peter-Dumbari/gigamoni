@@ -7,26 +7,43 @@ import BlueBall from "../assets/BlueEllipse.png"
 import NairaSign from "../assets/nairasign.png";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import axios from "axios";
+
 
 export default function DashBoard() {
+  const[data, setData] =  useState([]);
+  const access = JSON.parse(localStorage.getItem('tokens'));
+
+  useEffect(()=>{
+      let items = {headers: {"Authorization": "Token "+access}}
+      axios.get('https://test-gig.herokuapp.com/api/v1/crowdfunding/companytrans/', items)
+      .then(response =>{
+      setData(response.data.results);
+      console.log(data)
+      })
+  }, [])
   return (
     <>
     <Navbar/>
     <div className="dashboard__container__container">
     <div className="startBiddings">
           <div className="startBidding__container">
-          <div className="startbidding__card">
-            <img src={NairaSign} alt=""  width="100px" height="100px" className="startbbing__card__image" />
-            <div className="card__text">
-              <h3>Asset Title</h3>
-              <p>
-                This is the asset descriptin the user should know before the can
-                bid
-              </p>
-              <Link to='/startbiddings' style={{textDecortion: 'none'}}><button className="card__button"> view more</button></Link>
+          <div className="cards">
+             {data.map((item, index) =>
+               <div className="startbidding__card" key={index}>
+               <img src={NairaSign} alt=""  width="100px" height="100px" className="startbbing__card__image" />
+               <div className="card__text">
+                   <h3>{item.asset_title}</h3>
+                 <p>
+                   {item.asset_descr}
+                 </p>
+                 <Link to='/startbiddings' style={{textDecortion: 'none'}}><button className="card__button"> view more</button></Link>
+               </div>
+               <h4>{item.po_value}</h4>
+             </div>
+            )
+        }
             </div>
-            <h4>N70,000,000.00</h4>
-          </div>
             <div className="gigasec__services_list">
               <div className="gigasec__header_text">
                 <h3>Gigasec Services Ltd</h3>

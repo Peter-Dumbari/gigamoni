@@ -85,7 +85,7 @@
 }
 
 
-tr th{
+thead{
     background-color: #3C9DDA;
     color: #fff;
     padding-left: 2%;
@@ -360,13 +360,13 @@ table{
     flex-direction: column;
 }
 
-th{
+thead{
     align-items: center;
     font-size: 30%;
 }
 
 
-tr td{
+tbody{
     font-size:50%;
     align-items: center;
 }
@@ -379,12 +379,7 @@ tr td{
     padding-right: 5rem;
 }
 
-.search__button{
-    width: 50%;
-    font-size: 10px;
-    height: 20px;
 
-}
 
 
 .withdraw__items h5{
@@ -473,8 +468,16 @@ tr td{
     margin-top: 5px;
     font-size: xx-small;
    
+}.search__container input{
+    width: 100%;
+    height: 10px;
 }
 
+.search_container input ::placeholder{
+    font-size: 10px;
+    display: none;
+
+}
 .transactions__table{
     width: 100%;
     margin: 1px;
@@ -489,9 +492,10 @@ table{
     flex-direction: column;
 }
 
-th{
+thead{
     align-items: center;
     font-size: 15%;
+    padding: 0;
 
 
 }
@@ -508,7 +512,8 @@ tr td{
 padding: 1px;
 font-size: 100%;
 width: 80%;
-margin-top: 3px
+margin-top: 3px;
+border-radius: 0;
 }
 
 
@@ -516,7 +521,8 @@ margin-top: 3px
 padding: 5%;
 font-size: 10px;
 width: 100%;
-margin-top: 3px
+margin-top: 3px;
+border-radius: 0;
 }
 
 

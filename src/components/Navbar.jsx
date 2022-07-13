@@ -4,10 +4,13 @@ import "../pages/Dashboard.css";
 import Logo from "../assets/Logo.png";
 import axios from "axios";
 import { Navigate } from 'react-router'
+import { FaBars } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
 
 
 export default function Navbar() {
-  const [click, setClick] = useState(false);
+  
+  const [click, setClick] = useState(true);
   const [button, setButton] = useState(true);
   const [indicator, setIndicator] =useState('');
   
@@ -34,11 +37,11 @@ export default function Navbar() {
   return (
     <>
       <div className="navbar__container">
-        <p>{Notifier === "VERIFIED"? <p style={{color: 'green'}}>VERIFIED</p> : <p style={{color: 'red'}}>NOT YET VERIFIED</p>}</p>
+        <>{Notifier === "VERIFIED"? <p style={{color: 'green'}}>VERIFIED</p> : <p style={{color: 'red'}}>NOT YET VERIFIED</p>}</>
 
       </div>
-      <div onClick={handleClick} className="menu-icon">
-        <i className={click ? "fas fa-times" : "fas fa-bars"} />
+      <div className="menu-icon" onClick={handleClick} >
+        <>{click? <FaTimes className="times"/> : <FaBars className="bars"/> }</>
       </div>
       <div className="side__Nav">
       <img src={Logo} alt="logo" className="sidenav__image" />

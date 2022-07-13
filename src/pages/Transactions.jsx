@@ -47,6 +47,7 @@ export default function DashBoard() {
                       </div>   
                             <div className="transactions__table">
                             <table className="table">
+                                <thead>
                                 <tr>
                                     <th scope="col">IPO ID</th>
                                     <th scope="col">Asset Amount</th>
@@ -54,16 +55,18 @@ export default function DashBoard() {
                                     <th scope="col">Amount Received</th>  
                                     <th scope="col">Status</th>
                                 </tr>
-                            { data.map((items)=>
-                                <tr>
+                                </thead>
+                           <tbody>
+                             { data.map((items,index)=>
+                                <tr key={index}>
                                     <td >{items.ipo_id}</td>
                                     <td>{items.asset_amount}</td>
                                     <td>{items.repay_amount}</td>
                                     <td>{items.amount_received}</td>
                                     <td><h6 className="completed">{items.status}</h6></td>
                                 </tr>
-                                
                             )}
+                           </tbody>
                             </table>
                         </div>
                             
