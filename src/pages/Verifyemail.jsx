@@ -66,7 +66,7 @@ export default function ConfirmEmail() {
       <div className="confirmEmail__Item">
         <h3 className="confirmEmail__header">Email Confirmation</h3>
         <form >
-        <p className="error__notifier">{error}</p>
+        <p className="alert alert-danger">{error}</p>
           <input
             type="number"
             className="form-control"

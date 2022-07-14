@@ -96,7 +96,7 @@ export default function UserRegistration() {
       }).catch(error =>{
         console.log(error);
         if(error.response.status === 400){
-          setError('email already exit')
+          setError('Email Already exit!!')
           setLoading(false)
         }
 
@@ -116,7 +116,7 @@ export default function UserRegistration() {
             <h4>Company Registration</h4>
             <br />
             <div className="userformdiv"><form>
-              <div className="error__notifier">{error}</div><p className="success">{message}</p>
+            {error && <div className="alert alert-danger">{error}</div>}
               <br />
               <input
                 type="text"

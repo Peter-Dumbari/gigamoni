@@ -166,21 +166,33 @@ label{
     
 } */
 
-
-.firstline{
-    margin-right: 2rem;
-    width: 200px;
+.settings_form{
+    width: 100%;
 }
 
-.secondline{
-    margin-right: 2rem;
-    width: 200px;
+.formscontainer1{
+    width: 50%;
 }
 
+.formscontainer1 input{
+    height: 25px;
+}
 
+.formscontainer2{
+    width: 50%;
+}
+
+.formscontainer2 input{
+    height: 25px;
+}
+
+.formscontainer1 button{
+    height: 30px;
+    font-size: 20%;
+}
 label{
     font-weight: 600;
-    font-size: 90%;
+    font-size: 50%;
 }
 
 

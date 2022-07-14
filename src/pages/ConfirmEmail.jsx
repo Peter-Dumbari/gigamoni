@@ -43,7 +43,7 @@ export default function ConfirmEmail() {
 
         <h3 className="confirmEmail__header">Reset Password</h3>
         <form>
-          <p className="success">{info}</p>
+          <p className="alert alert-success">{info}</p>
 
           <input
             type="email"

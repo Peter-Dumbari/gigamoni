@@ -89,7 +89,7 @@ export default function UserRegistration() {
             <p className="loginheading_paragraph">
               Enter your Credentials to continue
             </p>
-            {error && <div className="error__notifier">{error}</div>}
+            {error && <div className="alert alert-danger">{error}</div>}
             <br />
             <form onSubmit={handleSubmit(handleSubmiting)}>
               <p className="error__notifier">{emailErrorMessage}</p>
