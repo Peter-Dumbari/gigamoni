@@ -16,6 +16,7 @@ function Logout () {
     .then((response)=>{
       if(response.status === 200){
         navigate('/login')
+        localStorage.clear();
       }
     })
     .catch((error) =>{
