@@ -41,7 +41,7 @@ export default function Navbar() {
 
       </div>
       <div className="menu-icon" onClick={handleClick} >
-        <>{click? <FaTimes className="times"/> : <FaBars className="bars"/> }</>
+        <>{click? <i class="fa-solid fa-bars"></i> : <i class="fa-solid fa-bars"></i>}</>
       </div>
       <div className="side__Nav">
       <img src={Logo} alt="logo" className="sidenav__image" />
