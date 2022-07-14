@@ -4,8 +4,8 @@ import "../pages/Dashboard.css";
 import Logo from "../assets/Logo.png";
 import axios from "axios";
 import { Navigate } from 'react-router'
-import { FaBars } from "react-icons/fa";
-import { FaTimes } from "react-icons/fa";
+// import { FaBars } from "react-icons/fa";
+// import { FaTimes } from "react-icons/fa";
 
 
 export default function Navbar() {
