@@ -10,7 +10,7 @@ import { FaTimes } from "react-icons/fa";
 
 export default function Navbar() {
   
-  const [click, setClick] = useState(true);
+  const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
   const [indicator, setIndicator] =useState('');
   
@@ -52,7 +52,7 @@ export default function Navbar() {
               className="nav-links"
               onClick={closeMobileMenu}
             >
-              Dashboard
+              Dashboard 
             </Link>
           </li>
           <li className="nav-item">
