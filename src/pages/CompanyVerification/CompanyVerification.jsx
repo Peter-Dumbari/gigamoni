@@ -42,7 +42,7 @@ export default function CompanyVerification() {
     let file = event.target.files[0];
    
   if (!file.type.includes('jpeg', 'jpg', 'image')) {
-      setError("File does not support. jpeg format only");
+      setError("File format not supported. jpeg format only");
       return false;
    }
    else if (file.size > 2e6) {
@@ -59,7 +59,7 @@ export default function CompanyVerification() {
     let file = event.target.files[0];
    
  if (!file.type.includes('jpeg', 'jpg', 'image')) {
-      setErr("Image not supported. jpeg format only ");
+      setErr("file format not supported. jpeg format only ");
       return false;
    }
    else if (file.size > 2e6) {

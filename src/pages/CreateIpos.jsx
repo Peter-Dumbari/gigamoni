@@ -29,7 +29,7 @@ function CreateIpos() {
     console.log(file.type)
    
  if (!file.type.includes('jpeg', 'jpg', 'image')) {
-      setError("Image file not supported. You must use .jpeg or  .jpg ");
+      setError("file format not supported. You must use .jpeg or  .jpg ");
       return false;
    }
    if (file.size > 2e6) {
