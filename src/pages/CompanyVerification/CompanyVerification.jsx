@@ -41,7 +41,7 @@ export default function CompanyVerification() {
   const onChangeFile = event => {
     let file = event.target.files[0];
    
- if (file.type.match(/\.(jpeg||jpg)$/)) {
+  if (!file.type.includes('jpeg', 'jpg', 'image')) {
       setError("File does not support. jpeg format only");
       return false;
    }
@@ -58,8 +58,8 @@ export default function CompanyVerification() {
   const _onChangeFile = event => {
     let file = event.target.files[0];
    
- if (file.type.match(/\.(jpeg||jpg)$/)) {
-      setErr("File does not support. jpeg format only ");
+ if (!file.type.includes('jpeg', 'jpg', 'image')) {
+      setErr("Image not supported. jpeg format only ");
       return false;
    }
    else if (file.size > 2e6) {
@@ -132,7 +132,7 @@ export default function CompanyVerification() {
                   <label>Upload your Utility bill</label>
                   <input
                     type="file"
-                    accept='image'
+                    accept='file'
                     id="companyname"
                     className="form-control"
                     placeholder="Utility bill "
@@ -145,7 +145,7 @@ export default function CompanyVerification() {
                    <label>Upload your Refrence Letter</label>
                   <input
                     type="file"
-                    accept='image'
+                    accept='file'
                     id="companyaddress"
                     className="form-control"
                     placeholder="Reference letter "

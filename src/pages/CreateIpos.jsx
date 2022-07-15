@@ -26,12 +26,13 @@ function CreateIpos() {
 
   const onChangeFile = event => {
     let file = event.target.files[0];
+    console.log(file.type)
    
- if (file.type.match(/\.(jpeg||jpg)$/)) {
-      setError("File does not support. You must use .png or .jpg ");
+ if (!file.type.includes('jpeg', 'jpg', 'image')) {
+      setError("Image file not supported. You must use .jpeg or  .jpg ");
       return false;
    }
-   else if (file.size > 2e6) {
+   if (file.size > 2e6) {
      setError("Image Size too big");
    }
    else{
@@ -125,7 +126,7 @@ function CreateIpos() {
                   <label htmlFor="">Select your PO image not more than 2MB:</label>
                   <div className="error__notifier">{error}</div>
                   <input type="file" 
-                  accept="image/jpeg" 
+                  accept="file" 
                   className="form-control" 
                   onChange= {onChangeFile} 
                   required/>
